@@ -78,7 +78,7 @@ namespace BAOCAOCUOIKY
 
         private void lblQuenMatKhau_Click(object sender, EventArgs e)
         {
-            FrmQuenMatKhau frm = new FrmQuenMatKhau();
+            FrmDangNhap frm = new FrmDangNhap();
             frm.ShowDialog();
         }
 
