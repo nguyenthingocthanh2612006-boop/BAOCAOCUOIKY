@@ -121,6 +121,12 @@
     <Compile Include="TRANG CHỦ NHÂN VIÊN.Designer.cs">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
     </Compile>
+    <Compile Include="TRANG CHỦ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANG CHỦ.Designer.cs">
+      <DependentUpon>TRANG CHỦ.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TRANG CHỦ NHÂN VIÊN.resx">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANG CHỦ.resx">
+      <DependentUpon>TRANG CHỦ.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
