@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace BAOCAOCUOIKY
 {
-    public partial class Form1 : Form
+    public partial class FrmTrangChuKhachHang : Form
     {
-        public Form1()
+        public FrmTrangChuKhachHang()
         {
             InitializeComponent();
         }
+
     }
 }
