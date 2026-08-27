@@ -16,7 +16,6 @@ namespace BAOCAOCUOIKY
         public FrmDangNhap()
         {
             InitializeComponent();
-            txtMatKhau.PasswordChar = '*';
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -56,6 +55,16 @@ namespace BAOCAOCUOIKY
                         MessageBox.Show("Tài khoản đang bị khóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
+                    if (taiKhoan.Quyen == "Quản trị viên")
+                    {
+                        // PHÂN QUYỀN ADMIN
+                        MessageBox.Show("Đăng nhập thành công!\nQuyền: Quản trị viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
+                        frm.Show();
+                        this.Hide();
+                    }
+                }
+            }
                         // PHÂN QUYỀN ADMIN
                     
                         // PHÂN QUYỀN NHÂN VIÊN

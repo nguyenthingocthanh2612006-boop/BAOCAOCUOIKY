@@ -81,6 +81,12 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTuyenXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTuyenXe.Designer.cs">
+      <DependentUpon>FrmTuyenXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatVe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,12 +127,21 @@
     <Compile Include="QUẢN LÝ VÉ.Designer.cs">
       <DependentUpon>QUẢN LÝ VÉ.cs</DependentUpon>
     </Compile>
+    <Compile Include="TRANG CHỦ ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANG CHỦ ADMIN.Designer.cs">
+      <DependentUpon>TRANG CHỦ ADMIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="TRANG CHỦ NHÂN VIÊN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TRANG CHỦ NHÂN VIÊN.Designer.cs">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmTuyenXe.resx">
+      <DependentUpon>FrmTuyenXe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DatVe.resx">
       <DependentUpon>DatVe.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QUẢN LÝ VÉ.resx">
       <DependentUpon>QUẢN LÝ VÉ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANG CHỦ ADMIN.resx">
+      <DependentUpon>TRANG CHỦ ADMIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TRANG CHỦ NHÂN VIÊN.resx">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
