@@ -15,6 +15,8 @@ namespace BAOCAOCUOIKY
         public FrmDatVe()
         {
             InitializeComponent();
+            lblDatVe.ForeColor = Color.FromArgb(0, 102, 204);
+            lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Bold);
         }
 
         private void lblTrangChu_Click(object sender, EventArgs e)
@@ -65,6 +67,11 @@ namespace BAOCAOCUOIKY
             lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
+            // MỞ FORM TRA CỨU VÉ
+            FrmTraCuuVe frm = new FrmTraCuuVe();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
         private void lblTuyenXe_Click(object sender, EventArgs e)

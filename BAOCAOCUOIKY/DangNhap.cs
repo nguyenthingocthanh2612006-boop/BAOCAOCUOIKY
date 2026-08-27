@@ -55,19 +55,7 @@ namespace BAOCAOCUOIKY
                         MessageBox.Show("Tài khoản đang bị khóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    if (taiKhoan.Quyen == "Quản trị viên")
-                    {
-                        // PHÂN QUYỀN ADMIN
-                        MessageBox.Show("Đăng nhập thành công!\nQuyền: Quản trị viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
-                        frm.Show();
-                        this.Hide();
-                    }
-                }
-            }
-                        // PHÂN QUYỀN ADMIN
-                    
-                        // PHÂN QUYỀN NHÂN VIÊN
+                    // PHÂN QUYỀN NHÂN VIÊN
                     else if (taiKhoan.Quyen == "Nhân viên")
                     {
                         MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -77,9 +65,9 @@ namespace BAOCAOCUOIKY
                         // Ẩn Form đăng nhập
                         this.Hide();
                     }
+                    // PHÂN QUYỀN KHÁCH HÀNG
                     else if (taiKhoan.Quyen == "Khách hàng")
                     {
-                        // PHÂN QUYỀN KHÁCH HÀNG
                         MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         FrmTrangChuKhachHang frm = new FrmTrangChuKhachHang();
                         frm.Show();
@@ -87,11 +75,7 @@ namespace BAOCAOCUOIKY
                     }
                     else
                     {
-                        MessageBox.Show(
-                            "Tài khoản này không có quyền Nhân viên!",
-                            "Thông báo",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Warning);
+                        MessageBox.Show("Tài khoản này không có quyền Nhân viên!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -100,7 +84,7 @@ namespace BAOCAOCUOIKY
                 MessageBox.Show("Không thể kết nối đến cơ sở dữ liệu!\n\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+            
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             Application.Exit();
