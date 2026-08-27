@@ -77,6 +77,36 @@ namespace BAOCAOCUOIKY
                     }
                 }
             }
+                        // PHÂN QUYỀN ADMIN
+                    
+                        // PHÂN QUYỀN NHÂN VIÊN
+                    else if (taiKhoan.Quyen == "Nhân viên")
+                    {
+                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Mở trang chủ nhân viên
+                        FrmTrangChuNhanVien frm = new FrmTrangChuNhanVien();
+                        frm.Show();
+                        // Ẩn Form đăng nhập
+                        this.Hide();
+                    }
+                    else if (taiKhoan.Quyen == "Khách hàng")
+                    {
+                        // PHÂN QUYỀN KHÁCH HÀNG
+                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FrmTrangChuKhachHang frm = new FrmTrangChuKhachHang();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "Tài khoản này không có quyền Nhân viên!",
+                            "Thông báo",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                    }
+                }
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("Không thể kết nối đến cơ sở dữ liệu!\n\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
