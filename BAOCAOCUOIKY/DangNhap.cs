@@ -55,13 +55,25 @@ namespace BAOCAOCUOIKY
                         MessageBox.Show("Tài khoản đang bị khóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    if (taiKhoan.Quyen == "Quản trị viên")
+                    if (taiKhoan.Quyen == "Admin")
                     {
                         // PHÂN QUYỀN ADMIN
-                        MessageBox.Show("Đăng nhập thành công!\nQuyền: Quản trị viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
                         frm.Show();
                         this.Hide();
+                    }
+                    if (taiKhoan.Quyen == "Nhân viên")
+                    {
+                        // PHÂN QUYỀN ADMIN
+                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FrmTrangChuNhanVien frm = new FrmTrangChuNhanVien();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không có quyền!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
