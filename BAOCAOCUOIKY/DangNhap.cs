@@ -56,13 +56,34 @@ namespace BAOCAOCUOIKY
                         MessageBox.Show("Tài khoản đang bị khóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    // Đăng nhập thành công
-                    MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // Mở Form trang chủ
-                    FrmDangNhap frm = new FrmDangNhap();
-                    frm.Show();
-                    // Ẩn Form đăng nhập
-                    this.Hide();
+                        // PHÂN QUYỀN ADMIN
+                    
+                        // PHÂN QUYỀN NHÂN VIÊN
+                    else if (taiKhoan.Quyen == "Nhân viên")
+                    {
+                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Mở trang chủ nhân viên
+                        FrmTrangChuNhanVien frm = new FrmTrangChuNhanVien();
+                        frm.Show();
+                        // Ẩn Form đăng nhập
+                        this.Hide();
+                    }
+                    else if (taiKhoan.Quyen == "Khách hàng")
+                    {
+                        // PHÂN QUYỀN KHÁCH HÀNG
+                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FrmTrangChuKhachHang frm = new FrmTrangChuKhachHang();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "Tài khoản này không có quyền Nhân viên!",
+                            "Thông báo",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+                    }
                 }
             }
             catch (Exception ex)
