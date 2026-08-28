@@ -100,7 +100,6 @@
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="MaHoaMatKhau.cs" />
     <Compile Include="Models\BenXe.cs" />
     <Compile Include="Models\ChiTietHoaDon.cs" />
     <Compile Include="Models\ChuyenXe.cs" />
@@ -114,6 +113,12 @@
     <Compile Include="Models\TuyenXe.cs" />
     <Compile Include="Models\VeXe.cs" />
     <Compile Include="Models\Xe.cs" />
+    <Compile Include="NV BÁN VÉ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NV BÁN VÉ.Designer.cs">
+      <DependentUpon>NV BÁN VÉ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuenMatKhau.cs">
@@ -128,20 +133,26 @@
     <Compile Include="QUẢN LÝ VÉ.Designer.cs">
       <DependentUpon>QUẢN LÝ VÉ.cs</DependentUpon>
     </Compile>
+    <Compile Include="TRA CỨU CHUYẾN XE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRA CỨU CHUYẾN XE.Designer.cs">
+      <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>
+    </Compile>
     <Compile Include="TRANG CHỦ NHÂN VIÊN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TRANG CHỦ NHÂN VIÊN.Designer.cs">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TraCuuVe.resx">
-      <DependentUpon>TraCuuVe.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatVe.resx">
       <DependentUpon>DatVe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhachHang.resx">
-      <DependentUpon>KhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="NV BÁN VÉ.resx">
+      <DependentUpon>NV BÁN VÉ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -151,6 +162,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
@@ -158,8 +170,20 @@
     <EmbeddedResource Include="QUẢN LÝ VÉ.resx">
       <DependentUpon>QUẢN LÝ VÉ.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TRA CỨU CHUYẾN XE.resx">
+      <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TRANG CHỦ NHÂN VIÊN.resx">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANG CHỦ USER.resx">
+      <DependentUpon>TRANG CHỦ USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TUYENXE.resx">
+      <DependentUpon>TUYENXE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XUẤT HÓA ĐƠN.resx">
+      <DependentUpon>XUẤT HÓA ĐƠN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -174,6 +198,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOOOO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BBBB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Â.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a17f46b7-76c5-4de0-a190-50de6e72c10e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a17f46b7-76c5-4de0-a190-50de6e72c10e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1b19a986-f8c4-4d74-a38f-65a63955fe8b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
