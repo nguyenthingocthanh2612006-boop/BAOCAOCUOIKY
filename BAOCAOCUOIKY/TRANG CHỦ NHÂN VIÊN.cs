@@ -31,5 +31,15 @@ namespace BAOCAOCUOIKY
         {
 
         }
+
+        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmTrangChuNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
