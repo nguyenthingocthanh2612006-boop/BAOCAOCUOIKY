@@ -81,17 +81,12 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongTinDangNhap.cs" />
     <Compile Include="TraCuuVe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TraCuuVe.Designer.cs">
       <DependentUpon>TraCuuVe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TuyenXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TuyenXe.Designer.cs">
-      <DependentUpon>TuyenXe.cs</DependentUpon>
     </Compile>
     <Compile Include="DatVe.cs">
       <SubType>Form</SubType>
@@ -141,9 +136,6 @@
     </Compile>
     <EmbeddedResource Include="TraCuuVe.resx">
       <DependentUpon>TraCuuVe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TuyenXe.resx">
-      <DependentUpon>TuyenXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DatVe.resx">
       <DependentUpon>DatVe.cs</DependentUpon>

@@ -15,8 +15,29 @@ namespace BAOCAOCUOIKY
         public FrmTraCuuVe()
         {
             InitializeComponent();
+
+            // Tra cứu vé sáng
+            lblTraCuuVe.ForeColor = Color.FromArgb(0, 102, 204);
+            lblTraCuuVe.Font = new Font(
+                lblTraCuuVe.Font,
+                FontStyle.Bold
+            );
+        }
+        public FrmTraCuuVe(
+            string noiDi,
+            string noiDen,
+            DateTime ngayDi,
+            string soLuongVe)
+        {
+            InitializeComponent();
+            // Nhận thông tin từ trang chủ
+            cboNoiDi.Text = noiDi;
+            cboNoiDen.Text = noiDen;
+            dtpNgayDi.Value = ngayDi;
+            cboSoLuongVe.Text = soLuongVe;
             lblTraCuuVe.ForeColor = Color.FromArgb(0, 102, 204);
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Bold);
+            
         }
 
         private void lblTrangChu_Click(object sender, EventArgs e)
@@ -102,6 +123,11 @@ namespace BAOCAOCUOIKY
             lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.FromArgb(0, 102, 204);
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Bold);
+        }
+
+        private void FrmTraCuuVe_Load(object sender, EventArgs e)
+        {
+            lblTenDangNhap.Text = ThongTinDangNhap.TenDangNhap;
         }
     }
 }

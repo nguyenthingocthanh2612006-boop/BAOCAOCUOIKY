@@ -49,6 +49,9 @@ namespace BAOCAOCUOIKY
                         txtMatKhau.Focus();
                         return;
                     }
+                    // LƯU THÔNG TIN NGƯỜI ĐANG ĐĂNG NHẬP
+                    ThongTinDangNhap.TenDangNhap = taiKhoan.TenDangNhap;
+                    ThongTinDangNhap.Quyen = taiKhoan.Quyen;
                     // Kiểm tra trạng thái tài khoản
                     if (taiKhoan.TrangThai != "Đang hoạt động")
                     {
@@ -69,13 +72,9 @@ namespace BAOCAOCUOIKY
                     else if (taiKhoan.Quyen == "Khách hàng")
                     {
                         MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        FrmTrangChuKhachHang frm = new FrmTrangChuKhachHang();
+                        FrmTrangChuKhachHang frm = new FrmTrangChuKhachHang ();
                         frm.Show();
                         this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Tài khoản này không có quyền Nhân viên!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -92,7 +91,7 @@ namespace BAOCAOCUOIKY
 
         private void lblQuenMatKhau_Click(object sender, EventArgs e)
         {
-            FrmDangNhap frm = new FrmDangNhap();
+            FrmQuenMatKhau frm = new FrmQuenMatKhau();
             frm.ShowDialog();
         }
 
