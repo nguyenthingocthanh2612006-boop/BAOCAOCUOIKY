@@ -281,9 +281,9 @@
             this.guna2HtmlLabel38.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel38.Location = new System.Drawing.Point(523, 13);
             this.guna2HtmlLabel38.Name = "guna2HtmlLabel38";
-            this.guna2HtmlLabel38.Size = new System.Drawing.Size(98, 22);
+            this.guna2HtmlLabel38.Size = new System.Drawing.Size(104, 22);
             this.guna2HtmlLabel38.TabIndex = 43;
-            this.guna2HtmlLabel38.Text = "Số Hóa Đơn";
+            this.guna2HtmlLabel38.Text = "Mã Hóa Đơn";
             // 
             // guna2DateTimePicker1
             // 
