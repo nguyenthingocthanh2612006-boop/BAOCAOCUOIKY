@@ -72,6 +72,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HÓA ĐƠN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HÓA ĐƠN.Designer.cs">
+      <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\BenXe.cs" />
     <Compile Include="Models\ChiTietHoaDon.cs" />
     <Compile Include="Models\ChuyenXe.cs" />
@@ -117,6 +123,12 @@
     <Compile Include="TRANG CHỦ USER.Designer.cs">
       <DependentUpon>TRANG CHỦ USER.cs</DependentUpon>
     </Compile>
+    <Compile Include="TUYENXE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TUYENXE.Designer.cs">
+      <DependentUpon>TUYENXE.cs</DependentUpon>
+    </Compile>
     <Compile Include="XUẤT HÓA ĐƠN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +137,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HÓA ĐƠN.resx">
+      <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NV BÁN VÉ.resx">
       <DependentUpon>NV BÁN VÉ.cs</DependentUpon>
@@ -150,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TRANG CHỦ USER.resx">
       <DependentUpon>TRANG CHỦ USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TUYENXE.resx">
+      <DependentUpon>TUYENXE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XUẤT HÓA ĐƠN.resx">
       <DependentUpon>XUẤT HÓA ĐƠN.cs</DependentUpon>
@@ -185,6 +203,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a17f46b7-76c5-4de0-a190-50de6e72c10e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a17f46b7-76c5-4de0-a190-50de6e72c10e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1b19a986-f8c4-4d74-a38f-65a63955fe8b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
