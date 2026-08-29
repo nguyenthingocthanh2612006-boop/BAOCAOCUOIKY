@@ -62,23 +62,9 @@ namespace BAOCAOCUOIKY
                         FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
                         frm.Show();
                         this.Hide();
-                    }
-                    if (taiKhoan.Quyen == "Nhân viên")
-                    {
-                        // PHÂN QUYỀN ADMIN
-                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        FrmTrangChuNhanVien frm = new FrmTrangChuNhanVien();
-                        frm.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không có quyền!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-            }
-                        // PHÂN QUYỀN ADMIN
                     
+                    }
+
                         // PHÂN QUYỀN NHÂN VIÊN
                     else if (taiKhoan.Quyen == "Nhân viên")
                     {
@@ -106,7 +92,9 @@ namespace BAOCAOCUOIKY
                             MessageBoxIcon.Warning);
                     }
                 }
-            }
+            }   
+                
+            
             catch (Exception ex)
             {
                 MessageBox.Show("Không thể kết nối đến cơ sở dữ liệu!\n\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);

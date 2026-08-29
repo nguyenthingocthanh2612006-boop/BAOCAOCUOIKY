@@ -17,231 +17,433 @@ namespace BAOCAOCUOIKY
         public FrmTrangChuAdmin()
         {
             InitializeComponent();
-            HienThiThongKe();
-            HienThiBieuDoDoanhThu();
-            HienThiBieuDoTyLeVe();
+
+            LoadTuyenXeNoiBat();
+            LoadThongKe();
+            LoadBieuDoDoanhThu();
+            HienThiTiLeVeTheoTrangThai();
+            HienThiThongTinHeThong();
             HienThiChuyenXeSapKhoiHanh();
-            HienThiTuyenXeNoiBat();
         }
-        private void HienThiThongKe()
+
+        private void LoadThongKe()
+        {
+            try
+            {
+                using (var db = new QuanLyVeXeModel())
+                {
+                    // =========================
+                    // 1. TỔNG SỐ TUYẾN
+                    // =========================
+                    int soTuyen = db.TuyenXes.Count();
+
+                    lblSoTuyen.Text = soTuyen.ToString();
+
+
+                    // =========================
+                    // 2. SỐ CHUYẾN XE HÔM NAY
+                    // =========================
+                    DateTime homNay = DateTime.Today;
+
+                    int soChuyen = db.ChuyenXes.Count(c =>
+                        c.NgayKhoiHanh == homNay);
+
+                    lblSoChuyen.Text = soChuyen.ToString();
+
+
+                    // =========================
+                    // 3. SỐ VÉ ĐÃ BÁN HÔM NAY
+                    // =========================
+                    int soVe = db.VeXes.Count(v =>
+                        v.NgayDat == homNay &&
+                        v.TrangThai != "Đã hủy");
+
+                    lblSoVe.Text = soVe.ToString();
+
+
+                    // =========================
+                    // 4. DOANH THU HÔM NAY
+                    // =========================
+                    decimal doanhThu = db.VeXes
+                        .Where(v =>
+                            v.NgayDat == homNay &&
+                            v.TrangThai == "Đã thanh toán")
+                        .Sum(v => (decimal?)v.GiaVe) ?? 0;
+
+                    lblSoDoanhThu.Text = doanhThu.ToString("N0");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Không thể tải thống kê!\n\n" + ex.Message,
+                    "Lỗi",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void LoadBieuDoDoanhThu()
+        {
+            try
+            {
+                using (var db = new QuanLyVeXeModel())
+                {
+                    // 7 ngày gần nhất, tính cả hôm nay
+                    DateTime ngayCuoi = DateTime.Today;
+                    DateTime ngayDau = ngayCuoi.AddDays(-6);
+
+                    // Xóa dữ liệu cũ
+                    chartDoanhThu.Series.Clear();
+
+                    // Tạo đường biểu đồ
+                    Series series = new Series("Doanh thu");
+                    series.ChartType = SeriesChartType.Line;
+                    series.BorderWidth = 3;
+                    series.MarkerStyle = MarkerStyle.Circle;
+                    series.MarkerSize = 7;
+
+                    // Lấy doanh thu từng ngày
+                    for (int i = 0; i < 7; i++)
+                    {
+                        DateTime ngay = ngayDau.AddDays(i);
+                        DateTime ngayTiepTheo = ngay.AddDays(1);
+
+                        decimal doanhThu = db.HoaDons
+                            .Where(h =>
+                                h.NgayLap >= ngay &&
+                                h.NgayLap < ngayTiepTheo &&
+                                h.TrangThai == "Đã thanh toán")
+                            .Select(h => (decimal?)h.TongTien)
+                            .Sum() ?? 0;
+
+                        // Thêm ngày và doanh thu vào biểu đồ
+                        series.Points.AddXY(
+                            ngay.ToString("dd/MM"),
+                            doanhThu
+                        );
+                    }
+
+                    chartDoanhThu.Series.Add(series);
+
+                    // Cấu hình trục X
+                    chartDoanhThu.ChartAreas[0].AxisX.Title = "Ngày";
+
+                    // Cấu hình trục Y
+                    chartDoanhThu.ChartAreas[0].AxisY.Title = "Doanh thu (VNĐ)";
+                    chartDoanhThu.ChartAreas[0].AxisY.LabelStyle.Format = "N0";
+
+                    // Hiển thị lưới
+                    chartDoanhThu.ChartAreas[0].AxisX.MajorGrid.Enabled = true;
+                    chartDoanhThu.ChartAreas[0].AxisY.MajorGrid.Enabled = true;
+
+                    // Tiêu đề
+                    chartDoanhThu.Titles.Clear();
+                    chartDoanhThu.Titles.Add("DOANH THU 7 NGÀY GẦN NHẤT");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Không thể tải biểu đồ doanh thu!\n\n" + ex.Message,
+                    "Lỗi",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void HienThiTiLeVeTheoTrangThai()
         {
             using (var db = new QuanLyVeXeModel())
             {
                 DateTime homNay = DateTime.Today;
+                DateTime ngayMai = homNay.AddDays(1);
 
-                // 1. Tổng số tuyến
-                int tongSoTuyen = db.TuyenXes.Count();
+                // Lấy dữ liệu trước, sau đó mới lọc ngày bằng C#
+                var veXe = db.VeXes
+                    .ToList()
+                    .Where(v => v.NgayDat >= homNay &&
+                                v.NgayDat < ngayMai)
+                    .ToList();
 
-                // 2. Chuyến xe hôm nay
-                int chuyenXeHomNay = db.ChuyenXes
-                    .Count(x => x.NgayKhoiHanh == homNay);
+                var duLieu = veXe
+                    .GroupBy(v => v.TrangThai)
+                    .Select(g => new
+                    {
+                        TrangThai = g.Key,
+                        SoLuong = g.Count()
+                    })
+                    .ToList();
 
-                // 3. Vé đã đặt hôm nay
-                int veDaBanHomNay = db.VeXes
-                    .Count(x => x.NgayDat == homNay);
+                chartTyLeVe.Series.Clear();
+                chartTyLeVe.Legends.Clear();
 
-                // 4. Doanh thu hôm nay
-                decimal doanhThuHomNay = db.HoaDons
-                    .Where(x => x.NgayLap == homNay)
-                    .Select(x => (decimal?)x.TongTien)
-                    .Sum() ?? 0;
+                Legend legend = new Legend();
+                legend.Docking = Docking.Right;
+                chartTyLeVe.Legends.Add(legend);
 
-                // Hiển thị lên giao diện
-                lblTongSoTuyen.Text = tongSoTuyen.ToString();
-                lblChuyenXeHomNay.Text = chuyenXeHomNay.ToString();
-                lblVeDaBanHomNay.Text = veDaBanHomNay.ToString();
-                lblDoanhThuHomNay.Text = doanhThuHomNay.ToString("#,##0");
+                Series series = new Series("Tỷ lệ vé");
+                series.ChartType = SeriesChartType.Doughnut;
+                series.IsValueShownAsLabel = true;
+                series.Label = "#PERCENT{P0}";
+
+                foreach (var item in duLieu)
+                {
+                    DataPoint point = new DataPoint();
+
+                    point.SetValueY(item.SoLuong);
+                    point.LegendText = item.TrangThai;
+
+                    series.Points.Add(point);
+                }
+
+                chartTyLeVe.Series.Add(series);
             }
         }
-        //NÀY CHỈ LÀ DỮ LIỆU MẪU
-        private void HienThiBieuDoDoanhThu()
+
+        private void HienThiThongTinHeThong()
         {
-            chartDoanhThu.Series.Clear();
-            chartDoanhThu.ChartAreas.Clear();
-
-            // Tạo khu vực biểu đồ
-            ChartArea area = new ChartArea("DoanhThu");
-            chartDoanhThu.ChartAreas.Add(area);
-
-            // Tạo đường doanh thu
-            Series series = new Series("Doanh thu");
-            series.ChartType = SeriesChartType.Line;
-            series.BorderWidth = 2;
-            series.MarkerStyle = MarkerStyle.Circle;
-            series.MarkerSize = 7;
-
-            // 7 ngày gần nhất
-            DateTime ngayHienTai = DateTime.Today;
-
-            double[] doanhThu =
+            using (var db = new QuanLyVeXeModel())
             {
-        1500000,
-        2100000,
-        1800000,
-        2500000,
-        1700000,
-        2900000,
-        2350000
-    };
+                // Phạm vi hoạt động
+                lblGiaTriPhamVi.Text = "Xe buýt nội tỉnh Đồng Tháp";
 
-            for (int i = 0; i < 7; i++)
-            {
-                DateTime ngay = ngayHienTai.AddDays(i - 6);
+                // Số tuyến
+                int soTuyen = db.TuyenXes.Count();
+                lblGiaTriSoTuyen.Text = soTuyen + " tuyến";
 
-                series.Points.AddXY(
-                    ngay.ToString("dd/MM"),
-                    doanhThu[i]
-                );
+                // Số xe
+                int soXe = db.Xes.Count();
+                lblGiaTriXe.Text = soXe + " xe";
+
+                // Số tài xế
+                int soTaiXe = db.TaiXes.Count();
+                lblGiaTriTaiXe.Text = soTaiXe + " tài xế";
+
+                // Số nhân viên
+                int soNhanVien = db.NhanViens.Count();
+                lblMoTaNhanVien.Text = soNhanVien + " nhân viên";
+
+                // Thời gian hoạt động
+                lblMoTaThoiGianHoatDong.Text = "05:00-18:00 Hằng ngày";
             }
-
-            chartDoanhThu.Series.Add(series);
-
-            // Tiêu đề trục
-            area.AxisX.Title = "Ngày";
-            area.AxisY.Title = "Doanh thu (VNĐ)";
-
-            // Hiển thị tiền
-            area.AxisY.LabelStyle.Format = "#,##0";
-
-            // Hiển thị đường lưới
-            area.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightGray;
-            area.AxisY.MajorGrid.LineColor = System.Drawing.Color.LightGray;
         }
-        //NÀY CHỈ LÀ DỮ LIỆU MẪU
-        private void HienThiBieuDoTyLeVe()
-        {
-            chartTyLeVe.Series.Clear();
-            chartTyLeVe.ChartAreas.Clear();
 
-            // Tạo khu vực biểu đồ
-            ChartArea area = new ChartArea("TyLeVe");
-            chartTyLeVe.ChartAreas.Add(area);
-
-            // Tạo biểu đồ tròn
-            Series series = new Series("Trạng thái vé");
-            series.ChartType = SeriesChartType.Doughnut;
-
-            // Dữ liệu mẫu
-            series.Points.AddXY("Đã đặt", 86);
-            series.Points.AddXY("Đã thanh toán", 45);
-            series.Points.AddXY("Đã hủy", 15);
-            series.Points.AddXY("Chờ thanh toán", 10);
-
-            // Hiển thị tên + phần trăm
-            series.IsValueShownAsLabel = true;
-            series.Label = "#PERCENT{P0}";
-
-            // Đưa chú thích ra ngoài
-            series.LegendText = "#VALX";
-
-            chartTyLeVe.Series.Add(series);
-
-            // Tiêu đề
-            chartTyLeVe.Titles.Clear();
-            chartTyLeVe.Titles.Add("TỶ LỆ VÉ THEO TRẠNG THÁI");
-        }
-        //NÀY CHỈ LÀ DỮ LIỆU MẪU
         private void HienThiChuyenXeSapKhoiHanh()
         {
-            using (var db = new QuanLyVeXeModel())
+            try
             {
-                DateTime hienTai = DateTime.Now;
-
-                var danhSach = db.ChuyenXes
-                    .Where(x => x.NgayKhoiHanh >= hienTai)
-                    .OrderBy(x => x.NgayKhoiHanh)
-                    .Take(10)
-                    .ToList();
-
-                dgvChuyenXeSapKhoiHanh.Rows.Clear();
-
-                int stt = 1;
-
-                foreach (var chuyen in danhSach)
+                using (var db = new QuanLyVeXeModel())
                 {
-                    dgvChuyenXeSapKhoiHanh.Rows.Add(
-                        stt++,
-                        chuyen.MaChuyen,
-                        chuyen.TuyenXe != null
-                            ? chuyen.TuyenXe.TenTuyen
-                            : "",
-                        chuyen.Xe != null
-                            ? chuyen.Xe.BienSo
-                            : "",
-                        chuyen.TaiXe != null
-                            ? chuyen.TaiXe.HoTen
-                            : "",
-                        chuyen.NgayKhoiHanh.ToString("dd/MM/yyyy HH:mm"),
-                        chuyen.TrangThai
-                    );
+                    DateTime homNay = DateTime.Today;
+                    DateTime denNgay = homNay.AddDays(7);
+
+                    // Lấy các chuyến xe trong 7 ngày tới
+                    var danhSach = db.ChuyenXes
+                        .Where(c =>
+                            c.NgayKhoiHanh >= homNay &&
+                            c.NgayKhoiHanh < denNgay &&
+                            c.TrangThai == "Chưa khởi hành")
+                        .OrderBy(c => c.NgayKhoiHanh)
+                        .ThenBy(c => c.GioKhoiHanh)
+                        .ToList();
+
+                    // Xóa dữ liệu cũ trên bảng
+                    dgvChuyenXeSapKhoiHanh.Rows.Clear();
+
+                    foreach (var c in danhSach)
+                    {
+                        // Tìm tuyến xe
+                        var tuyen = db.TuyenXes
+                            .FirstOrDefault(t => t.MaTuyen == c.MaTuyen);
+
+                        string tenTuyen = "";
+                        string diemDau = "";
+                        string diemCuoi = "";
+
+                        if (tuyen != null)
+                        {
+                            // Tên tuyến
+                            tenTuyen = tuyen.TenTuyen;
+
+                            // Tìm bến đầu
+                            var benDau = db.BenXes
+                                .FirstOrDefault(b => b.MaBenXe == tuyen.MaBenXeDi);
+
+                            // Tìm bến cuối
+                            var benCuoi = db.BenXes
+                                .FirstOrDefault(b => b.MaBenXe == tuyen.MaBenXeDen);
+
+                            if (benDau != null)
+                            {
+                                diemDau = benDau.TenBenXe
+                                    .Replace("Bến xe ", "");
+                            }
+
+                            if (benCuoi != null)
+                            {
+                                diemCuoi = benCuoi.TenBenXe
+                                    .Replace("Bến xe ", "");
+                            }
+                        }
+
+                        // Thêm vào DataGridView
+                        dgvChuyenXeSapKhoiHanh.Rows.Add(
+                            c.MaChuyen,
+                            tenTuyen,
+                            c.MaXe,
+                            c.MaTX,
+                            c.GioKhoiHanh.ToString(@"hh\:mm"),
+                            diemDau,
+                            diemCuoi,
+                            c.TrangThai
+                        );
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Lỗi khi tải chuyến xe sắp khởi hành!\n\n" + ex.Message,
+                    "Lỗi",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
-        private void HienThiTuyenXeNoiBat()
+
+        private void LoadTuyenXeNoiBat()
         {
-            using (var db = new QuanLyVeXeModel())
+            try
             {
-                var danhSach = db.TuyenXes
-                    .Select(t => new
+                using (var db = new QuanLyVeXeModel())
+                {
+                    // Lấy dữ liệu từ đúng 3 bảng:
+                    // TuyenXe -> ChuyenXe -> VeXe
+
+                    var tuyenXe = db.TuyenXes.ToList();
+                    var chuyenXe = db.ChuyenXes.ToList();
+                    var veXe = db.VeXes.ToList();
+
+                    var danhSach = tuyenXe
+                        .Select(t => new
+                        {
+                            MaTuyen = t.MaTuyen,
+                            TenTuyen = t.TenTuyen,
+
+                            // Số chuyến của tuyến
+                            SoChuyen = chuyenXe.Count(c =>
+                                c.MaTuyen == t.MaTuyen),
+
+                            // Số vé đã bán/đặt, không tính vé đã hủy
+                            SoVe = veXe.Count(v =>
+                                v.TrangThai != "Đã hủy" &&
+                                chuyenXe.Any(c =>
+                                    c.MaChuyen == v.MaChuyen &&
+                                    c.MaTuyen == t.MaTuyen)),
+
+                            // Doanh thu chỉ tính vé đã thanh toán
+                            DoanhThu = veXe
+                                .Where(v =>
+                                    v.TrangThai == "Đã thanh toán" &&
+                                    chuyenXe.Any(c =>
+                                        c.MaChuyen == v.MaChuyen &&
+                                        c.MaTuyen == t.MaTuyen))
+                                .Sum(v => (decimal?)v.GiaVe) ?? 0
+                        })
+                        .OrderByDescending(x => x.SoVe)
+                        .ThenByDescending(x => x.DoanhThu)
+                        .Take(3)
+                        .ToList();
+
+
+                    // ==============================
+                    // XÓA DỮ LIỆU CŨ
+                    // ==============================
+
+                    lblTenTuyen1.Text = "";
+                    lblSoChuyen1.Text = "";
+                    lblSoVe1.Text = "";
+                    lblTien1.Text = "";
+
+                    lblTenTuyen2.Text = "";
+                    lblSoChuyen2.Text = "";
+                    lblSoVe2.Text = "";
+                    lblTien2.Text = "";
+
+                    lblTenTuyen3.Text = "";
+                    lblSoChuyen3.Text = "";
+                    lblSoVe3.Text = "";
+                    lblTien3.Text = "";
+
+
+                    // ==============================
+                    // TUYẾN NỔI BẬT 1
+                    // ==============================
+
+                    if (danhSach.Count > 0)
                     {
-                        TenTuyen = t.TenTuyen,
+                        var t = danhSach[0];
 
-                        SoVe = t.ChuyenXes
-                            .SelectMany(c => c.VeXes)
-                            .Count(),
+                        lblTenTuyen1.Text = "01 " + t.TenTuyen;
+                        lblSoChuyen1.Text = t.SoChuyen + " chuyến";
+                        lblSoVe1.Text = t.SoVe.ToString();
+                        lblTien1.Text = t.DoanhThu.ToString("N0");
+                    }
 
-                        SoChuyen = t.ChuyenXes.Count(),
 
-                        DoanhThu = t.ChuyenXes
-                            .SelectMany(c => c.VeXes)
-                            .Select(v => (decimal?)v.GiaVe)
-                            .Sum() ?? 0
-                    })
-                    .OrderByDescending(x => x.SoVe)
-                    .Take(3)
-                    .ToList();
+                    // ==============================
+                    // TUYẾN NỔI BẬT 2
+                    // ==============================
 
-                // Xóa dữ liệu cũ
-                lblTenTuyen1.Text = "";
-                lblSoChuyen1.Text = "";
-                lblVeDaBan1.Text = "";
-                lblDoanhThu1.Text = "";
+                    if (danhSach.Count > 1)
+                    {
+                        var t = danhSach[1];
 
-                lblTenTuyen2.Text = "";
-                lblSoChuyen2.Text = "";
-                lblVeDaBan2.Text = "";
-                lblDoanhThu2.Text = "";
+                        lblTenTuyen2.Text = "02 " + t.TenTuyen;
+                        lblSoChuyen2.Text = t.SoChuyen + " chuyến";
+                        lblSoVe2.Text = t.SoVe.ToString();
+                        lblTien2.Text = t.DoanhThu.ToString("N0");
+                    }
 
-                lblTenTuyen3.Text = "";
-                lblSoChuyen3.Text = "";
-                lblVeDaBan3.Text = "";
-                lblDoanhThu3.Text = "";
 
-                // Hiển thị 3 tuyến
-                if (danhSach.Count > 0)
-                {
-                    lblTenTuyen1.Text = danhSach[0].TenTuyen;
-                    lblSoChuyen1.Text = danhSach[0].SoChuyen + " chuyến";
-                    lblVeDaBan1.Text = danhSach[0].SoVe + " vé";
-                    lblDoanhThu1.Text = danhSach[0].DoanhThu.ToString("#,##0") + " VND";
-                }
+                    // ==============================
+                    // TUYẾN NỔI BẬT 3
+                    // ==============================
 
-                if (danhSach.Count > 1)
-                {
-                    lblTenTuyen2.Text = danhSach[1].TenTuyen;
-                    lblSoChuyen2.Text = danhSach[1].SoChuyen + " chuyến";
-                    lblVeDaBan2.Text = danhSach[1].SoVe + " vé";
-                    lblDoanhThu2.Text = danhSach[1].DoanhThu.ToString("#,##0") + " VND";
-                }
+                    if (danhSach.Count > 2)
+                    {
+                        var t = danhSach[2];
 
-                if (danhSach.Count > 2)
-                {
-                    lblTenTuyen3.Text = danhSach[2].TenTuyen;
-                    lblSoChuyen3.Text = danhSach[2].SoChuyen + " chuyến";
-                    lblVeDaBan3.Text = danhSach[2].SoVe + " vé";
-                    lblDoanhThu3.Text = danhSach[2].DoanhThu.ToString("#,##0") + " VND";
+                        lblTenTuyen3.Text = "03 " + t.TenTuyen;
+                        lblSoChuyen3.Text = t.SoChuyen + " chuyến";
+                        lblSoVe3.Text = t.SoVe.ToString();
+                        lblTien3.Text = t.DoanhThu.ToString("N0");
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Không thể tải tuyến xe nổi bật!\n\n" + ex.Message,
+                    "Lỗi",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void lblTuyenXe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTien3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
