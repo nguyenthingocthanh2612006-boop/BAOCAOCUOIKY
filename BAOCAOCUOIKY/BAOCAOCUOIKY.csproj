@@ -81,6 +81,7 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongTinDangNhap.cs" />
     <Compile Include="TraCuuVe.cs">
       <SubType>Form</SubType>
     </Compile>

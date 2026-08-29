@@ -104,5 +104,11 @@ namespace BAOCAOCUOIKY
             lblHoaDon.ForeColor = Color.FromArgb(0, 102, 204);
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Bold);
         }
+
+        private void FrmDatVe_Load(object sender, EventArgs e)
+        {
+            lblTenDangNhap.Text = ThongTinDangNhap.TenDangNhap;
+        }
+
     }
 }
