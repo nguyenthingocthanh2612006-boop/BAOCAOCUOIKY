@@ -49,6 +49,9 @@ namespace BAOCAOCUOIKY
                         txtMatKhau.Focus();
                         return;
                     }
+                    // LƯU THÔNG TIN NGƯỜI ĐANG ĐĂNG NHẬP
+                    ThongTinDangNhap.TenDangNhap = taiKhoan.TenDangNhap;
+                    ThongTinDangNhap.Quyen = taiKhoan.Quyen;
                     // Kiểm tra trạng thái tài khoản
                     if (taiKhoan.TrangThai != "Đang hoạt động")
                     {
@@ -75,21 +78,13 @@ namespace BAOCAOCUOIKY
                         // Ẩn Form đăng nhập
                         this.Hide();
                     }
+                    // PHÂN QUYỀN KHÁCH HÀNG
                     else if (taiKhoan.Quyen == "Khách hàng")
                     {
-                        // PHÂN QUYỀN KHÁCH HÀNG
                         MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        FrmTrangChuKhachHang frm = new FrmTrangChuKhachHang();
+                        FrmTrangChuKhachHang frm = new FrmTrangChuKhachHang ();
                         frm.Show();
                         this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show(
-                            "Tài khoản này không có quyền Nhân viên!",
-                            "Thông báo",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Warning);
                     }
                 }
             }   
@@ -100,7 +95,7 @@ namespace BAOCAOCUOIKY
                 MessageBox.Show("Không thể kết nối đến cơ sở dữ liệu!\n\n" + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+            
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -108,7 +103,7 @@ namespace BAOCAOCUOIKY
 
         private void lblQuenMatKhau_Click(object sender, EventArgs e)
         {
-            FrmDangNhap frm = new FrmDangNhap();
+            FrmQuenMatKhau frm = new FrmQuenMatKhau();
             frm.ShowDialog();
         }
 

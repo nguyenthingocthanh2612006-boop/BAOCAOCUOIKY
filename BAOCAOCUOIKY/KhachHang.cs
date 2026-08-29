@@ -21,6 +21,7 @@ namespace BAOCAOCUOIKY
 
         private void FrmTrangChuKhachHang_Load(object sender, EventArgs e)
         {
+            lblTenDangNhap.Text = ThongTinDangNhap.TenDangNhap;
             cboNoiDi.Items.Clear();
             cboNoiDen.Items.Clear();
             string[] diaDiem =
@@ -43,7 +44,6 @@ namespace BAOCAOCUOIKY
             {
                 cboSoLuongVe.Items.Add(i + " vé");
             }
-
             cboSoLuongVe.SelectedIndex = 0;
             // Ngày đi
             dtpNgayDi.MinDate = DateTime.Today;
@@ -97,6 +97,10 @@ namespace BAOCAOCUOIKY
             lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
+            FrmTraCuuVe frm = new FrmTraCuuVe();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
         private void lblTuyenXe_Click(object sender, EventArgs e)
@@ -112,6 +116,7 @@ namespace BAOCAOCUOIKY
             lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Bold);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
+            
         }
 
         private void lblHoaDon_Click(object sender, EventArgs e)
@@ -127,6 +132,7 @@ namespace BAOCAOCUOIKY
             lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.FromArgb(0, 102, 204);
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Bold);
+            
         }
 
         private void btnTim_Click(object sender, EventArgs e)
@@ -150,14 +156,26 @@ namespace BAOCAOCUOIKY
                 MessageBox.Show("Nơi đi và nơi đến không được giống nhau!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
-            MessageBox.Show("Nơi đi: " + cboNoiDi.Text + "\nNơi đến: " + cboNoiDen.Text + "\nNgày đi: " + dtpNgayDi.Value.ToString("dd/MM/yyyy") +
-                "\nSố lượng: " + cboSoLuongVe.Text,
-                "Thông tin tìm vé",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            // Lấy thông tin người dùng đã chọn
+            string noiDi = cboNoiDi.Text;
+            string noiDen = cboNoiDen.Text;
+            DateTime ngayDi = dtpNgayDi.Value;
+            string soLuongVe = cboSoLuongVe.Text;
+            // Mở form Tra Cứu Vé và truyền thông tin qua
+            FrmTraCuuVe frm = new FrmTraCuuVe (
+                noiDi,
+                noiDen,
+                ngayDi,
+                soLuongVe
+            );
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
         private void btnDatVe1_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe();
+            FrmDatVe frm = new FrmDatVe ();
             this.Hide();
             frm.ShowDialog();
             this.Show();
