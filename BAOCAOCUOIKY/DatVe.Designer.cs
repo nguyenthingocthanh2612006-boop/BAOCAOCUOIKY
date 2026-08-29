@@ -37,7 +37,16 @@
             this.lblDatVe = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTrangChu = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlBuoc = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblBuoc2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblBuoc3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblBuoc1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientCircleButton3 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.pnlThongTinChuyenXe = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblXemtatCa = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblDanhSach = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.grbThongTin = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dtpNgayDi = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -47,6 +56,9 @@
             this.lblNoiDen = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNoiDi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.grpChonGhe = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lblViTri = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGhe = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGheTrong1 = new System.Windows.Forms.Label();
             this.pnlXe = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGhe27 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnGhe29 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -86,18 +98,17 @@
             this.pnlGheDaDat = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlGheTrong = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTenDangNhap = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGheTrong1 = new System.Windows.Forms.Label();
             this.pnlChuyen1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblGio1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGio2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyen1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyen2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblXe1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblBienSo1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGhe1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGia1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblThoiGian1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGia1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGhe1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblBienSo1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblXe1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTuyen2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTuyen1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGio2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGio1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblThoiGian2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -109,43 +120,31 @@
             this.lblTuyen3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblGio4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblGio3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblXemtatCa = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGhe = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblViTri = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.grpThongTinHanhKhach = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.lblTuyen5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblChuyenxe = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyen7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblXe3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblXe4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblNgayDi1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblNgayDi2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGheChon = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGheDaChon1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGia3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblSoLuong3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTamTinh = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTien = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTong = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnThanhToan = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnHuy = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.lblGia5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblSoLuong = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblBuoc2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblBuoc3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblBuoc1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2GradientCircleButton3 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-            this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-            this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.lblTongTien = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.grpChinhSach = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.lblChinhSach1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblChinhSach3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblChinhSach2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblChinhSach3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblChinhSach1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTamTinh = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGia5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTong = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTien = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblSoLuong = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnHuy = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblSoLuong3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnThanhToan = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblGheDaChon1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGia3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNgayDi2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGheChon = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblXe4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNgayDi1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblXe3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTuyen7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblChuyenxe = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTuyen5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
             this.pnlBuoc.SuspendLayout();
             this.pnlThongTinChuyenXe.SuspendLayout();
@@ -156,7 +155,6 @@
             this.pnlChuyen1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.grpThongTinHanhKhach.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.grpChinhSach.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -267,6 +265,109 @@
             this.pnlBuoc.Size = new System.Drawing.Size(1312, 83);
             this.pnlBuoc.TabIndex = 45;
             // 
+            // lblBuoc2
+            // 
+            this.lblBuoc2.AutoSize = false;
+            this.lblBuoc2.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuoc2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuoc2.Location = new System.Drawing.Point(569, 28);
+            this.lblBuoc2.Name = "lblBuoc2";
+            this.lblBuoc2.Size = new System.Drawing.Size(174, 28);
+            this.lblBuoc2.TabIndex = 79;
+            this.lblBuoc2.Text = "Chọn ghế ngồi ";
+            // 
+            // lblBuoc3
+            // 
+            this.lblBuoc3.AutoSize = false;
+            this.lblBuoc3.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuoc3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuoc3.Location = new System.Drawing.Point(874, 28);
+            this.lblBuoc3.Name = "lblBuoc3";
+            this.lblBuoc3.Size = new System.Drawing.Size(226, 28);
+            this.lblBuoc3.TabIndex = 78;
+            this.lblBuoc3.Text = "Thông tin hành khách";
+            // 
+            // lblBuoc1
+            // 
+            this.lblBuoc1.AutoSize = false;
+            this.lblBuoc1.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuoc1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuoc1.Location = new System.Drawing.Point(267, 28);
+            this.lblBuoc1.Name = "lblBuoc1";
+            this.lblBuoc1.Size = new System.Drawing.Size(156, 28);
+            this.lblBuoc1.TabIndex = 77;
+            this.lblBuoc1.Text = "Chọn chuyến xe";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.AutoSize = false;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(759, 28);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(31, 28);
+            this.guna2HtmlLabel3.TabIndex = 76;
+            this.guna2HtmlLabel3.Text = "→";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(448, 28);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(31, 28);
+            this.guna2HtmlLabel1.TabIndex = 73;
+            this.guna2HtmlLabel1.Text = "→";
+            // 
+            // guna2GradientCircleButton3
+            // 
+            this.guna2GradientCircleButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientCircleButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton3.Location = new System.Drawing.Point(819, 17);
+            this.guna2GradientCircleButton3.Name = "guna2GradientCircleButton3";
+            this.guna2GradientCircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton3.Size = new System.Drawing.Size(49, 49);
+            this.guna2GradientCircleButton3.TabIndex = 75;
+            this.guna2GradientCircleButton3.Text = "3";
+            // 
+            // guna2GradientCircleButton2
+            // 
+            this.guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(512, 17);
+            this.guna2GradientCircleButton2.Name = "guna2GradientCircleButton2";
+            this.guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(49, 49);
+            this.guna2GradientCircleButton2.TabIndex = 74;
+            this.guna2GradientCircleButton2.Text = "2";
+            // 
+            // guna2GradientCircleButton1
+            // 
+            this.guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(212, 17);
+            this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
+            this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(49, 49);
+            this.guna2GradientCircleButton1.TabIndex = 72;
+            this.guna2GradientCircleButton1.Text = "1";
+            // 
             // pnlThongTinChuyenXe
             // 
             this.pnlThongTinChuyenXe.Controls.Add(this.lblXemtatCa);
@@ -276,6 +377,17 @@
             this.pnlThongTinChuyenXe.Name = "pnlThongTinChuyenXe";
             this.pnlThongTinChuyenXe.Size = new System.Drawing.Size(353, 636);
             this.pnlThongTinChuyenXe.TabIndex = 46;
+            // 
+            // lblXemtatCa
+            // 
+            this.lblXemtatCa.AutoSize = false;
+            this.lblXemtatCa.BackColor = System.Drawing.Color.Transparent;
+            this.lblXemtatCa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXemtatCa.Location = new System.Drawing.Point(255, 290);
+            this.lblXemtatCa.Name = "lblXemtatCa";
+            this.lblXemtatCa.Size = new System.Drawing.Size(95, 21);
+            this.lblXemtatCa.TabIndex = 60;
+            this.lblXemtatCa.Text = "Xem tất cả ";
             // 
             // lblDanhSach
             // 
@@ -413,6 +525,39 @@
             this.grpChonGhe.Size = new System.Drawing.Size(420, 636);
             this.grpChonGhe.TabIndex = 48;
             this.grpChonGhe.Text = "Chọn ghế ngồi";
+            // 
+            // lblViTri
+            // 
+            this.lblViTri.AutoSize = false;
+            this.lblViTri.BackColor = System.Drawing.Color.Transparent;
+            this.lblViTri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViTri.Location = new System.Drawing.Point(231, 612);
+            this.lblViTri.Name = "lblViTri";
+            this.lblViTri.Size = new System.Drawing.Size(91, 21);
+            this.lblViTri.TabIndex = 60;
+            this.lblViTri.Text = "10";
+            // 
+            // lblGhe
+            // 
+            this.lblGhe.AutoSize = false;
+            this.lblGhe.BackColor = System.Drawing.Color.Transparent;
+            this.lblGhe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGhe.Location = new System.Drawing.Point(111, 612);
+            this.lblGhe.Name = "lblGhe";
+            this.lblGhe.Size = new System.Drawing.Size(114, 21);
+            this.lblGhe.TabIndex = 60;
+            this.lblGhe.Text = "Ghế đã chọn :";
+            // 
+            // lblGheTrong1
+            // 
+            this.lblGheTrong1.AutoSize = true;
+            this.lblGheTrong1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGheTrong1.ForeColor = System.Drawing.Color.Black;
+            this.lblGheTrong1.Location = new System.Drawing.Point(37, 51);
+            this.lblGheTrong1.Name = "lblGheTrong1";
+            this.lblGheTrong1.Size = new System.Drawing.Size(87, 22);
+            this.lblGheTrong1.TabIndex = 51;
+            this.lblGheTrong1.Text = "Ghế trống";
             // 
             // pnlXe
             // 
@@ -983,17 +1128,6 @@
             this.lblTenDangNhap.TabIndex = 50;
             this.lblTenDangNhap.Text = "Tên";
             // 
-            // lblGheTrong1
-            // 
-            this.lblGheTrong1.AutoSize = true;
-            this.lblGheTrong1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGheTrong1.ForeColor = System.Drawing.Color.Black;
-            this.lblGheTrong1.Location = new System.Drawing.Point(37, 51);
-            this.lblGheTrong1.Name = "lblGheTrong1";
-            this.lblGheTrong1.Size = new System.Drawing.Size(87, 22);
-            this.lblGheTrong1.TabIndex = 51;
-            this.lblGheTrong1.Text = "Ghế trống";
-            // 
             // pnlChuyen1
             // 
             this.pnlChuyen1.Controls.Add(this.lblThoiGian1);
@@ -1011,93 +1145,16 @@
             this.pnlChuyen1.Size = new System.Drawing.Size(353, 159);
             this.pnlChuyen1.TabIndex = 52;
             // 
-            // lblGio1
+            // lblThoiGian1
             // 
-            this.lblGio1.AutoSize = false;
-            this.lblGio1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGio1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGio1.Location = new System.Drawing.Point(35, 5);
-            this.lblGio1.Name = "lblGio1";
-            this.lblGio1.Size = new System.Drawing.Size(53, 21);
-            this.lblGio1.TabIndex = 53;
-            this.lblGio1.Text = "07:00 ";
-            // 
-            // lblGio2
-            // 
-            this.lblGio2.AutoSize = false;
-            this.lblGio2.BackColor = System.Drawing.Color.Transparent;
-            this.lblGio2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGio2.Location = new System.Drawing.Point(264, 3);
-            this.lblGio2.Name = "lblGio2";
-            this.lblGio2.Size = new System.Drawing.Size(52, 21);
-            this.lblGio2.TabIndex = 53;
-            this.lblGio2.Text = "08:00";
-            // 
-            // lblTuyen1
-            // 
-            this.lblTuyen1.AutoSize = false;
-            this.lblTuyen1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen1.Location = new System.Drawing.Point(19, 23);
-            this.lblTuyen1.Name = "lblTuyen1";
-            this.lblTuyen1.Size = new System.Drawing.Size(89, 21);
-            this.lblTuyen1.TabIndex = 54;
-            this.lblTuyen1.Text = "Cao Lãnh";
-            // 
-            // lblTuyen2
-            // 
-            this.lblTuyen2.AutoSize = false;
-            this.lblTuyen2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen2.Location = new System.Drawing.Point(264, 23);
-            this.lblTuyen2.Name = "lblTuyen2";
-            this.lblTuyen2.Size = new System.Drawing.Size(69, 21);
-            this.lblTuyen2.TabIndex = 55;
-            this.lblTuyen2.Text = "Sa Đéc";
-            // 
-            // lblXe1
-            // 
-            this.lblXe1.AutoSize = false;
-            this.lblXe1.BackColor = System.Drawing.Color.Transparent;
-            this.lblXe1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXe1.Location = new System.Drawing.Point(17, 50);
-            this.lblXe1.Name = "lblXe1";
-            this.lblXe1.Size = new System.Drawing.Size(91, 21);
-            this.lblXe1.TabIndex = 56;
-            this.lblXe1.Text = "Xe  29 chỗ";
-            // 
-            // lblBienSo1
-            // 
-            this.lblBienSo1.AutoSize = false;
-            this.lblBienSo1.BackColor = System.Drawing.Color.Transparent;
-            this.lblBienSo1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienSo1.Location = new System.Drawing.Point(17, 77);
-            this.lblBienSo1.Name = "lblBienSo1";
-            this.lblBienSo1.Size = new System.Drawing.Size(177, 21);
-            this.lblBienSo1.TabIndex = 57;
-            this.lblBienSo1.Text = "Biển số 66A-12345";
-            // 
-            // lblGhe1
-            // 
-            this.lblGhe1.AutoSize = false;
-            this.lblGhe1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGhe1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGhe1.Location = new System.Drawing.Point(236, 77);
-            this.lblGhe1.Name = "lblGhe1";
-            this.lblGhe1.Size = new System.Drawing.Size(114, 21);
-            this.lblGhe1.TabIndex = 58;
-            this.lblGhe1.Text = "Còn 12 ghế";
-            // 
-            // lblGia1
-            // 
-            this.lblGia1.AutoSize = false;
-            this.lblGia1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGia1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia1.Location = new System.Drawing.Point(236, 104);
-            this.lblGia1.Name = "lblGia1";
-            this.lblGia1.Size = new System.Drawing.Size(114, 21);
-            this.lblGia1.TabIndex = 59;
-            this.lblGia1.Text = "Giá 30.000đ";
+            this.lblThoiGian1.AutoSize = false;
+            this.lblThoiGian1.BackColor = System.Drawing.Color.Transparent;
+            this.lblThoiGian1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThoiGian1.Location = new System.Drawing.Point(152, 23);
+            this.lblThoiGian1.Name = "lblThoiGian1";
+            this.lblThoiGian1.Size = new System.Drawing.Size(74, 28);
+            this.lblThoiGian1.TabIndex = 53;
+            this.lblThoiGian1.Text = "60 phút";
             // 
             // guna2HtmlLabel6
             // 
@@ -1110,16 +1167,93 @@
             this.guna2HtmlLabel6.TabIndex = 59;
             this.guna2HtmlLabel6.Text = "→";
             // 
-            // lblThoiGian1
+            // lblGia1
             // 
-            this.lblThoiGian1.AutoSize = false;
-            this.lblThoiGian1.BackColor = System.Drawing.Color.Transparent;
-            this.lblThoiGian1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThoiGian1.Location = new System.Drawing.Point(152, 23);
-            this.lblThoiGian1.Name = "lblThoiGian1";
-            this.lblThoiGian1.Size = new System.Drawing.Size(74, 28);
-            this.lblThoiGian1.TabIndex = 53;
-            this.lblThoiGian1.Text = "60 phút";
+            this.lblGia1.AutoSize = false;
+            this.lblGia1.BackColor = System.Drawing.Color.Transparent;
+            this.lblGia1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGia1.Location = new System.Drawing.Point(236, 104);
+            this.lblGia1.Name = "lblGia1";
+            this.lblGia1.Size = new System.Drawing.Size(114, 21);
+            this.lblGia1.TabIndex = 59;
+            this.lblGia1.Text = "Giá 30.000đ";
+            // 
+            // lblGhe1
+            // 
+            this.lblGhe1.AutoSize = false;
+            this.lblGhe1.BackColor = System.Drawing.Color.Transparent;
+            this.lblGhe1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGhe1.Location = new System.Drawing.Point(236, 77);
+            this.lblGhe1.Name = "lblGhe1";
+            this.lblGhe1.Size = new System.Drawing.Size(114, 21);
+            this.lblGhe1.TabIndex = 58;
+            this.lblGhe1.Text = "Còn 12 ghế";
+            // 
+            // lblBienSo1
+            // 
+            this.lblBienSo1.AutoSize = false;
+            this.lblBienSo1.BackColor = System.Drawing.Color.Transparent;
+            this.lblBienSo1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienSo1.Location = new System.Drawing.Point(17, 77);
+            this.lblBienSo1.Name = "lblBienSo1";
+            this.lblBienSo1.Size = new System.Drawing.Size(177, 21);
+            this.lblBienSo1.TabIndex = 57;
+            this.lblBienSo1.Text = "Biển số 66A-12345";
+            // 
+            // lblXe1
+            // 
+            this.lblXe1.AutoSize = false;
+            this.lblXe1.BackColor = System.Drawing.Color.Transparent;
+            this.lblXe1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXe1.Location = new System.Drawing.Point(17, 50);
+            this.lblXe1.Name = "lblXe1";
+            this.lblXe1.Size = new System.Drawing.Size(91, 21);
+            this.lblXe1.TabIndex = 56;
+            this.lblXe1.Text = "Xe  29 chỗ";
+            // 
+            // lblTuyen2
+            // 
+            this.lblTuyen2.AutoSize = false;
+            this.lblTuyen2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTuyen2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuyen2.Location = new System.Drawing.Point(264, 23);
+            this.lblTuyen2.Name = "lblTuyen2";
+            this.lblTuyen2.Size = new System.Drawing.Size(69, 21);
+            this.lblTuyen2.TabIndex = 55;
+            this.lblTuyen2.Text = "Sa Đéc";
+            // 
+            // lblTuyen1
+            // 
+            this.lblTuyen1.AutoSize = false;
+            this.lblTuyen1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTuyen1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuyen1.Location = new System.Drawing.Point(19, 23);
+            this.lblTuyen1.Name = "lblTuyen1";
+            this.lblTuyen1.Size = new System.Drawing.Size(89, 21);
+            this.lblTuyen1.TabIndex = 54;
+            this.lblTuyen1.Text = "Cao Lãnh";
+            // 
+            // lblGio2
+            // 
+            this.lblGio2.AutoSize = false;
+            this.lblGio2.BackColor = System.Drawing.Color.Transparent;
+            this.lblGio2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGio2.Location = new System.Drawing.Point(264, 3);
+            this.lblGio2.Name = "lblGio2";
+            this.lblGio2.Size = new System.Drawing.Size(52, 21);
+            this.lblGio2.TabIndex = 53;
+            this.lblGio2.Text = "08:00";
+            // 
+            // lblGio1
+            // 
+            this.lblGio1.AutoSize = false;
+            this.lblGio1.BackColor = System.Drawing.Color.Transparent;
+            this.lblGio1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGio1.Location = new System.Drawing.Point(35, 5);
+            this.lblGio1.Name = "lblGio1";
+            this.lblGio1.Size = new System.Drawing.Size(53, 21);
+            this.lblGio1.TabIndex = 53;
+            this.lblGio1.Text = "07:00 ";
             // 
             // guna2Panel1
             // 
@@ -1248,46 +1382,18 @@
             this.lblGio3.TabIndex = 53;
             this.lblGio3.Text = "09:00 ";
             // 
-            // lblXemtatCa
-            // 
-            this.lblXemtatCa.AutoSize = false;
-            this.lblXemtatCa.BackColor = System.Drawing.Color.Transparent;
-            this.lblXemtatCa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXemtatCa.Location = new System.Drawing.Point(255, 290);
-            this.lblXemtatCa.Name = "lblXemtatCa";
-            this.lblXemtatCa.Size = new System.Drawing.Size(95, 21);
-            this.lblXemtatCa.TabIndex = 60;
-            this.lblXemtatCa.Text = "Xem tất cả ";
-            // 
-            // lblGhe
-            // 
-            this.lblGhe.AutoSize = false;
-            this.lblGhe.BackColor = System.Drawing.Color.Transparent;
-            this.lblGhe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGhe.Location = new System.Drawing.Point(111, 612);
-            this.lblGhe.Name = "lblGhe";
-            this.lblGhe.Size = new System.Drawing.Size(114, 21);
-            this.lblGhe.TabIndex = 60;
-            this.lblGhe.Text = "Ghế đã chọn :";
-            // 
-            // lblViTri
-            // 
-            this.lblViTri.AutoSize = false;
-            this.lblViTri.BackColor = System.Drawing.Color.Transparent;
-            this.lblViTri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViTri.Location = new System.Drawing.Point(231, 612);
-            this.lblViTri.Name = "lblViTri";
-            this.lblViTri.Size = new System.Drawing.Size(91, 21);
-            this.lblViTri.TabIndex = 60;
-            this.lblViTri.Text = "10";
-            // 
             // grpThongTinHanhKhach
             // 
+            this.grpThongTinHanhKhach.Controls.Add(this.lblTongTien);
             this.grpThongTinHanhKhach.Controls.Add(this.grpChinhSach);
-            this.grpThongTinHanhKhach.Controls.Add(this.guna2Panel2);
+            this.grpThongTinHanhKhach.Controls.Add(this.lblTamTinh);
             this.grpThongTinHanhKhach.Controls.Add(this.lblGia5);
+            this.grpThongTinHanhKhach.Controls.Add(this.lblTong);
+            this.grpThongTinHanhKhach.Controls.Add(this.lblTien);
             this.grpThongTinHanhKhach.Controls.Add(this.lblSoLuong);
+            this.grpThongTinHanhKhach.Controls.Add(this.btnHuy);
             this.grpThongTinHanhKhach.Controls.Add(this.lblSoLuong3);
+            this.grpThongTinHanhKhach.Controls.Add(this.btnThanhToan);
             this.grpThongTinHanhKhach.Controls.Add(this.lblGheDaChon1);
             this.grpThongTinHanhKhach.Controls.Add(this.lblGia3);
             this.grpThongTinHanhKhach.Controls.Add(this.lblNgayDi2);
@@ -1307,82 +1413,180 @@
             this.grpThongTinHanhKhach.TabIndex = 61;
             this.grpThongTinHanhKhach.Text = "Thông tin hành khách";
             // 
-            // lblTuyen5
+            // lblTongTien
             // 
-            this.lblTuyen5.AutoSize = false;
-            this.lblTuyen5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen5.Location = new System.Drawing.Point(34, 52);
-            this.lblTuyen5.Name = "lblTuyen5";
-            this.lblTuyen5.Size = new System.Drawing.Size(89, 21);
-            this.lblTuyen5.TabIndex = 60;
-            this.lblTuyen5.Text = "Tuyến xe";
+            this.lblTongTien.AutoSize = false;
+            this.lblTongTien.BackColor = System.Drawing.Color.Transparent;
+            this.lblTongTien.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongTien.Location = new System.Drawing.Point(267, 358);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(101, 21);
+            this.lblTongTien.TabIndex = 96;
+            this.lblTongTien.Text = "30.000đ";
             // 
-            // lblChuyenxe
+            // grpChinhSach
             // 
-            this.lblChuyenxe.AutoSize = false;
-            this.lblChuyenxe.BackColor = System.Drawing.Color.Transparent;
-            this.lblChuyenxe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChuyenxe.Location = new System.Drawing.Point(34, 93);
-            this.lblChuyenxe.Name = "lblChuyenxe";
-            this.lblChuyenxe.Size = new System.Drawing.Size(89, 21);
-            this.lblChuyenxe.TabIndex = 62;
-            this.lblChuyenxe.Text = "Chuyến xe";
+            this.grpChinhSach.Controls.Add(this.lblChinhSach2);
+            this.grpChinhSach.Controls.Add(this.lblChinhSach3);
+            this.grpChinhSach.Controls.Add(this.lblChinhSach1);
+            this.grpChinhSach.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpChinhSach.ForeColor = System.Drawing.Color.Blue;
+            this.grpChinhSach.Location = new System.Drawing.Point(0, 480);
+            this.grpChinhSach.Name = "grpChinhSach";
+            this.grpChinhSach.Size = new System.Drawing.Size(420, 157);
+            this.grpChinhSach.TabIndex = 87;
+            this.grpChinhSach.Text = "Chính sách vé";
             // 
-            // lblTuyen7
+            // lblChinhSach2
             // 
-            this.lblTuyen7.AutoSize = false;
-            this.lblTuyen7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen7.Location = new System.Drawing.Point(235, 52);
-            this.lblTuyen7.Name = "lblTuyen7";
-            this.lblTuyen7.Size = new System.Drawing.Size(182, 21);
-            this.lblTuyen7.TabIndex = 63;
-            this.lblTuyen7.Text = "Cao Lãnh → Sa Đéc";
+            this.lblChinhSach2.AutoSize = false;
+            this.lblChinhSach2.BackColor = System.Drawing.Color.Transparent;
+            this.lblChinhSach2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChinhSach2.Location = new System.Drawing.Point(36, 87);
+            this.lblChinhSach2.Name = "lblChinhSach2";
+            this.lblChinhSach2.Size = new System.Drawing.Size(361, 21);
+            this.lblChinhSach2.TabIndex = 90;
+            this.lblChinhSach2.Text = "Không hoàn tiền vé đã thanh toán.";
             // 
-            // guna2HtmlLabel9
+            // lblChinhSach3
             // 
-            this.guna2HtmlLabel9.AutoSize = false;
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(267, 93);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(130, 21);
-            this.guna2HtmlLabel9.TabIndex = 65;
-            this.guna2HtmlLabel9.Text = "07:00 → 08:00";
+            this.lblChinhSach3.AutoSize = false;
+            this.lblChinhSach3.BackColor = System.Drawing.Color.Transparent;
+            this.lblChinhSach3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChinhSach3.Location = new System.Drawing.Point(36, 126);
+            this.lblChinhSach3.Name = "lblChinhSach3";
+            this.lblChinhSach3.Size = new System.Drawing.Size(342, 21);
+            this.lblChinhSach3.TabIndex = 89;
+            this.lblChinhSach3.Text = "Vui lòng có mặt tại bến xe trước 30 phút.";
             // 
-            // lblXe3
+            // lblChinhSach1
             // 
-            this.lblXe3.AutoSize = false;
-            this.lblXe3.BackColor = System.Drawing.Color.Transparent;
-            this.lblXe3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXe3.Location = new System.Drawing.Point(34, 129);
-            this.lblXe3.Name = "lblXe3";
-            this.lblXe3.Size = new System.Drawing.Size(89, 21);
-            this.lblXe3.TabIndex = 64;
-            this.lblXe3.Text = "Xe";
+            this.lblChinhSach1.AutoSize = false;
+            this.lblChinhSach1.BackColor = System.Drawing.Color.Transparent;
+            this.lblChinhSach1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChinhSach1.Location = new System.Drawing.Point(33, 47);
+            this.lblChinhSach1.Name = "lblChinhSach1";
+            this.lblChinhSach1.Size = new System.Drawing.Size(384, 21);
+            this.lblChinhSach1.TabIndex = 88;
+            this.lblChinhSach1.Text = "Đổi/Trả vé trước giờ khởi hành ít nhất 2 tiếng.";
             // 
-            // lblXe4
+            // lblTamTinh
             // 
-            this.lblXe4.AutoSize = false;
-            this.lblXe4.BackColor = System.Drawing.Color.Transparent;
-            this.lblXe4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXe4.Location = new System.Drawing.Point(267, 129);
-            this.lblXe4.Name = "lblXe4";
-            this.lblXe4.Size = new System.Drawing.Size(59, 21);
-            this.lblXe4.TabIndex = 67;
-            this.lblXe4.Text = "29 chỗ ";
+            this.lblTamTinh.AutoSize = false;
+            this.lblTamTinh.BackColor = System.Drawing.Color.Transparent;
+            this.lblTamTinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTamTinh.Location = new System.Drawing.Point(33, 323);
+            this.lblTamTinh.Name = "lblTamTinh";
+            this.lblTamTinh.Size = new System.Drawing.Size(89, 21);
+            this.lblTamTinh.TabIndex = 91;
+            this.lblTamTinh.Text = "Tạm tính";
             // 
-            // lblNgayDi1
+            // lblGia5
             // 
-            this.lblNgayDi1.AutoSize = false;
-            this.lblNgayDi1.BackColor = System.Drawing.Color.Transparent;
-            this.lblNgayDi1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayDi1.Location = new System.Drawing.Point(34, 166);
-            this.lblNgayDi1.Name = "lblNgayDi1";
-            this.lblNgayDi1.Size = new System.Drawing.Size(89, 21);
-            this.lblNgayDi1.TabIndex = 66;
-            this.lblNgayDi1.Text = "Ngày đi";
+            this.lblGia5.AutoSize = false;
+            this.lblGia5.BackColor = System.Drawing.Color.Transparent;
+            this.lblGia5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGia5.Location = new System.Drawing.Point(267, 247);
+            this.lblGia5.Name = "lblGia5";
+            this.lblGia5.Size = new System.Drawing.Size(83, 21);
+            this.lblGia5.TabIndex = 86;
+            this.lblGia5.Text = "30.000đ";
+            // 
+            // lblTong
+            // 
+            this.lblTong.AutoSize = false;
+            this.lblTong.BackColor = System.Drawing.Color.Transparent;
+            this.lblTong.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTong.Location = new System.Drawing.Point(36, 358);
+            this.lblTong.Name = "lblTong";
+            this.lblTong.Size = new System.Drawing.Size(124, 31);
+            this.lblTong.TabIndex = 92;
+            this.lblTong.Text = "Tổng cộng";
+            // 
+            // lblTien
+            // 
+            this.lblTien.AutoSize = false;
+            this.lblTien.BackColor = System.Drawing.Color.Transparent;
+            this.lblTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTien.Location = new System.Drawing.Point(267, 323);
+            this.lblTien.Name = "lblTien";
+            this.lblTien.Size = new System.Drawing.Size(101, 21);
+            this.lblTien.TabIndex = 93;
+            this.lblTien.Text = "30.000đ";
+            // 
+            // lblSoLuong
+            // 
+            this.lblSoLuong.AutoSize = false;
+            this.lblSoLuong.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoLuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong.Location = new System.Drawing.Point(36, 281);
+            this.lblSoLuong.Name = "lblSoLuong";
+            this.lblSoLuong.Size = new System.Drawing.Size(114, 21);
+            this.lblSoLuong.TabIndex = 85;
+            this.lblSoLuong.Text = "Số lượng vé";
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHuy.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.Location = new System.Drawing.Point(235, 409);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(154, 45);
+            this.btnHuy.TabIndex = 95;
+            this.btnHuy.Text = "Hủy";
+            // 
+            // lblSoLuong3
+            // 
+            this.lblSoLuong3.AutoSize = false;
+            this.lblSoLuong3.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoLuong3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong3.Location = new System.Drawing.Point(267, 274);
+            this.lblSoLuong3.Name = "lblSoLuong3";
+            this.lblSoLuong3.Size = new System.Drawing.Size(59, 21);
+            this.lblSoLuong3.TabIndex = 73;
+            this.lblSoLuong3.Text = "1 vé";
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThanhToan.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
+            this.btnThanhToan.Location = new System.Drawing.Point(33, 409);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(156, 45);
+            this.btnThanhToan.TabIndex = 94;
+            this.btnThanhToan.Text = "Thanh toán ";
+            // 
+            // lblGheDaChon1
+            // 
+            this.lblGheDaChon1.AutoSize = false;
+            this.lblGheDaChon1.BackColor = System.Drawing.Color.Transparent;
+            this.lblGheDaChon1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGheDaChon1.Location = new System.Drawing.Point(267, 203);
+            this.lblGheDaChon1.Name = "lblGheDaChon1";
+            this.lblGheDaChon1.Size = new System.Drawing.Size(27, 21);
+            this.lblGheDaChon1.TabIndex = 71;
+            this.lblGheDaChon1.Text = "10";
+            // 
+            // lblGia3
+            // 
+            this.lblGia3.AutoSize = false;
+            this.lblGia3.BackColor = System.Drawing.Color.Transparent;
+            this.lblGia3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGia3.Location = new System.Drawing.Point(34, 247);
+            this.lblGia3.Name = "lblGia3";
+            this.lblGia3.Size = new System.Drawing.Size(89, 21);
+            this.lblGia3.TabIndex = 70;
+            this.lblGia3.Text = "Giá";
             // 
             // lblNgayDi2
             // 
@@ -1407,296 +1611,82 @@
             this.lblGheChon.TabIndex = 68;
             this.lblGheChon.Text = "Ghế đã chọn ";
             // 
-            // lblGheDaChon1
+            // lblXe4
             // 
-            this.lblGheDaChon1.AutoSize = false;
-            this.lblGheDaChon1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGheDaChon1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGheDaChon1.Location = new System.Drawing.Point(267, 203);
-            this.lblGheDaChon1.Name = "lblGheDaChon1";
-            this.lblGheDaChon1.Size = new System.Drawing.Size(27, 21);
-            this.lblGheDaChon1.TabIndex = 71;
-            this.lblGheDaChon1.Text = "10";
+            this.lblXe4.AutoSize = false;
+            this.lblXe4.BackColor = System.Drawing.Color.Transparent;
+            this.lblXe4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXe4.Location = new System.Drawing.Point(267, 129);
+            this.lblXe4.Name = "lblXe4";
+            this.lblXe4.Size = new System.Drawing.Size(59, 21);
+            this.lblXe4.TabIndex = 67;
+            this.lblXe4.Text = "29 chỗ ";
             // 
-            // lblGia3
+            // lblNgayDi1
             // 
-            this.lblGia3.AutoSize = false;
-            this.lblGia3.BackColor = System.Drawing.Color.Transparent;
-            this.lblGia3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia3.Location = new System.Drawing.Point(34, 247);
-            this.lblGia3.Name = "lblGia3";
-            this.lblGia3.Size = new System.Drawing.Size(89, 21);
-            this.lblGia3.TabIndex = 70;
-            this.lblGia3.Text = "Giá";
+            this.lblNgayDi1.AutoSize = false;
+            this.lblNgayDi1.BackColor = System.Drawing.Color.Transparent;
+            this.lblNgayDi1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayDi1.Location = new System.Drawing.Point(34, 166);
+            this.lblNgayDi1.Name = "lblNgayDi1";
+            this.lblNgayDi1.Size = new System.Drawing.Size(89, 21);
+            this.lblNgayDi1.TabIndex = 66;
+            this.lblNgayDi1.Text = "Ngày đi";
             // 
-            // lblSoLuong3
+            // guna2HtmlLabel9
             // 
-            this.lblSoLuong3.AutoSize = false;
-            this.lblSoLuong3.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoLuong3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoLuong3.Location = new System.Drawing.Point(267, 274);
-            this.lblSoLuong3.Name = "lblSoLuong3";
-            this.lblSoLuong3.Size = new System.Drawing.Size(59, 21);
-            this.lblSoLuong3.TabIndex = 73;
-            this.lblSoLuong3.Text = "1 vé";
+            this.guna2HtmlLabel9.AutoSize = false;
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(267, 93);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(130, 21);
+            this.guna2HtmlLabel9.TabIndex = 65;
+            this.guna2HtmlLabel9.Text = "07:00 → 08:00";
             // 
-            // lblTamTinh
+            // lblXe3
             // 
-            this.lblTamTinh.AutoSize = false;
-            this.lblTamTinh.BackColor = System.Drawing.Color.Transparent;
-            this.lblTamTinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTamTinh.Location = new System.Drawing.Point(33, 12);
-            this.lblTamTinh.Name = "lblTamTinh";
-            this.lblTamTinh.Size = new System.Drawing.Size(89, 21);
-            this.lblTamTinh.TabIndex = 72;
-            this.lblTamTinh.Text = "Tạm tính";
+            this.lblXe3.AutoSize = false;
+            this.lblXe3.BackColor = System.Drawing.Color.Transparent;
+            this.lblXe3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXe3.Location = new System.Drawing.Point(34, 129);
+            this.lblXe3.Name = "lblXe3";
+            this.lblXe3.Size = new System.Drawing.Size(89, 21);
+            this.lblXe3.TabIndex = 64;
+            this.lblXe3.Text = "Xe";
             // 
-            // lblTien
+            // lblTuyen7
             // 
-            this.lblTien.AutoSize = false;
-            this.lblTien.BackColor = System.Drawing.Color.Transparent;
-            this.lblTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTien.Location = new System.Drawing.Point(267, 12);
-            this.lblTien.Name = "lblTien";
-            this.lblTien.Size = new System.Drawing.Size(101, 21);
-            this.lblTien.TabIndex = 75;
-            this.lblTien.Text = "30.000đ";
+            this.lblTuyen7.AutoSize = false;
+            this.lblTuyen7.BackColor = System.Drawing.Color.Transparent;
+            this.lblTuyen7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuyen7.Location = new System.Drawing.Point(235, 52);
+            this.lblTuyen7.Name = "lblTuyen7";
+            this.lblTuyen7.Size = new System.Drawing.Size(182, 21);
+            this.lblTuyen7.TabIndex = 63;
+            this.lblTuyen7.Text = "Cao Lãnh → Sa Đéc";
             // 
-            // lblTong
+            // lblChuyenxe
             // 
-            this.lblTong.AutoSize = false;
-            this.lblTong.BackColor = System.Drawing.Color.Transparent;
-            this.lblTong.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTong.Location = new System.Drawing.Point(36, 39);
-            this.lblTong.Name = "lblTong";
-            this.lblTong.Size = new System.Drawing.Size(124, 31);
-            this.lblTong.TabIndex = 74;
-            this.lblTong.Text = "Tổng cộng";
+            this.lblChuyenxe.AutoSize = false;
+            this.lblChuyenxe.BackColor = System.Drawing.Color.Transparent;
+            this.lblChuyenxe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChuyenxe.Location = new System.Drawing.Point(34, 93);
+            this.lblChuyenxe.Name = "lblChuyenxe";
+            this.lblChuyenxe.Size = new System.Drawing.Size(89, 21);
+            this.lblChuyenxe.TabIndex = 62;
+            this.lblChuyenxe.Text = "Chuyến xe";
             // 
-            // btnThanhToan
+            // lblTuyen5
             // 
-            this.btnThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThanhToan.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToan.Location = new System.Drawing.Point(33, 90);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(156, 45);
-            this.btnThanhToan.TabIndex = 83;
-            this.btnThanhToan.Text = "Thanh toán ";
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHuy.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Location = new System.Drawing.Point(235, 90);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(154, 45);
-            this.btnHuy.TabIndex = 84;
-            this.btnHuy.Text = "Hủy";
-            // 
-            // lblGia5
-            // 
-            this.lblGia5.AutoSize = false;
-            this.lblGia5.BackColor = System.Drawing.Color.Transparent;
-            this.lblGia5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia5.Location = new System.Drawing.Point(267, 247);
-            this.lblGia5.Name = "lblGia5";
-            this.lblGia5.Size = new System.Drawing.Size(83, 21);
-            this.lblGia5.TabIndex = 86;
-            this.lblGia5.Text = "30.000đ";
-            // 
-            // lblSoLuong
-            // 
-            this.lblSoLuong.AutoSize = false;
-            this.lblSoLuong.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoLuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoLuong.Location = new System.Drawing.Point(36, 281);
-            this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(114, 21);
-            this.lblSoLuong.TabIndex = 85;
-            this.lblSoLuong.Text = "Số lượng vé";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.lblTongTien);
-            this.guna2Panel2.Controls.Add(this.lblTamTinh);
-            this.guna2Panel2.Controls.Add(this.lblTong);
-            this.guna2Panel2.Controls.Add(this.lblTien);
-            this.guna2Panel2.Controls.Add(this.btnHuy);
-            this.guna2Panel2.Controls.Add(this.btnThanhToan);
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 320);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(419, 159);
-            this.guna2Panel2.TabIndex = 60;
-            // 
-            // lblBuoc2
-            // 
-            this.lblBuoc2.AutoSize = false;
-            this.lblBuoc2.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuoc2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuoc2.Location = new System.Drawing.Point(569, 28);
-            this.lblBuoc2.Name = "lblBuoc2";
-            this.lblBuoc2.Size = new System.Drawing.Size(154, 28);
-            this.lblBuoc2.TabIndex = 79;
-            this.lblBuoc2.Text = "Chọn ghế ngồi ";
-            // 
-            // lblBuoc3
-            // 
-            this.lblBuoc3.AutoSize = false;
-            this.lblBuoc3.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuoc3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuoc3.Location = new System.Drawing.Point(874, 28);
-            this.lblBuoc3.Name = "lblBuoc3";
-            this.lblBuoc3.Size = new System.Drawing.Size(226, 28);
-            this.lblBuoc3.TabIndex = 78;
-            this.lblBuoc3.Text = "Thông tin hành khách";
-            // 
-            // lblBuoc1
-            // 
-            this.lblBuoc1.AutoSize = false;
-            this.lblBuoc1.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuoc1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuoc1.Location = new System.Drawing.Point(267, 28);
-            this.lblBuoc1.Name = "lblBuoc1";
-            this.lblBuoc1.Size = new System.Drawing.Size(156, 28);
-            this.lblBuoc1.TabIndex = 77;
-            this.lblBuoc1.Text = "Chọn chuyến xe";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(740, 28);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(31, 28);
-            this.guna2HtmlLabel3.TabIndex = 76;
-            this.guna2HtmlLabel3.Text = "→";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(448, 28);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(31, 28);
-            this.guna2HtmlLabel1.TabIndex = 73;
-            this.guna2HtmlLabel1.Text = "→";
-            // 
-            // guna2GradientCircleButton3
-            // 
-            this.guna2GradientCircleButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientCircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientCircleButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton3.Location = new System.Drawing.Point(819, 17);
-            this.guna2GradientCircleButton3.Name = "guna2GradientCircleButton3";
-            this.guna2GradientCircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton3.Size = new System.Drawing.Size(49, 49);
-            this.guna2GradientCircleButton3.TabIndex = 75;
-            this.guna2GradientCircleButton3.Text = "3";
-            // 
-            // guna2GradientCircleButton2
-            // 
-            this.guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(512, 17);
-            this.guna2GradientCircleButton2.Name = "guna2GradientCircleButton2";
-            this.guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(49, 49);
-            this.guna2GradientCircleButton2.TabIndex = 74;
-            this.guna2GradientCircleButton2.Text = "2";
-            // 
-            // guna2GradientCircleButton1
-            // 
-            this.guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(212, 17);
-            this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
-            this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(49, 49);
-            this.guna2GradientCircleButton1.TabIndex = 72;
-            this.guna2GradientCircleButton1.Text = "1";
-            // 
-            // lblTongTien
-            // 
-            this.lblTongTien.AutoSize = false;
-            this.lblTongTien.BackColor = System.Drawing.Color.Transparent;
-            this.lblTongTien.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTongTien.Location = new System.Drawing.Point(267, 39);
-            this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(101, 21);
-            this.lblTongTien.TabIndex = 85;
-            this.lblTongTien.Text = "30.000đ";
-            // 
-            // grpChinhSach
-            // 
-            this.grpChinhSach.Controls.Add(this.lblChinhSach2);
-            this.grpChinhSach.Controls.Add(this.lblChinhSach3);
-            this.grpChinhSach.Controls.Add(this.lblChinhSach1);
-            this.grpChinhSach.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpChinhSach.ForeColor = System.Drawing.Color.Blue;
-            this.grpChinhSach.Location = new System.Drawing.Point(0, 480);
-            this.grpChinhSach.Name = "grpChinhSach";
-            this.grpChinhSach.Size = new System.Drawing.Size(420, 157);
-            this.grpChinhSach.TabIndex = 87;
-            this.grpChinhSach.Text = "Chính sách vé";
-            // 
-            // lblChinhSach1
-            // 
-            this.lblChinhSach1.AutoSize = false;
-            this.lblChinhSach1.BackColor = System.Drawing.Color.Transparent;
-            this.lblChinhSach1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChinhSach1.Location = new System.Drawing.Point(33, 47);
-            this.lblChinhSach1.Name = "lblChinhSach1";
-            this.lblChinhSach1.Size = new System.Drawing.Size(384, 21);
-            this.lblChinhSach1.TabIndex = 88;
-            this.lblChinhSach1.Text = "Đổi/Trả vé trước giờ khởi hành ít nhất 2 tiếng.";
-            // 
-            // lblChinhSach3
-            // 
-            this.lblChinhSach3.AutoSize = false;
-            this.lblChinhSach3.BackColor = System.Drawing.Color.Transparent;
-            this.lblChinhSach3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChinhSach3.Location = new System.Drawing.Point(36, 126);
-            this.lblChinhSach3.Name = "lblChinhSach3";
-            this.lblChinhSach3.Size = new System.Drawing.Size(342, 21);
-            this.lblChinhSach3.TabIndex = 89;
-            this.lblChinhSach3.Text = "Vui lòng có mặt tại bến xe trước 30 phút.";
-            // 
-            // lblChinhSach2
-            // 
-            this.lblChinhSach2.AutoSize = false;
-            this.lblChinhSach2.BackColor = System.Drawing.Color.Transparent;
-            this.lblChinhSach2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChinhSach2.Location = new System.Drawing.Point(36, 87);
-            this.lblChinhSach2.Name = "lblChinhSach2";
-            this.lblChinhSach2.Size = new System.Drawing.Size(361, 21);
-            this.lblChinhSach2.TabIndex = 90;
-            this.lblChinhSach2.Text = "Không hoàn tiền vé đã thanh toán.";
+            this.lblTuyen5.AutoSize = false;
+            this.lblTuyen5.BackColor = System.Drawing.Color.Transparent;
+            this.lblTuyen5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuyen5.Location = new System.Drawing.Point(34, 52);
+            this.lblTuyen5.Name = "lblTuyen5";
+            this.lblTuyen5.Size = new System.Drawing.Size(89, 21);
+            this.lblTuyen5.TabIndex = 60;
+            this.lblTuyen5.Text = "Tuyến xe";
             // 
             // FrmDatVe
             // 
@@ -1733,7 +1723,6 @@
             this.pnlChuyen1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.grpThongTinHanhKhach.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
             this.grpChinhSach.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1828,12 +1817,7 @@
         private Guna.UI2.WinForms.Guna2GroupBox grpThongTinHanhKhach;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyen5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblChuyenxe;
-        private Guna.UI2.WinForms.Guna2GradientButton btnHuy;
-        private Guna.UI2.WinForms.Guna2GradientButton btnThanhToan;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTien;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTong;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSoLuong3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTamTinh;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGheDaChon1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGia3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNgayDi2;
@@ -1845,7 +1829,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyen7;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGia5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSoLuong;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblBuoc2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblBuoc3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblBuoc1;
@@ -1854,10 +1837,15 @@
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton3;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTongTien;
         private Guna.UI2.WinForms.Guna2GroupBox grpChinhSach;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblChinhSach2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblChinhSach3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblChinhSach1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTongTien;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTamTinh;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTong;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTien;
+        private Guna.UI2.WinForms.Guna2GradientButton btnHuy;
+        private Guna.UI2.WinForms.Guna2GradientButton btnThanhToan;
     }
 }

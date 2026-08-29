@@ -129,5 +129,6 @@ namespace BAOCAOCUOIKY
         {
             lblTenDangNhap.Text = ThongTinDangNhap.TenDangNhap;
         }
+
     }
 }
