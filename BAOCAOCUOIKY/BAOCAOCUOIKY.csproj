@@ -81,6 +81,24 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="QUẢN LÝ NHÂN VIÊN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUẢN LÝ NHÂN VIÊN.Designer.cs">
+      <DependentUpon>QUẢN LÝ NHÂN VIÊN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUẢN LÝ TÀI XẾ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUẢN LÝ TÀI XẾ.Designer.cs">
+      <DependentUpon>QUẢN LÝ TÀI XẾ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUẢN LÝ XE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUẢN LÝ XE.Designer.cs">
+      <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinDangNhap.cs" />
     <Compile Include="TraCuuVe.cs">
       <SubType>Form</SubType>
@@ -194,8 +212,17 @@
     <EmbeddedResource Include="QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QUẢN LÝ NHÂN VIÊN.resx">
+      <DependentUpon>QUẢN LÝ NHÂN VIÊN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUẢN LÝ TÀI XẾ.resx">
+      <DependentUpon>QUẢN LÝ TÀI XẾ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QUẢN LÝ VÉ.resx">
       <DependentUpon>QUẢN LÝ VÉ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUẢN LÝ XE.resx">
+      <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TRA CỨU CHUYẾN XE.resx">
       <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>
@@ -258,6 +285,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiiiiiiii.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
