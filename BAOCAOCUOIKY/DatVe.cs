@@ -1,7 +1,9 @@
-﻿using System;
+﻿using BAOCAOCUOIKY.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,13 +14,15 @@ namespace BAOCAOCUOIKY
 {
     public partial class FrmDatVe : Form
     {
-        public FrmDatVe()
+        public FrmDatVe(string noiDi, string noiDen, DateTime ngayDi)
         {
             InitializeComponent();
+            cboNoiDi.Text = noiDi;
+            cboNoiDen.Text = noiDen;
+            dtpNgayDi.Value = ngayDi;
             lblDatVe.ForeColor = Color.FromArgb(0, 102, 204);
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Bold);
         }
-
         private void lblTrangChu_Click(object sender, EventArgs e)
         {
             //MÀU CHO CÁC NÚT
@@ -109,6 +113,13 @@ namespace BAOCAOCUOIKY
         {
             lblTenDangNhap.Text = ThongTinDangNhap.TenDangNhap;
         }
-
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            if (cboNoiDi.Text == cboNoiDen.Text)
+            {
+                MessageBox.Show("Nơi đi và nơi đến không được giống nhau!");
+                return;
+            }
+        }
     }
 }

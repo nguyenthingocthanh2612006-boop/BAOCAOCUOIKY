@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblXinChao = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblHoaDon = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTuyenXe = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,24 +40,21 @@
             this.btnTim = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.lblSoLuongVe = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNgayDi = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cboNoiDen = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cboNoiDi = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblNoiDen = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNoiDi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnXoa = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.lblTenDangNhap = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pnlTimKiemVeXe = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTimKiemVeXe1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.grbTimKiem = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lblNoiDen = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cboNoiDen = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.pnlTimKiemVeXe.SuspendLayout();
+            this.grbTimKiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
             this.SuspendLayout();
-            // 
-            // guna2CirclePictureBox5
-            // 
-            this.guna2CirclePictureBox5.ImageRotate = 0F;
-            this.guna2CirclePictureBox5.Location = new System.Drawing.Point(1032, 12);
-            this.guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
-            this.guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox5.Size = new System.Drawing.Size(56, 49);
-            this.guna2CirclePictureBox5.TabIndex = 52;
-            this.guna2CirclePictureBox5.TabStop = false;
             // 
             // lblXinChao
             // 
@@ -182,9 +178,9 @@
             "27 vé",
             "28 vé",
             "29 vé"});
-            this.cboSoLuongVe.Location = new System.Drawing.Point(22, 394);
+            this.cboSoLuongVe.Location = new System.Drawing.Point(0, 360);
             this.cboSoLuongVe.Name = "cboSoLuongVe";
-            this.cboSoLuongVe.Size = new System.Drawing.Size(175, 36);
+            this.cboSoLuongVe.Size = new System.Drawing.Size(303, 36);
             this.cboSoLuongVe.TabIndex = 62;
             // 
             // dtpNgayDi
@@ -192,11 +188,11 @@
             this.dtpNgayDi.Checked = true;
             this.dtpNgayDi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpNgayDi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayDi.Location = new System.Drawing.Point(22, 298);
+            this.dtpNgayDi.Location = new System.Drawing.Point(3, 272);
             this.dtpNgayDi.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgayDi.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgayDi.Name = "dtpNgayDi";
-            this.dtpNgayDi.Size = new System.Drawing.Size(231, 36);
+            this.dtpNgayDi.Size = new System.Drawing.Size(300, 36);
             this.dtpNgayDi.TabIndex = 61;
             this.dtpNgayDi.Value = new System.DateTime(2026, 8, 27, 16, 26, 48, 192);
             // 
@@ -210,7 +206,7 @@
             this.btnTim.FillColor2 = System.Drawing.Color.Lime;
             this.btnTim.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTim.ForeColor = System.Drawing.Color.White;
-            this.btnTim.Location = new System.Drawing.Point(22, 480);
+            this.btnTim.Location = new System.Drawing.Point(29, 414);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(130, 43);
             this.btnTim.TabIndex = 60;
@@ -221,9 +217,9 @@
             this.lblSoLuongVe.AutoSize = false;
             this.lblSoLuongVe.BackColor = System.Drawing.Color.Transparent;
             this.lblSoLuongVe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoLuongVe.Location = new System.Drawing.Point(22, 360);
+            this.lblSoLuongVe.Location = new System.Drawing.Point(3, 326);
             this.lblSoLuongVe.Name = "lblSoLuongVe";
-            this.lblSoLuongVe.Size = new System.Drawing.Size(300, 28);
+            this.lblSoLuongVe.Size = new System.Drawing.Size(159, 28);
             this.lblSoLuongVe.TabIndex = 59;
             this.lblSoLuongVe.Text = "Số lượng vé";
             // 
@@ -232,33 +228,11 @@
             this.lblNgayDi.AutoSize = false;
             this.lblNgayDi.BackColor = System.Drawing.Color.Transparent;
             this.lblNgayDi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayDi.Location = new System.Drawing.Point(22, 264);
+            this.lblNgayDi.Location = new System.Drawing.Point(3, 238);
             this.lblNgayDi.Name = "lblNgayDi";
-            this.lblNgayDi.Size = new System.Drawing.Size(300, 28);
+            this.lblNgayDi.Size = new System.Drawing.Size(156, 28);
             this.lblNgayDi.TabIndex = 58;
             this.lblNgayDi.Text = "Ngày đi";
-            // 
-            // cboNoiDen
-            // 
-            this.cboNoiDen.BackColor = System.Drawing.Color.Transparent;
-            this.cboNoiDen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboNoiDen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboNoiDen.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboNoiDen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboNoiDen.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboNoiDen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboNoiDen.ItemHeight = 30;
-            this.cboNoiDen.Items.AddRange(new object[] {
-            "Cao Lãnh",
-            "Sa Đéc",
-            "Hồng Ngự",
-            "Lai Vung",
-            "Lấp Vò",
-            "Tam Nông"});
-            this.cboNoiDen.Location = new System.Drawing.Point(22, 201);
-            this.cboNoiDen.Name = "cboNoiDen";
-            this.cboNoiDen.Size = new System.Drawing.Size(251, 36);
-            this.cboNoiDen.TabIndex = 57;
             // 
             // cboNoiDi
             // 
@@ -277,28 +251,17 @@
             "Lai Vung",
             "Lấp Vò",
             "Tam Nông"});
-            this.cboNoiDi.Location = new System.Drawing.Point(22, 110);
+            this.cboNoiDi.Location = new System.Drawing.Point(3, 89);
             this.cboNoiDi.Name = "cboNoiDi";
-            this.cboNoiDi.Size = new System.Drawing.Size(251, 36);
+            this.cboNoiDi.Size = new System.Drawing.Size(300, 36);
             this.cboNoiDi.TabIndex = 54;
-            // 
-            // lblNoiDen
-            // 
-            this.lblNoiDen.AutoSize = false;
-            this.lblNoiDen.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoiDen.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoiDen.Location = new System.Drawing.Point(22, 167);
-            this.lblNoiDen.Name = "lblNoiDen";
-            this.lblNoiDen.Size = new System.Drawing.Size(300, 28);
-            this.lblNoiDen.TabIndex = 56;
-            this.lblNoiDen.Text = "Nơi đến";
             // 
             // lblNoiDi
             // 
             this.lblNoiDi.AutoSize = false;
             this.lblNoiDi.BackColor = System.Drawing.Color.Transparent;
             this.lblNoiDi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoiDi.Location = new System.Drawing.Point(22, 76);
+            this.lblNoiDi.Location = new System.Drawing.Point(3, 55);
             this.lblNoiDi.Name = "lblNoiDi";
             this.lblNoiDi.Size = new System.Drawing.Size(300, 28);
             this.lblNoiDi.TabIndex = 55;
@@ -314,7 +277,7 @@
             this.btnXoa.FillColor2 = System.Drawing.Color.Lime;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(22, 568);
+            this.btnXoa.Location = new System.Drawing.Point(202, 414);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(130, 43);
             this.btnXoa.TabIndex = 63;
@@ -331,22 +294,108 @@
             this.lblTenDangNhap.TabIndex = 64;
             this.lblTenDangNhap.Text = "Tên";
             // 
+            // pnlTimKiemVeXe
+            // 
+            this.pnlTimKiemVeXe.Controls.Add(this.guna2HtmlLabel1);
+            this.pnlTimKiemVeXe.Controls.Add(this.lblTimKiemVeXe1);
+            this.pnlTimKiemVeXe.Location = new System.Drawing.Point(11, 65);
+            this.pnlTimKiemVeXe.Name = "pnlTimKiemVeXe";
+            this.pnlTimKiemVeXe.Size = new System.Drawing.Size(1356, 83);
+            this.pnlTimKiemVeXe.TabIndex = 65;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(4, 32);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(370, 21);
+            this.guna2HtmlLabel1.TabIndex = 73;
+            this.guna2HtmlLabel1.Text = "Tìm chuyến xe phù hợp với lịch trình của bạn";
+            // 
+            // lblTimKiemVeXe1
+            // 
+            this.lblTimKiemVeXe1.AutoSize = false;
+            this.lblTimKiemVeXe1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimKiemVeXe1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimKiemVeXe1.Location = new System.Drawing.Point(94, 3);
+            this.lblTimKiemVeXe1.Name = "lblTimKiemVeXe1";
+            this.lblTimKiemVeXe1.Size = new System.Drawing.Size(199, 33);
+            this.lblTimKiemVeXe1.TabIndex = 72;
+            this.lblTimKiemVeXe1.Text = "Tìm kiếm vé xe";
+            // 
+            // grbTimKiem
+            // 
+            this.grbTimKiem.Controls.Add(this.lblNoiDen);
+            this.grbTimKiem.Controls.Add(this.cboNoiDen);
+            this.grbTimKiem.Controls.Add(this.dtpNgayDi);
+            this.grbTimKiem.Controls.Add(this.lblNoiDi);
+            this.grbTimKiem.Controls.Add(this.btnXoa);
+            this.grbTimKiem.Controls.Add(this.cboNoiDi);
+            this.grbTimKiem.Controls.Add(this.cboSoLuongVe);
+            this.grbTimKiem.Controls.Add(this.lblNgayDi);
+            this.grbTimKiem.Controls.Add(this.btnTim);
+            this.grbTimKiem.Controls.Add(this.lblSoLuongVe);
+            this.grbTimKiem.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbTimKiem.ForeColor = System.Drawing.Color.Blue;
+            this.grbTimKiem.Location = new System.Drawing.Point(12, 149);
+            this.grbTimKiem.Name = "grbTimKiem";
+            this.grbTimKiem.Size = new System.Drawing.Size(377, 601);
+            this.grbTimKiem.TabIndex = 66;
+            this.grbTimKiem.Text = "Bộ lọc tìm kiếm";
+            // 
+            // lblNoiDen
+            // 
+            this.lblNoiDen.AutoSize = false;
+            this.lblNoiDen.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoiDen.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoiDen.Location = new System.Drawing.Point(3, 148);
+            this.lblNoiDen.Name = "lblNoiDen";
+            this.lblNoiDen.Size = new System.Drawing.Size(163, 28);
+            this.lblNoiDen.TabIndex = 72;
+            this.lblNoiDen.Text = "Nơi đến";
+            // 
+            // cboNoiDen
+            // 
+            this.cboNoiDen.BackColor = System.Drawing.Color.Transparent;
+            this.cboNoiDen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboNoiDen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNoiDen.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboNoiDen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboNoiDen.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboNoiDen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboNoiDen.ItemHeight = 30;
+            this.cboNoiDen.Items.AddRange(new object[] {
+            "Cao Lãnh",
+            "Sa Đéc",
+            "Hồng Ngự",
+            "Lai Vung",
+            "Lấp Vò",
+            "Tam Nông"});
+            this.cboNoiDen.Location = new System.Drawing.Point(3, 182);
+            this.cboNoiDen.Name = "cboNoiDen";
+            this.cboNoiDen.Size = new System.Drawing.Size(300, 36);
+            this.cboNoiDen.TabIndex = 73;
+            // 
+            // guna2CirclePictureBox5
+            // 
+            this.guna2CirclePictureBox5.ImageRotate = 0F;
+            this.guna2CirclePictureBox5.Location = new System.Drawing.Point(1032, 12);
+            this.guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
+            this.guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox5.Size = new System.Drawing.Size(56, 49);
+            this.guna2CirclePictureBox5.TabIndex = 52;
+            this.guna2CirclePictureBox5.TabStop = false;
+            // 
             // FrmTraCuuVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1403, 761);
+            this.ClientSize = new System.Drawing.Size(1379, 753);
+            this.Controls.Add(this.grbTimKiem);
+            this.Controls.Add(this.pnlTimKiemVeXe);
             this.Controls.Add(this.lblTenDangNhap);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.cboSoLuongVe);
-            this.Controls.Add(this.dtpNgayDi);
-            this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.lblSoLuongVe);
-            this.Controls.Add(this.lblNgayDi);
-            this.Controls.Add(this.cboNoiDen);
-            this.Controls.Add(this.cboNoiDi);
-            this.Controls.Add(this.lblNoiDen);
-            this.Controls.Add(this.lblNoiDi);
             this.Controls.Add(this.guna2CirclePictureBox5);
             this.Controls.Add(this.lblXinChao);
             this.Controls.Add(this.lblHoaDon);
@@ -358,6 +407,8 @@
             this.Name = "FrmTraCuuVe";
             this.Text = "TRA CỨU VÉ";
             this.Load += new System.EventHandler(this.FrmTraCuuVe_Load);
+            this.pnlTimKiemVeXe.ResumeLayout(false);
+            this.grbTimKiem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).EndInit();
             this.ResumeLayout(false);
 
@@ -378,11 +429,15 @@
         private Guna.UI2.WinForms.Guna2GradientTileButton btnTim;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSoLuongVe;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNgayDi;
-        private Guna.UI2.WinForms.Guna2ComboBox cboNoiDen;
         private Guna.UI2.WinForms.Guna2ComboBox cboNoiDi;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblNoiDen;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNoiDi;
         private Guna.UI2.WinForms.Guna2GradientTileButton btnXoa;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTenDangNhap;
+        private Guna.UI2.WinForms.Guna2GradientPanel pnlTimKiemVeXe;
+        private Guna.UI2.WinForms.Guna2GroupBox grbTimKiem;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTimKiemVeXe1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNoiDen;
+        private Guna.UI2.WinForms.Guna2ComboBox cboNoiDen;
     }
 }

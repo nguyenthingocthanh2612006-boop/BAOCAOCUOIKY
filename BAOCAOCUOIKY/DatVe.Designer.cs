@@ -28,25 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTieuDe = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblXinChao = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblHoaDon = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTuyenXe = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTraCuuVe = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblDatVe = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTrangChu = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlBuoc = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblBuoc2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblBuoc3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblBuoc1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientCircleButton3 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.pnlThongTinChuyenXe = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.dgvDanhSachChuyen = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.colGioDi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColGioDenDuKien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNoiDi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNoiDen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBienSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblDanhSach = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.grbThongTin = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.dtpNgayDi = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.lblNgayDi = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cboNoiDen = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cboNoiDi = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblNoiDen = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblNoiDi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.grpChonGhe = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lblViTri = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGhe = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGheTrong1 = new System.Windows.Forms.Label();
             this.pnlXe = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGhe27 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnGhe29 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -81,112 +91,69 @@
             this.guna2CirclePictureBox6 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblXe = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblGheDaDat = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGheDangChon = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlGheDaChon = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlGheDaDat = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlGheTrong = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTenDangNhap = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGheTrong1 = new System.Windows.Forms.Label();
-            this.pnlChuyen1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblGio1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGio2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyen1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyen2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblXe1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblBienSo1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGhe1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGia1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblThoiGian1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblThoiGian2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGia2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGhe2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblBienSo2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblxe2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyen4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyen3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGio4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGio3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblXemtatCa = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGhe = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblViTri = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.grpThongTinHanhKhach = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.lblTuyen5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblChuyenxe = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyen7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblXe3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblXe4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblNgayDi1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblNgayDi2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGheChon = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGheDaChon1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblGia3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblSoLuong3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTamTinh = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTien = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTong = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnThanhToan = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnHuy = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.lblGia5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblSoLuong = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblBuoc2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblBuoc3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblBuoc1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2GradientCircleButton3 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-            this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-            this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.lblTongTien = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.grpChinhSach = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.lblChinhSach1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblChinhSach3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblChinhSach2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
+            this.lblChinhSach3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblChinhSach1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTamTinh = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGia5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTong = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTien = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblSoLuong = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnHuy = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblSoLuong3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnThanhToan = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblGheDaChon1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGia3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNgayDi2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblGheChon = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblXe4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNgayDi1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblXe3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTuyen7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblChuyenxe = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTuyen5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTieuDe = new System.Windows.Forms.Label();
+            this.lblTrangChu = new System.Windows.Forms.Label();
+            this.lblDatVe = new System.Windows.Forms.Label();
+            this.grbThongTin = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.cboSoLuongVe = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblSoLuongVe = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnTim = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.dtpNgayDi = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lblNgayDi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cboNoiDen = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cboNoiDi = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblNoiDen = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNoiDi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pnlBuoc.SuspendLayout();
             this.pnlThongTinChuyenXe.SuspendLayout();
-            this.grbThongTin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachChuyen)).BeginInit();
             this.grpChonGhe.SuspendLayout();
             this.pnlXe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).BeginInit();
-            this.pnlChuyen1.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             this.grpThongTinHanhKhach.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.grpChinhSach.SuspendLayout();
+            this.grbThongTin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblTieuDe
-            // 
-            this.lblTieuDe.AutoSize = false;
-            this.lblTieuDe.BackColor = System.Drawing.Color.Transparent;
-            this.lblTieuDe.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTieuDe.Location = new System.Drawing.Point(29, 29);
-            this.lblTieuDe.Name = "lblTieuDe";
-            this.lblTieuDe.Size = new System.Drawing.Size(400, 37);
-            this.lblTieuDe.TabIndex = 1;
-            this.lblTieuDe.Text = "VÉ XE BUÝT NỘI TỈNH";
-            // 
-            // guna2CirclePictureBox5
-            // 
-            this.guna2CirclePictureBox5.ImageRotate = 0F;
-            this.guna2CirclePictureBox5.Location = new System.Drawing.Point(1049, 29);
-            this.guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
-            this.guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox5.Size = new System.Drawing.Size(56, 49);
-            this.guna2CirclePictureBox5.TabIndex = 44;
-            this.guna2CirclePictureBox5.TabStop = false;
             // 
             // lblXinChao
             // 
+            this.lblXinChao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblXinChao.AutoSize = false;
             this.lblXinChao.BackColor = System.Drawing.Color.Transparent;
             this.lblXinChao.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXinChao.Location = new System.Drawing.Point(1111, 38);
+            this.lblXinChao.Location = new System.Drawing.Point(1274, 14);
             this.lblXinChao.Name = "lblXinChao";
             this.lblXinChao.Size = new System.Drawing.Size(200, 28);
             this.lblXinChao.TabIndex = 43;
@@ -194,10 +161,11 @@
             // 
             // lblHoaDon
             // 
+            this.lblHoaDon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHoaDon.AutoSize = false;
             this.lblHoaDon.BackColor = System.Drawing.Color.Transparent;
             this.lblHoaDon.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoaDon.Location = new System.Drawing.Point(920, 38);
+            this.lblHoaDon.Location = new System.Drawing.Point(956, 14);
             this.lblHoaDon.Name = "lblHoaDon";
             this.lblHoaDon.Size = new System.Drawing.Size(200, 28);
             this.lblHoaDon.TabIndex = 42;
@@ -206,10 +174,11 @@
             // 
             // lblTuyenXe
             // 
+            this.lblTuyenXe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTuyenXe.AutoSize = false;
             this.lblTuyenXe.BackColor = System.Drawing.Color.Transparent;
             this.lblTuyenXe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyenXe.Location = new System.Drawing.Point(775, 38);
+            this.lblTuyenXe.Location = new System.Drawing.Point(811, 14);
             this.lblTuyenXe.Name = "lblTuyenXe";
             this.lblTuyenXe.Size = new System.Drawing.Size(200, 28);
             this.lblTuyenXe.TabIndex = 41;
@@ -218,42 +187,20 @@
             // 
             // lblTraCuuVe
             // 
+            this.lblTraCuuVe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTraCuuVe.AutoSize = false;
             this.lblTraCuuVe.BackColor = System.Drawing.Color.Transparent;
             this.lblTraCuuVe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTraCuuVe.Location = new System.Drawing.Point(635, 38);
+            this.lblTraCuuVe.Location = new System.Drawing.Point(669, 15);
             this.lblTraCuuVe.Name = "lblTraCuuVe";
             this.lblTraCuuVe.Size = new System.Drawing.Size(200, 28);
             this.lblTraCuuVe.TabIndex = 40;
             this.lblTraCuuVe.Text = "Tra cứu vé";
             this.lblTraCuuVe.Click += new System.EventHandler(this.lblTraCuuVe_Click);
             // 
-            // lblDatVe
-            // 
-            this.lblDatVe.AutoSize = false;
-            this.lblDatVe.BackColor = System.Drawing.Color.Transparent;
-            this.lblDatVe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatVe.Location = new System.Drawing.Point(530, 38);
-            this.lblDatVe.Name = "lblDatVe";
-            this.lblDatVe.Size = new System.Drawing.Size(200, 28);
-            this.lblDatVe.TabIndex = 39;
-            this.lblDatVe.Text = "Đặt vé";
-            this.lblDatVe.Click += new System.EventHandler(this.lblDatVe_Click);
-            // 
-            // lblTrangChu
-            // 
-            this.lblTrangChu.AutoSize = false;
-            this.lblTrangChu.BackColor = System.Drawing.Color.Transparent;
-            this.lblTrangChu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangChu.Location = new System.Drawing.Point(393, 38);
-            this.lblTrangChu.Name = "lblTrangChu";
-            this.lblTrangChu.Size = new System.Drawing.Size(200, 28);
-            this.lblTrangChu.TabIndex = 38;
-            this.lblTrangChu.Text = "Trang chủ";
-            this.lblTrangChu.Click += new System.EventHandler(this.lblTrangChu_Click);
-            // 
             // pnlBuoc
             // 
+            this.pnlBuoc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlBuoc.Controls.Add(this.lblBuoc2);
             this.pnlBuoc.Controls.Add(this.lblBuoc3);
             this.pnlBuoc.Controls.Add(this.lblBuoc1);
@@ -262,160 +209,293 @@
             this.pnlBuoc.Controls.Add(this.guna2GradientCircleButton3);
             this.pnlBuoc.Controls.Add(this.guna2GradientCircleButton2);
             this.pnlBuoc.Controls.Add(this.guna2GradientCircleButton1);
-            this.pnlBuoc.Location = new System.Drawing.Point(12, 87);
+            this.pnlBuoc.Location = new System.Drawing.Point(12, 45);
             this.pnlBuoc.Name = "pnlBuoc";
-            this.pnlBuoc.Size = new System.Drawing.Size(1312, 83);
+            this.pnlBuoc.Size = new System.Drawing.Size(1488, 56);
             this.pnlBuoc.TabIndex = 45;
+            // 
+            // lblBuoc2
+            // 
+            this.lblBuoc2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBuoc2.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuoc2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuoc2.Location = new System.Drawing.Point(657, 15);
+            this.lblBuoc2.Name = "lblBuoc2";
+            this.lblBuoc2.Size = new System.Drawing.Size(140, 28);
+            this.lblBuoc2.TabIndex = 79;
+            this.lblBuoc2.Text = "Chọn ghế ngồi ";
+            // 
+            // lblBuoc3
+            // 
+            this.lblBuoc3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBuoc3.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuoc3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuoc3.Location = new System.Drawing.Point(962, 15);
+            this.lblBuoc3.Name = "lblBuoc3";
+            this.lblBuoc3.Size = new System.Drawing.Size(208, 28);
+            this.lblBuoc3.TabIndex = 78;
+            this.lblBuoc3.Text = "Thông tin hành khách";
+            // 
+            // lblBuoc1
+            // 
+            this.lblBuoc1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblBuoc1.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuoc1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuoc1.Location = new System.Drawing.Point(355, 15);
+            this.lblBuoc1.Name = "lblBuoc1";
+            this.lblBuoc1.Size = new System.Drawing.Size(154, 28);
+            this.lblBuoc1.TabIndex = 77;
+            this.lblBuoc1.Text = "Chọn chuyến xe";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2HtmlLabel3.AutoSize = false;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(847, 15);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(31, 28);
+            this.guna2HtmlLabel3.TabIndex = 76;
+            this.guna2HtmlLabel3.Text = "→";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(536, 15);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(31, 28);
+            this.guna2HtmlLabel1.TabIndex = 73;
+            this.guna2HtmlLabel1.Text = "→";
+            // 
+            // guna2GradientCircleButton3
+            // 
+            this.guna2GradientCircleButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientCircleButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientCircleButton3.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton3.Location = new System.Drawing.Point(907, 4);
+            this.guna2GradientCircleButton3.Name = "guna2GradientCircleButton3";
+            this.guna2GradientCircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton3.Size = new System.Drawing.Size(49, 49);
+            this.guna2GradientCircleButton3.TabIndex = 75;
+            this.guna2GradientCircleButton3.Text = "3";
+            // 
+            // guna2GradientCircleButton2
+            // 
+            this.guna2GradientCircleButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(600, 4);
+            this.guna2GradientCircleButton2.Name = "guna2GradientCircleButton2";
+            this.guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(49, 49);
+            this.guna2GradientCircleButton2.TabIndex = 74;
+            this.guna2GradientCircleButton2.Text = "2";
+            // 
+            // guna2GradientCircleButton1
+            // 
+            this.guna2GradientCircleButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(300, 4);
+            this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
+            this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(49, 49);
+            this.guna2GradientCircleButton1.TabIndex = 72;
+            this.guna2GradientCircleButton1.Text = "1";
             // 
             // pnlThongTinChuyenXe
             // 
-            this.pnlThongTinChuyenXe.Controls.Add(this.lblXemtatCa);
+            this.pnlThongTinChuyenXe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlThongTinChuyenXe.Controls.Add(this.dgvDanhSachChuyen);
             this.pnlThongTinChuyenXe.Controls.Add(this.lblDanhSach);
-            this.pnlThongTinChuyenXe.Controls.Add(this.grbThongTin);
-            this.pnlThongTinChuyenXe.Location = new System.Drawing.Point(12, 187);
+            this.pnlThongTinChuyenXe.Location = new System.Drawing.Point(18, 109);
             this.pnlThongTinChuyenXe.Name = "pnlThongTinChuyenXe";
-            this.pnlThongTinChuyenXe.Size = new System.Drawing.Size(353, 636);
+            this.pnlThongTinChuyenXe.Size = new System.Drawing.Size(550, 623);
             this.pnlThongTinChuyenXe.TabIndex = 46;
+            // 
+            // dgvDanhSachChuyen
+            // 
+            this.dgvDanhSachChuyen.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvDanhSachChuyen.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDanhSachChuyen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDanhSachChuyen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDanhSachChuyen.ColumnHeadersHeight = 18;
+            this.dgvDanhSachChuyen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvDanhSachChuyen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colGioDi,
+            this.ColGioDenDuKien,
+            this.colNoiDi,
+            this.colNoiDen,
+            this.colBienSo,
+            this.colGia});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDanhSachChuyen.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvDanhSachChuyen.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvDanhSachChuyen.Location = new System.Drawing.Point(0, 325);
+            this.dgvDanhSachChuyen.MultiSelect = false;
+            this.dgvDanhSachChuyen.Name = "dgvDanhSachChuyen";
+            this.dgvDanhSachChuyen.ReadOnly = true;
+            this.dgvDanhSachChuyen.RowHeadersVisible = false;
+            this.dgvDanhSachChuyen.RowHeadersWidth = 51;
+            this.dgvDanhSachChuyen.RowTemplate.Height = 24;
+            this.dgvDanhSachChuyen.Size = new System.Drawing.Size(550, 299);
+            this.dgvDanhSachChuyen.TabIndex = 61;
+            this.dgvDanhSachChuyen.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvDanhSachChuyen.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDanhSachChuyen.ThemeStyle.HeaderStyle.Height = 18;
+            this.dgvDanhSachChuyen.ThemeStyle.ReadOnly = true;
+            this.dgvDanhSachChuyen.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDanhSachChuyen.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.dgvDanhSachChuyen.ThemeStyle.RowsStyle.Height = 24;
+            // 
+            // colGioDi
+            // 
+            this.colGioDi.HeaderText = "Giờ đi";
+            this.colGioDi.MinimumWidth = 6;
+            this.colGioDi.Name = "colGioDi";
+            this.colGioDi.ReadOnly = true;
+            // 
+            // ColGioDenDuKien
+            // 
+            this.ColGioDenDuKien.HeaderText = "Giờ đến ";
+            this.ColGioDenDuKien.MinimumWidth = 6;
+            this.ColGioDenDuKien.Name = "ColGioDenDuKien";
+            this.ColGioDenDuKien.ReadOnly = true;
+            // 
+            // colNoiDi
+            // 
+            this.colNoiDi.HeaderText = "Nơi đi";
+            this.colNoiDi.MinimumWidth = 6;
+            this.colNoiDi.Name = "colNoiDi";
+            this.colNoiDi.ReadOnly = true;
+            // 
+            // colNoiDen
+            // 
+            this.colNoiDen.HeaderText = "Nơi đến";
+            this.colNoiDen.MinimumWidth = 6;
+            this.colNoiDen.Name = "colNoiDen";
+            this.colNoiDen.ReadOnly = true;
+            // 
+            // colBienSo
+            // 
+            this.colBienSo.HeaderText = "Biển số ";
+            this.colBienSo.MinimumWidth = 6;
+            this.colBienSo.Name = "colBienSo";
+            this.colBienSo.ReadOnly = true;
+            // 
+            // colGia
+            // 
+            this.colGia.HeaderText = "Giá ";
+            this.colGia.MinimumWidth = 6;
+            this.colGia.Name = "colGia";
+            this.colGia.ReadOnly = true;
             // 
             // lblDanhSach
             // 
+            this.lblDanhSach.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDanhSach.BackColor = System.Drawing.Color.Transparent;
             this.lblDanhSach.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDanhSach.ForeColor = System.Drawing.Color.Blue;
-            this.lblDanhSach.Location = new System.Drawing.Point(17, 283);
+            this.lblDanhSach.Location = new System.Drawing.Point(11, 291);
             this.lblDanhSach.Name = "lblDanhSach";
             this.lblDanhSach.Size = new System.Drawing.Size(200, 28);
             this.lblDanhSach.TabIndex = 1;
             this.lblDanhSach.Text = "Danh sách chuyến xe";
             // 
-            // grbThongTin
-            // 
-            this.grbThongTin.Controls.Add(this.dtpNgayDi);
-            this.grbThongTin.Controls.Add(this.lblNgayDi);
-            this.grbThongTin.Controls.Add(this.cboNoiDen);
-            this.grbThongTin.Controls.Add(this.cboNoiDi);
-            this.grbThongTin.Controls.Add(this.lblNoiDen);
-            this.grbThongTin.Controls.Add(this.lblNoiDi);
-            this.grbThongTin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbThongTin.ForeColor = System.Drawing.Color.Blue;
-            this.grbThongTin.Location = new System.Drawing.Point(0, 0);
-            this.grbThongTin.Name = "grbThongTin";
-            this.grbThongTin.Size = new System.Drawing.Size(353, 277);
-            this.grbThongTin.TabIndex = 0;
-            this.grbThongTin.Text = "Thông tin chuyến xe";
-            // 
-            // dtpNgayDi
-            // 
-            this.dtpNgayDi.Checked = true;
-            this.dtpNgayDi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpNgayDi.ForeColor = System.Drawing.Color.White;
-            this.dtpNgayDi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayDi.Location = new System.Drawing.Point(17, 229);
-            this.dtpNgayDi.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpNgayDi.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpNgayDi.Name = "dtpNgayDi";
-            this.dtpNgayDi.Size = new System.Drawing.Size(316, 36);
-            this.dtpNgayDi.TabIndex = 59;
-            this.dtpNgayDi.Value = new System.DateTime(2026, 8, 27, 16, 26, 48, 192);
-            // 
-            // lblNgayDi
-            // 
-            this.lblNgayDi.AutoSize = false;
-            this.lblNgayDi.BackColor = System.Drawing.Color.Transparent;
-            this.lblNgayDi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayDi.Location = new System.Drawing.Point(17, 195);
-            this.lblNgayDi.Name = "lblNgayDi";
-            this.lblNgayDi.Size = new System.Drawing.Size(200, 28);
-            this.lblNgayDi.TabIndex = 58;
-            this.lblNgayDi.Text = "Ngày đi";
-            // 
-            // cboNoiDen
-            // 
-            this.cboNoiDen.BackColor = System.Drawing.Color.Transparent;
-            this.cboNoiDen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboNoiDen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboNoiDen.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboNoiDen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboNoiDen.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboNoiDen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboNoiDen.ItemHeight = 30;
-            this.cboNoiDen.Items.AddRange(new object[] {
-            "Cao Lãnh",
-            "Sa Đéc",
-            "Hồng Ngự",
-            "Lai Vung",
-            "Lấp Vò",
-            "Tam Nông"});
-            this.cboNoiDen.Location = new System.Drawing.Point(17, 153);
-            this.cboNoiDen.Name = "cboNoiDen";
-            this.cboNoiDen.Size = new System.Drawing.Size(316, 36);
-            this.cboNoiDen.TabIndex = 57;
-            // 
-            // cboNoiDi
-            // 
-            this.cboNoiDi.BackColor = System.Drawing.Color.Transparent;
-            this.cboNoiDi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboNoiDi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboNoiDi.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboNoiDi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboNoiDi.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboNoiDi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboNoiDi.ItemHeight = 30;
-            this.cboNoiDi.Items.AddRange(new object[] {
-            "Cao Lãnh",
-            "Sa Đéc",
-            "Hồng Ngự",
-            "Lai Vung",
-            "Lấp Vò",
-            "Tam Nông"});
-            this.cboNoiDi.Location = new System.Drawing.Point(17, 77);
-            this.cboNoiDi.Name = "cboNoiDi";
-            this.cboNoiDi.Size = new System.Drawing.Size(316, 36);
-            this.cboNoiDi.TabIndex = 47;
-            // 
-            // lblNoiDen
-            // 
-            this.lblNoiDen.AutoSize = false;
-            this.lblNoiDen.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoiDen.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoiDen.Location = new System.Drawing.Point(17, 119);
-            this.lblNoiDen.Name = "lblNoiDen";
-            this.lblNoiDen.Size = new System.Drawing.Size(200, 28);
-            this.lblNoiDen.TabIndex = 56;
-            this.lblNoiDen.Text = "Nơi đến";
-            // 
-            // lblNoiDi
-            // 
-            this.lblNoiDi.AutoSize = false;
-            this.lblNoiDi.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoiDi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoiDi.Location = new System.Drawing.Point(17, 43);
-            this.lblNoiDi.Name = "lblNoiDi";
-            this.lblNoiDi.Size = new System.Drawing.Size(200, 28);
-            this.lblNoiDi.TabIndex = 48;
-            this.lblNoiDi.Text = "Nơi đi";
-            // 
             // grpChonGhe
             // 
+            this.grpChonGhe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grpChonGhe.Controls.Add(this.lblViTri);
             this.grpChonGhe.Controls.Add(this.lblGhe);
             this.grpChonGhe.Controls.Add(this.lblGheTrong1);
             this.grpChonGhe.Controls.Add(this.pnlXe);
             this.grpChonGhe.Controls.Add(this.lblGheDaDat);
-            this.grpChonGhe.Controls.Add(this.guna2HtmlLabel2);
+            this.grpChonGhe.Controls.Add(this.lblGheDangChon);
             this.grpChonGhe.Controls.Add(this.pnlGheDaChon);
             this.grpChonGhe.Controls.Add(this.pnlGheDaDat);
             this.grpChonGhe.Controls.Add(this.pnlGheTrong);
             this.grpChonGhe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpChonGhe.ForeColor = System.Drawing.Color.Blue;
-            this.grpChonGhe.Location = new System.Drawing.Point(415, 180);
+            this.grpChonGhe.Location = new System.Drawing.Point(603, 106);
             this.grpChonGhe.Name = "grpChonGhe";
-            this.grpChonGhe.Size = new System.Drawing.Size(420, 636);
+            this.grpChonGhe.Size = new System.Drawing.Size(420, 627);
             this.grpChonGhe.TabIndex = 48;
             this.grpChonGhe.Text = "Chọn ghế ngồi";
             // 
+            // lblViTri
+            // 
+            this.lblViTri.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblViTri.AutoSize = false;
+            this.lblViTri.BackColor = System.Drawing.Color.Transparent;
+            this.lblViTri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViTri.Location = new System.Drawing.Point(231, 590);
+            this.lblViTri.Name = "lblViTri";
+            this.lblViTri.Size = new System.Drawing.Size(35, 21);
+            this.lblViTri.TabIndex = 60;
+            this.lblViTri.Text = "10";
+            // 
+            // lblGhe
+            // 
+            this.lblGhe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblGhe.AutoSize = false;
+            this.lblGhe.BackColor = System.Drawing.Color.Transparent;
+            this.lblGhe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGhe.Location = new System.Drawing.Point(111, 590);
+            this.lblGhe.Name = "lblGhe";
+            this.lblGhe.Size = new System.Drawing.Size(114, 21);
+            this.lblGhe.TabIndex = 60;
+            this.lblGhe.Text = "Ghế đã chọn :";
+            // 
+            // lblGheTrong1
+            // 
+            this.lblGheTrong1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblGheTrong1.AutoSize = true;
+            this.lblGheTrong1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGheTrong1.ForeColor = System.Drawing.Color.Black;
+            this.lblGheTrong1.Location = new System.Drawing.Point(37, 46);
+            this.lblGheTrong1.Name = "lblGheTrong1";
+            this.lblGheTrong1.Size = new System.Drawing.Size(87, 22);
+            this.lblGheTrong1.TabIndex = 51;
+            this.lblGheTrong1.Text = "Ghế trống";
+            // 
             // pnlXe
             // 
+            this.pnlXe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlXe.BackColor = System.Drawing.Color.White;
             this.pnlXe.Controls.Add(this.btnGhe27);
             this.pnlXe.Controls.Add(this.btnGhe29);
@@ -449,13 +529,14 @@
             this.pnlXe.Controls.Add(this.lblTaiXe);
             this.pnlXe.Controls.Add(this.guna2CirclePictureBox6);
             this.pnlXe.Controls.Add(this.lblXe);
-            this.pnlXe.Location = new System.Drawing.Point(24, 97);
+            this.pnlXe.Location = new System.Drawing.Point(24, 78);
             this.pnlXe.Name = "pnlXe";
             this.pnlXe.Size = new System.Drawing.Size(372, 508);
             this.pnlXe.TabIndex = 53;
             // 
             // btnGhe27
             // 
+            this.btnGhe27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe27.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe27.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe27.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -471,6 +552,7 @@
             // 
             // btnGhe29
             // 
+            this.btnGhe29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe29.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe29.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe29.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -486,6 +568,7 @@
             // 
             // btnGhe28
             // 
+            this.btnGhe28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe28.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe28.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe28.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -501,6 +584,7 @@
             // 
             // btnGhe26
             // 
+            this.btnGhe26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe26.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe26.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe26.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -516,6 +600,7 @@
             // 
             // btnGhe25
             // 
+            this.btnGhe25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe25.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe25.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe25.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -531,6 +616,7 @@
             // 
             // btnGhe24
             // 
+            this.btnGhe24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe24.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe24.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe24.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -546,6 +632,7 @@
             // 
             // btnGhe23
             // 
+            this.btnGhe23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe23.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe23.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe23.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -561,6 +648,7 @@
             // 
             // btnGhe22
             // 
+            this.btnGhe22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe22.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe22.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe22.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -576,6 +664,7 @@
             // 
             // btnGhe21
             // 
+            this.btnGhe21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe21.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe21.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe21.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -591,6 +680,7 @@
             // 
             // btnGhe20
             // 
+            this.btnGhe20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe20.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe20.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -606,6 +696,7 @@
             // 
             // btnGhe19
             // 
+            this.btnGhe19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe19.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe19.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe19.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -621,6 +712,7 @@
             // 
             // btnGhe18
             // 
+            this.btnGhe18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe18.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe18.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe18.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -636,6 +728,7 @@
             // 
             // btnGhe17
             // 
+            this.btnGhe17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe17.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe17.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe17.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -651,6 +744,7 @@
             // 
             // btnGhe16
             // 
+            this.btnGhe16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe16.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -666,6 +760,7 @@
             // 
             // btnGhe15
             // 
+            this.btnGhe15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -681,6 +776,7 @@
             // 
             // btnGhe14
             // 
+            this.btnGhe14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe14.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe14.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -696,6 +792,7 @@
             // 
             // btnGhe13
             // 
+            this.btnGhe13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -711,6 +808,7 @@
             // 
             // btnGhe12
             // 
+            this.btnGhe12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -726,6 +824,7 @@
             // 
             // btnGhe11
             // 
+            this.btnGhe11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -741,6 +840,7 @@
             // 
             // btnGhe10
             // 
+            this.btnGhe10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -756,6 +856,7 @@
             // 
             // btnGhe9
             // 
+            this.btnGhe9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -771,6 +872,7 @@
             // 
             // btnGhe8
             // 
+            this.btnGhe8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -786,6 +888,7 @@
             // 
             // btnGhe7
             // 
+            this.btnGhe7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -801,6 +904,7 @@
             // 
             // btnGhe6
             // 
+            this.btnGhe6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -816,6 +920,7 @@
             // 
             // btnGhe5
             // 
+            this.btnGhe5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -831,6 +936,7 @@
             // 
             // btnGhe4
             // 
+            this.btnGhe4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -846,6 +952,7 @@
             // 
             // btnGhe3
             // 
+            this.btnGhe3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -861,6 +968,7 @@
             // 
             // btnGhe2
             // 
+            this.btnGhe2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -876,6 +984,7 @@
             // 
             // btnGhe1
             // 
+            this.btnGhe1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGhe1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGhe1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -891,6 +1000,7 @@
             // 
             // lblTaiXe
             // 
+            this.lblTaiXe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTaiXe.AutoSize = false;
             this.lblTaiXe.BackColor = System.Drawing.Color.Transparent;
             this.lblTaiXe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -903,6 +1013,7 @@
             // 
             // guna2CirclePictureBox6
             // 
+            this.guna2CirclePictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CirclePictureBox6.BackColor = System.Drawing.Color.IndianRed;
             this.guna2CirclePictureBox6.ImageRotate = 0F;
             this.guna2CirclePictureBox6.Location = new System.Drawing.Point(37, 56);
@@ -914,6 +1025,7 @@
             // 
             // lblXe
             // 
+            this.lblXe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblXe.AutoSize = false;
             this.lblXe.BackColor = System.Drawing.Color.Transparent;
             this.lblXe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -926,368 +1038,82 @@
             // 
             // lblGheDaDat
             // 
+            this.lblGheDaDat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblGheDaDat.AutoSize = false;
             this.lblGheDaDat.BackColor = System.Drawing.Color.Transparent;
             this.lblGheDaDat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGheDaDat.ForeColor = System.Drawing.Color.Black;
-            this.lblGheDaDat.Location = new System.Drawing.Point(154, 51);
+            this.lblGheDaDat.Location = new System.Drawing.Point(161, 46);
             this.lblGheDaDat.Name = "lblGheDaDat";
-            this.lblGheDaDat.Size = new System.Drawing.Size(106, 28);
+            this.lblGheDaDat.Size = new System.Drawing.Size(99, 28);
             this.lblGheDaDat.TabIndex = 52;
             this.lblGheDaDat.Text = "Ghế đã đặt";
             // 
-            // guna2HtmlLabel2
+            // lblGheDangChon
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(295, 51);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(200, 28);
-            this.guna2HtmlLabel2.TabIndex = 51;
-            this.guna2HtmlLabel2.Text = "Ghế đang chọn";
+            this.lblGheDangChon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblGheDangChon.AutoSize = false;
+            this.lblGheDangChon.BackColor = System.Drawing.Color.Transparent;
+            this.lblGheDangChon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGheDangChon.ForeColor = System.Drawing.Color.Black;
+            this.lblGheDangChon.Location = new System.Drawing.Point(295, 46);
+            this.lblGheDangChon.Name = "lblGheDangChon";
+            this.lblGheDangChon.Size = new System.Drawing.Size(200, 28);
+            this.lblGheDangChon.TabIndex = 51;
+            this.lblGheDangChon.Text = "Ghế đang chọn";
             // 
             // pnlGheDaChon
             // 
+            this.pnlGheDaChon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlGheDaChon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.pnlGheDaChon.Location = new System.Drawing.Point(266, 51);
+            this.pnlGheDaChon.Location = new System.Drawing.Point(266, 46);
             this.pnlGheDaChon.Name = "pnlGheDaChon";
             this.pnlGheDaChon.Size = new System.Drawing.Size(23, 20);
             this.pnlGheDaChon.TabIndex = 50;
             // 
             // pnlGheDaDat
             // 
+            this.pnlGheDaDat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlGheDaDat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pnlGheDaDat.Location = new System.Drawing.Point(127, 51);
+            this.pnlGheDaDat.Location = new System.Drawing.Point(134, 46);
             this.pnlGheDaDat.Name = "pnlGheDaDat";
             this.pnlGheDaDat.Size = new System.Drawing.Size(23, 20);
             this.pnlGheDaDat.TabIndex = 50;
             // 
             // pnlGheTrong
             // 
+            this.pnlGheTrong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlGheTrong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnlGheTrong.Location = new System.Drawing.Point(8, 51);
+            this.pnlGheTrong.Location = new System.Drawing.Point(8, 46);
             this.pnlGheTrong.Name = "pnlGheTrong";
             this.pnlGheTrong.Size = new System.Drawing.Size(23, 20);
             this.pnlGheTrong.TabIndex = 49;
             // 
             // lblTenDangNhap
             // 
+            this.lblTenDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTenDangNhap.AutoSize = false;
             this.lblTenDangNhap.BackColor = System.Drawing.Color.Transparent;
             this.lblTenDangNhap.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenDangNhap.Location = new System.Drawing.Point(1210, 38);
+            this.lblTenDangNhap.Location = new System.Drawing.Point(1373, 12);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
             this.lblTenDangNhap.Size = new System.Drawing.Size(200, 28);
             this.lblTenDangNhap.TabIndex = 50;
             this.lblTenDangNhap.Text = "Tên";
             // 
-            // lblGheTrong1
-            // 
-            this.lblGheTrong1.AutoSize = true;
-            this.lblGheTrong1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGheTrong1.ForeColor = System.Drawing.Color.Black;
-            this.lblGheTrong1.Location = new System.Drawing.Point(37, 51);
-            this.lblGheTrong1.Name = "lblGheTrong1";
-            this.lblGheTrong1.Size = new System.Drawing.Size(87, 22);
-            this.lblGheTrong1.TabIndex = 51;
-            this.lblGheTrong1.Text = "Ghế trống";
-            // 
-            // pnlChuyen1
-            // 
-            this.pnlChuyen1.Controls.Add(this.lblThoiGian1);
-            this.pnlChuyen1.Controls.Add(this.guna2HtmlLabel6);
-            this.pnlChuyen1.Controls.Add(this.lblGia1);
-            this.pnlChuyen1.Controls.Add(this.lblGhe1);
-            this.pnlChuyen1.Controls.Add(this.lblBienSo1);
-            this.pnlChuyen1.Controls.Add(this.lblXe1);
-            this.pnlChuyen1.Controls.Add(this.lblTuyen2);
-            this.pnlChuyen1.Controls.Add(this.lblTuyen1);
-            this.pnlChuyen1.Controls.Add(this.lblGio2);
-            this.pnlChuyen1.Controls.Add(this.lblGio1);
-            this.pnlChuyen1.Location = new System.Drawing.Point(12, 504);
-            this.pnlChuyen1.Name = "pnlChuyen1";
-            this.pnlChuyen1.Size = new System.Drawing.Size(353, 159);
-            this.pnlChuyen1.TabIndex = 52;
-            // 
-            // lblGio1
-            // 
-            this.lblGio1.AutoSize = false;
-            this.lblGio1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGio1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGio1.Location = new System.Drawing.Point(35, 5);
-            this.lblGio1.Name = "lblGio1";
-            this.lblGio1.Size = new System.Drawing.Size(53, 21);
-            this.lblGio1.TabIndex = 53;
-            this.lblGio1.Text = "07:00 ";
-            // 
-            // lblGio2
-            // 
-            this.lblGio2.AutoSize = false;
-            this.lblGio2.BackColor = System.Drawing.Color.Transparent;
-            this.lblGio2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGio2.Location = new System.Drawing.Point(264, 3);
-            this.lblGio2.Name = "lblGio2";
-            this.lblGio2.Size = new System.Drawing.Size(52, 21);
-            this.lblGio2.TabIndex = 53;
-            this.lblGio2.Text = "08:00";
-            // 
-            // lblTuyen1
-            // 
-            this.lblTuyen1.AutoSize = false;
-            this.lblTuyen1.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen1.Location = new System.Drawing.Point(19, 23);
-            this.lblTuyen1.Name = "lblTuyen1";
-            this.lblTuyen1.Size = new System.Drawing.Size(89, 21);
-            this.lblTuyen1.TabIndex = 54;
-            this.lblTuyen1.Text = "Cao Lãnh";
-            // 
-            // lblTuyen2
-            // 
-            this.lblTuyen2.AutoSize = false;
-            this.lblTuyen2.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen2.Location = new System.Drawing.Point(264, 23);
-            this.lblTuyen2.Name = "lblTuyen2";
-            this.lblTuyen2.Size = new System.Drawing.Size(69, 21);
-            this.lblTuyen2.TabIndex = 55;
-            this.lblTuyen2.Text = "Sa Đéc";
-            // 
-            // lblXe1
-            // 
-            this.lblXe1.AutoSize = false;
-            this.lblXe1.BackColor = System.Drawing.Color.Transparent;
-            this.lblXe1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXe1.Location = new System.Drawing.Point(17, 50);
-            this.lblXe1.Name = "lblXe1";
-            this.lblXe1.Size = new System.Drawing.Size(91, 21);
-            this.lblXe1.TabIndex = 56;
-            this.lblXe1.Text = "Xe  29 chỗ";
-            // 
-            // lblBienSo1
-            // 
-            this.lblBienSo1.AutoSize = false;
-            this.lblBienSo1.BackColor = System.Drawing.Color.Transparent;
-            this.lblBienSo1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienSo1.Location = new System.Drawing.Point(17, 77);
-            this.lblBienSo1.Name = "lblBienSo1";
-            this.lblBienSo1.Size = new System.Drawing.Size(177, 21);
-            this.lblBienSo1.TabIndex = 57;
-            this.lblBienSo1.Text = "Biển số 66A-12345";
-            // 
-            // lblGhe1
-            // 
-            this.lblGhe1.AutoSize = false;
-            this.lblGhe1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGhe1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGhe1.Location = new System.Drawing.Point(236, 77);
-            this.lblGhe1.Name = "lblGhe1";
-            this.lblGhe1.Size = new System.Drawing.Size(114, 21);
-            this.lblGhe1.TabIndex = 58;
-            this.lblGhe1.Text = "Còn 12 ghế";
-            // 
-            // lblGia1
-            // 
-            this.lblGia1.AutoSize = false;
-            this.lblGia1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGia1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia1.Location = new System.Drawing.Point(236, 104);
-            this.lblGia1.Name = "lblGia1";
-            this.lblGia1.Size = new System.Drawing.Size(114, 21);
-            this.lblGia1.TabIndex = 59;
-            this.lblGia1.Text = "Giá 30.000đ";
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.AutoSize = false;
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(163, 3);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(31, 28);
-            this.guna2HtmlLabel6.TabIndex = 59;
-            this.guna2HtmlLabel6.Text = "→";
-            // 
-            // lblThoiGian1
-            // 
-            this.lblThoiGian1.AutoSize = false;
-            this.lblThoiGian1.BackColor = System.Drawing.Color.Transparent;
-            this.lblThoiGian1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThoiGian1.Location = new System.Drawing.Point(152, 23);
-            this.lblThoiGian1.Name = "lblThoiGian1";
-            this.lblThoiGian1.Size = new System.Drawing.Size(74, 28);
-            this.lblThoiGian1.TabIndex = 53;
-            this.lblThoiGian1.Text = "60 phút";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.lblThoiGian2);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel8);
-            this.guna2Panel1.Controls.Add(this.lblGia2);
-            this.guna2Panel1.Controls.Add(this.lblGhe2);
-            this.guna2Panel1.Controls.Add(this.lblBienSo2);
-            this.guna2Panel1.Controls.Add(this.lblxe2);
-            this.guna2Panel1.Controls.Add(this.lblTuyen4);
-            this.guna2Panel1.Controls.Add(this.lblTuyen3);
-            this.guna2Panel1.Controls.Add(this.lblGio4);
-            this.guna2Panel1.Controls.Add(this.lblGio3);
-            this.guna2Panel1.Location = new System.Drawing.Point(12, 663);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(353, 159);
-            this.guna2Panel1.TabIndex = 60;
-            // 
-            // lblThoiGian2
-            // 
-            this.lblThoiGian2.AutoSize = false;
-            this.lblThoiGian2.BackColor = System.Drawing.Color.Transparent;
-            this.lblThoiGian2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThoiGian2.Location = new System.Drawing.Point(152, 23);
-            this.lblThoiGian2.Name = "lblThoiGian2";
-            this.lblThoiGian2.Size = new System.Drawing.Size(74, 28);
-            this.lblThoiGian2.TabIndex = 53;
-            this.lblThoiGian2.Text = "120 phút";
-            // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.AutoSize = false;
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(163, 3);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(31, 28);
-            this.guna2HtmlLabel8.TabIndex = 59;
-            this.guna2HtmlLabel8.Text = "→";
-            // 
-            // lblGia2
-            // 
-            this.lblGia2.AutoSize = false;
-            this.lblGia2.BackColor = System.Drawing.Color.Transparent;
-            this.lblGia2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia2.Location = new System.Drawing.Point(236, 104);
-            this.lblGia2.Name = "lblGia2";
-            this.lblGia2.Size = new System.Drawing.Size(114, 21);
-            this.lblGia2.TabIndex = 59;
-            this.lblGia2.Text = "Giá 50.000đ";
-            // 
-            // lblGhe2
-            // 
-            this.lblGhe2.AutoSize = false;
-            this.lblGhe2.BackColor = System.Drawing.Color.Transparent;
-            this.lblGhe2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGhe2.Location = new System.Drawing.Point(236, 77);
-            this.lblGhe2.Name = "lblGhe2";
-            this.lblGhe2.Size = new System.Drawing.Size(114, 21);
-            this.lblGhe2.TabIndex = 58;
-            this.lblGhe2.Text = "Còn 12 ghế";
-            // 
-            // lblBienSo2
-            // 
-            this.lblBienSo2.AutoSize = false;
-            this.lblBienSo2.BackColor = System.Drawing.Color.Transparent;
-            this.lblBienSo2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienSo2.Location = new System.Drawing.Point(17, 77);
-            this.lblBienSo2.Name = "lblBienSo2";
-            this.lblBienSo2.Size = new System.Drawing.Size(177, 21);
-            this.lblBienSo2.TabIndex = 57;
-            this.lblBienSo2.Text = "Biển số 66B-67890";
-            // 
-            // lblxe2
-            // 
-            this.lblxe2.AutoSize = false;
-            this.lblxe2.BackColor = System.Drawing.Color.Transparent;
-            this.lblxe2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblxe2.Location = new System.Drawing.Point(17, 50);
-            this.lblxe2.Name = "lblxe2";
-            this.lblxe2.Size = new System.Drawing.Size(91, 21);
-            this.lblxe2.TabIndex = 56;
-            this.lblxe2.Text = "Xe  29 chỗ";
-            // 
-            // lblTuyen4
-            // 
-            this.lblTuyen4.AutoSize = false;
-            this.lblTuyen4.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen4.Location = new System.Drawing.Point(260, 23);
-            this.lblTuyen4.Name = "lblTuyen4";
-            this.lblTuyen4.Size = new System.Drawing.Size(86, 21);
-            this.lblTuyen4.TabIndex = 55;
-            this.lblTuyen4.Text = "Hồng Ngự";
-            // 
-            // lblTuyen3
-            // 
-            this.lblTuyen3.AutoSize = false;
-            this.lblTuyen3.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen3.Location = new System.Drawing.Point(19, 23);
-            this.lblTuyen3.Name = "lblTuyen3";
-            this.lblTuyen3.Size = new System.Drawing.Size(89, 21);
-            this.lblTuyen3.TabIndex = 54;
-            this.lblTuyen3.Text = "Cao Lãnh";
-            // 
-            // lblGio4
-            // 
-            this.lblGio4.AutoSize = false;
-            this.lblGio4.BackColor = System.Drawing.Color.Transparent;
-            this.lblGio4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGio4.Location = new System.Drawing.Point(264, 3);
-            this.lblGio4.Name = "lblGio4";
-            this.lblGio4.Size = new System.Drawing.Size(52, 21);
-            this.lblGio4.TabIndex = 53;
-            this.lblGio4.Text = "11:00";
-            // 
-            // lblGio3
-            // 
-            this.lblGio3.AutoSize = false;
-            this.lblGio3.BackColor = System.Drawing.Color.Transparent;
-            this.lblGio3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGio3.Location = new System.Drawing.Point(35, 5);
-            this.lblGio3.Name = "lblGio3";
-            this.lblGio3.Size = new System.Drawing.Size(53, 21);
-            this.lblGio3.TabIndex = 53;
-            this.lblGio3.Text = "09:00 ";
-            // 
-            // lblXemtatCa
-            // 
-            this.lblXemtatCa.AutoSize = false;
-            this.lblXemtatCa.BackColor = System.Drawing.Color.Transparent;
-            this.lblXemtatCa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXemtatCa.Location = new System.Drawing.Point(255, 290);
-            this.lblXemtatCa.Name = "lblXemtatCa";
-            this.lblXemtatCa.Size = new System.Drawing.Size(95, 21);
-            this.lblXemtatCa.TabIndex = 60;
-            this.lblXemtatCa.Text = "Xem tất cả ";
-            // 
-            // lblGhe
-            // 
-            this.lblGhe.AutoSize = false;
-            this.lblGhe.BackColor = System.Drawing.Color.Transparent;
-            this.lblGhe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGhe.Location = new System.Drawing.Point(111, 612);
-            this.lblGhe.Name = "lblGhe";
-            this.lblGhe.Size = new System.Drawing.Size(114, 21);
-            this.lblGhe.TabIndex = 60;
-            this.lblGhe.Text = "Ghế đã chọn :";
-            // 
-            // lblViTri
-            // 
-            this.lblViTri.AutoSize = false;
-            this.lblViTri.BackColor = System.Drawing.Color.Transparent;
-            this.lblViTri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViTri.Location = new System.Drawing.Point(231, 612);
-            this.lblViTri.Name = "lblViTri";
-            this.lblViTri.Size = new System.Drawing.Size(91, 21);
-            this.lblViTri.TabIndex = 60;
-            this.lblViTri.Text = "10";
-            // 
             // grpThongTinHanhKhach
             // 
+            this.grpThongTinHanhKhach.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grpThongTinHanhKhach.Controls.Add(this.lblTongTien);
             this.grpThongTinHanhKhach.Controls.Add(this.grpChinhSach);
-            this.grpThongTinHanhKhach.Controls.Add(this.guna2Panel2);
+            this.grpThongTinHanhKhach.Controls.Add(this.lblTamTinh);
             this.grpThongTinHanhKhach.Controls.Add(this.lblGia5);
+            this.grpThongTinHanhKhach.Controls.Add(this.lblTong);
+            this.grpThongTinHanhKhach.Controls.Add(this.lblTien);
             this.grpThongTinHanhKhach.Controls.Add(this.lblSoLuong);
+            this.grpThongTinHanhKhach.Controls.Add(this.btnHuy);
             this.grpThongTinHanhKhach.Controls.Add(this.lblSoLuong3);
+            this.grpThongTinHanhKhach.Controls.Add(this.btnThanhToan);
             this.grpThongTinHanhKhach.Controls.Add(this.lblGheDaChon1);
             this.grpThongTinHanhKhach.Controls.Add(this.lblGia3);
             this.grpThongTinHanhKhach.Controls.Add(this.lblNgayDi2);
@@ -1301,195 +1127,137 @@
             this.grpThongTinHanhKhach.Controls.Add(this.lblTuyen5);
             this.grpThongTinHanhKhach.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpThongTinHanhKhach.ForeColor = System.Drawing.Color.Blue;
-            this.grpThongTinHanhKhach.Location = new System.Drawing.Point(886, 186);
+            this.grpThongTinHanhKhach.Location = new System.Drawing.Point(1069, 107);
             this.grpThongTinHanhKhach.Name = "grpThongTinHanhKhach";
-            this.grpThongTinHanhKhach.Size = new System.Drawing.Size(420, 636);
+            this.grpThongTinHanhKhach.Size = new System.Drawing.Size(420, 627);
             this.grpThongTinHanhKhach.TabIndex = 61;
             this.grpThongTinHanhKhach.Text = "Thông tin hành khách";
             // 
-            // lblTuyen5
+            // lblTongTien
             // 
-            this.lblTuyen5.AutoSize = false;
-            this.lblTuyen5.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen5.Location = new System.Drawing.Point(34, 52);
-            this.lblTuyen5.Name = "lblTuyen5";
-            this.lblTuyen5.Size = new System.Drawing.Size(89, 21);
-            this.lblTuyen5.TabIndex = 60;
-            this.lblTuyen5.Text = "Tuyến xe";
+            this.lblTongTien.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTongTien.AutoSize = false;
+            this.lblTongTien.BackColor = System.Drawing.Color.Transparent;
+            this.lblTongTien.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongTien.Location = new System.Drawing.Point(267, 353);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(101, 21);
+            this.lblTongTien.TabIndex = 96;
+            this.lblTongTien.Text = "30.000đ";
             // 
-            // lblChuyenxe
+            // grpChinhSach
             // 
-            this.lblChuyenxe.AutoSize = false;
-            this.lblChuyenxe.BackColor = System.Drawing.Color.Transparent;
-            this.lblChuyenxe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChuyenxe.Location = new System.Drawing.Point(34, 93);
-            this.lblChuyenxe.Name = "lblChuyenxe";
-            this.lblChuyenxe.Size = new System.Drawing.Size(89, 21);
-            this.lblChuyenxe.TabIndex = 62;
-            this.lblChuyenxe.Text = "Chuyến xe";
+            this.grpChinhSach.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grpChinhSach.Controls.Add(this.lblChinhSach2);
+            this.grpChinhSach.Controls.Add(this.lblChinhSach3);
+            this.grpChinhSach.Controls.Add(this.lblChinhSach1);
+            this.grpChinhSach.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpChinhSach.ForeColor = System.Drawing.Color.Blue;
+            this.grpChinhSach.Location = new System.Drawing.Point(0, 462);
+            this.grpChinhSach.Name = "grpChinhSach";
+            this.grpChinhSach.Size = new System.Drawing.Size(420, 164);
+            this.grpChinhSach.TabIndex = 87;
+            this.grpChinhSach.Text = "Chính sách vé";
             // 
-            // lblTuyen7
+            // lblChinhSach2
             // 
-            this.lblTuyen7.AutoSize = false;
-            this.lblTuyen7.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyen7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyen7.Location = new System.Drawing.Point(235, 52);
-            this.lblTuyen7.Name = "lblTuyen7";
-            this.lblTuyen7.Size = new System.Drawing.Size(182, 21);
-            this.lblTuyen7.TabIndex = 63;
-            this.lblTuyen7.Text = "Cao Lãnh → Sa Đéc";
+            this.lblChinhSach2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChinhSach2.AutoSize = false;
+            this.lblChinhSach2.BackColor = System.Drawing.Color.Transparent;
+            this.lblChinhSach2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChinhSach2.Location = new System.Drawing.Point(36, 80);
+            this.lblChinhSach2.Name = "lblChinhSach2";
+            this.lblChinhSach2.Size = new System.Drawing.Size(361, 21);
+            this.lblChinhSach2.TabIndex = 90;
+            this.lblChinhSach2.Text = "Không hoàn tiền vé đã thanh toán.";
             // 
-            // guna2HtmlLabel9
+            // lblChinhSach3
             // 
-            this.guna2HtmlLabel9.AutoSize = false;
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(267, 93);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(130, 21);
-            this.guna2HtmlLabel9.TabIndex = 65;
-            this.guna2HtmlLabel9.Text = "07:00 → 08:00";
+            this.lblChinhSach3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChinhSach3.AutoSize = false;
+            this.lblChinhSach3.BackColor = System.Drawing.Color.Transparent;
+            this.lblChinhSach3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChinhSach3.Location = new System.Drawing.Point(36, 109);
+            this.lblChinhSach3.Name = "lblChinhSach3";
+            this.lblChinhSach3.Size = new System.Drawing.Size(342, 21);
+            this.lblChinhSach3.TabIndex = 89;
+            this.lblChinhSach3.Text = "Vui lòng có mặt tại bến xe trước 30 phút.";
             // 
-            // lblXe3
+            // lblChinhSach1
             // 
-            this.lblXe3.AutoSize = false;
-            this.lblXe3.BackColor = System.Drawing.Color.Transparent;
-            this.lblXe3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXe3.Location = new System.Drawing.Point(34, 129);
-            this.lblXe3.Name = "lblXe3";
-            this.lblXe3.Size = new System.Drawing.Size(89, 21);
-            this.lblXe3.TabIndex = 64;
-            this.lblXe3.Text = "Xe";
-            // 
-            // lblXe4
-            // 
-            this.lblXe4.AutoSize = false;
-            this.lblXe4.BackColor = System.Drawing.Color.Transparent;
-            this.lblXe4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXe4.Location = new System.Drawing.Point(267, 129);
-            this.lblXe4.Name = "lblXe4";
-            this.lblXe4.Size = new System.Drawing.Size(59, 21);
-            this.lblXe4.TabIndex = 67;
-            this.lblXe4.Text = "29 chỗ ";
-            // 
-            // lblNgayDi1
-            // 
-            this.lblNgayDi1.AutoSize = false;
-            this.lblNgayDi1.BackColor = System.Drawing.Color.Transparent;
-            this.lblNgayDi1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayDi1.Location = new System.Drawing.Point(34, 166);
-            this.lblNgayDi1.Name = "lblNgayDi1";
-            this.lblNgayDi1.Size = new System.Drawing.Size(89, 21);
-            this.lblNgayDi1.TabIndex = 66;
-            this.lblNgayDi1.Text = "Ngày đi";
-            // 
-            // lblNgayDi2
-            // 
-            this.lblNgayDi2.AutoSize = false;
-            this.lblNgayDi2.BackColor = System.Drawing.Color.Transparent;
-            this.lblNgayDi2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayDi2.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
-            this.lblNgayDi2.Location = new System.Drawing.Point(267, 166);
-            this.lblNgayDi2.Name = "lblNgayDi2";
-            this.lblNgayDi2.Size = new System.Drawing.Size(106, 21);
-            this.lblNgayDi2.TabIndex = 69;
-            this.lblNgayDi2.Text = "25-08-2026";
-            // 
-            // lblGheChon
-            // 
-            this.lblGheChon.AutoSize = false;
-            this.lblGheChon.BackColor = System.Drawing.Color.Transparent;
-            this.lblGheChon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGheChon.Location = new System.Drawing.Point(34, 205);
-            this.lblGheChon.Name = "lblGheChon";
-            this.lblGheChon.Size = new System.Drawing.Size(116, 21);
-            this.lblGheChon.TabIndex = 68;
-            this.lblGheChon.Text = "Ghế đã chọn ";
-            // 
-            // lblGheDaChon1
-            // 
-            this.lblGheDaChon1.AutoSize = false;
-            this.lblGheDaChon1.BackColor = System.Drawing.Color.Transparent;
-            this.lblGheDaChon1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGheDaChon1.Location = new System.Drawing.Point(267, 203);
-            this.lblGheDaChon1.Name = "lblGheDaChon1";
-            this.lblGheDaChon1.Size = new System.Drawing.Size(27, 21);
-            this.lblGheDaChon1.TabIndex = 71;
-            this.lblGheDaChon1.Text = "10";
-            // 
-            // lblGia3
-            // 
-            this.lblGia3.AutoSize = false;
-            this.lblGia3.BackColor = System.Drawing.Color.Transparent;
-            this.lblGia3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia3.Location = new System.Drawing.Point(34, 247);
-            this.lblGia3.Name = "lblGia3";
-            this.lblGia3.Size = new System.Drawing.Size(89, 21);
-            this.lblGia3.TabIndex = 70;
-            this.lblGia3.Text = "Giá";
-            // 
-            // lblSoLuong3
-            // 
-            this.lblSoLuong3.AutoSize = false;
-            this.lblSoLuong3.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoLuong3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoLuong3.Location = new System.Drawing.Point(267, 274);
-            this.lblSoLuong3.Name = "lblSoLuong3";
-            this.lblSoLuong3.Size = new System.Drawing.Size(59, 21);
-            this.lblSoLuong3.TabIndex = 73;
-            this.lblSoLuong3.Text = "1 vé";
+            this.lblChinhSach1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChinhSach1.AutoSize = false;
+            this.lblChinhSach1.BackColor = System.Drawing.Color.Transparent;
+            this.lblChinhSach1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChinhSach1.Location = new System.Drawing.Point(33, 51);
+            this.lblChinhSach1.Name = "lblChinhSach1";
+            this.lblChinhSach1.Size = new System.Drawing.Size(384, 21);
+            this.lblChinhSach1.TabIndex = 88;
+            this.lblChinhSach1.Text = "Đổi/Trả vé trước giờ khởi hành ít nhất 2 tiếng.";
             // 
             // lblTamTinh
             // 
+            this.lblTamTinh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTamTinh.AutoSize = false;
             this.lblTamTinh.BackColor = System.Drawing.Color.Transparent;
             this.lblTamTinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTamTinh.Location = new System.Drawing.Point(33, 12);
+            this.lblTamTinh.Location = new System.Drawing.Point(33, 318);
             this.lblTamTinh.Name = "lblTamTinh";
             this.lblTamTinh.Size = new System.Drawing.Size(89, 21);
-            this.lblTamTinh.TabIndex = 72;
+            this.lblTamTinh.TabIndex = 91;
             this.lblTamTinh.Text = "Tạm tính";
             // 
-            // lblTien
+            // lblGia5
             // 
-            this.lblTien.AutoSize = false;
-            this.lblTien.BackColor = System.Drawing.Color.Transparent;
-            this.lblTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTien.Location = new System.Drawing.Point(267, 12);
-            this.lblTien.Name = "lblTien";
-            this.lblTien.Size = new System.Drawing.Size(101, 21);
-            this.lblTien.TabIndex = 75;
-            this.lblTien.Text = "30.000đ";
+            this.lblGia5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblGia5.AutoSize = false;
+            this.lblGia5.BackColor = System.Drawing.Color.Transparent;
+            this.lblGia5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGia5.Location = new System.Drawing.Point(267, 242);
+            this.lblGia5.Name = "lblGia5";
+            this.lblGia5.Size = new System.Drawing.Size(83, 21);
+            this.lblGia5.TabIndex = 86;
+            this.lblGia5.Text = "30.000đ";
             // 
             // lblTong
             // 
+            this.lblTong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTong.AutoSize = false;
             this.lblTong.BackColor = System.Drawing.Color.Transparent;
             this.lblTong.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTong.Location = new System.Drawing.Point(36, 39);
+            this.lblTong.Location = new System.Drawing.Point(36, 353);
             this.lblTong.Name = "lblTong";
             this.lblTong.Size = new System.Drawing.Size(124, 31);
-            this.lblTong.TabIndex = 74;
+            this.lblTong.TabIndex = 92;
             this.lblTong.Text = "Tổng cộng";
             // 
-            // btnThanhToan
+            // lblTien
             // 
-            this.btnThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThanhToan.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToan.Location = new System.Drawing.Point(33, 90);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(156, 45);
-            this.btnThanhToan.TabIndex = 83;
-            this.btnThanhToan.Text = "Thanh toán ";
+            this.lblTien.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTien.AutoSize = false;
+            this.lblTien.BackColor = System.Drawing.Color.Transparent;
+            this.lblTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTien.Location = new System.Drawing.Point(267, 318);
+            this.lblTien.Name = "lblTien";
+            this.lblTien.Size = new System.Drawing.Size(101, 21);
+            this.lblTien.TabIndex = 93;
+            this.lblTien.Text = "30.000đ";
+            // 
+            // lblSoLuong
+            // 
+            this.lblSoLuong.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSoLuong.AutoSize = false;
+            this.lblSoLuong.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoLuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong.Location = new System.Drawing.Point(36, 276);
+            this.lblSoLuong.Name = "lblSoLuong";
+            this.lblSoLuong.Size = new System.Drawing.Size(114, 21);
+            this.lblSoLuong.TabIndex = 85;
+            this.lblSoLuong.Text = "Số lượng vé";
             // 
             // btnHuy
             // 
+            this.btnHuy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHuy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnHuy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnHuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -1497,274 +1265,464 @@
             this.btnHuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Location = new System.Drawing.Point(235, 90);
+            this.btnHuy.Location = new System.Drawing.Point(235, 404);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(154, 45);
-            this.btnHuy.TabIndex = 84;
+            this.btnHuy.TabIndex = 95;
             this.btnHuy.Text = "Hủy";
             // 
-            // lblGia5
+            // lblSoLuong3
             // 
-            this.lblGia5.AutoSize = false;
-            this.lblGia5.BackColor = System.Drawing.Color.Transparent;
-            this.lblGia5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia5.Location = new System.Drawing.Point(267, 247);
-            this.lblGia5.Name = "lblGia5";
-            this.lblGia5.Size = new System.Drawing.Size(83, 21);
-            this.lblGia5.TabIndex = 86;
-            this.lblGia5.Text = "30.000đ";
+            this.lblSoLuong3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblSoLuong3.AutoSize = false;
+            this.lblSoLuong3.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoLuong3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong3.Location = new System.Drawing.Point(267, 269);
+            this.lblSoLuong3.Name = "lblSoLuong3";
+            this.lblSoLuong3.Size = new System.Drawing.Size(59, 21);
+            this.lblSoLuong3.TabIndex = 73;
+            this.lblSoLuong3.Text = "1 vé";
             // 
-            // lblSoLuong
+            // btnThanhToan
             // 
-            this.lblSoLuong.AutoSize = false;
-            this.lblSoLuong.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoLuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoLuong.Location = new System.Drawing.Point(36, 281);
-            this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(114, 21);
-            this.lblSoLuong.TabIndex = 85;
-            this.lblSoLuong.Text = "Số lượng vé";
+            this.btnThanhToan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThanhToan.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
+            this.btnThanhToan.Location = new System.Drawing.Point(33, 404);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(156, 45);
+            this.btnThanhToan.TabIndex = 94;
+            this.btnThanhToan.Text = "Thanh toán ";
             // 
-            // guna2Panel2
+            // lblGheDaChon1
             // 
-            this.guna2Panel2.Controls.Add(this.lblTongTien);
-            this.guna2Panel2.Controls.Add(this.lblTamTinh);
-            this.guna2Panel2.Controls.Add(this.lblTong);
-            this.guna2Panel2.Controls.Add(this.lblTien);
-            this.guna2Panel2.Controls.Add(this.btnHuy);
-            this.guna2Panel2.Controls.Add(this.btnThanhToan);
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 320);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(419, 159);
-            this.guna2Panel2.TabIndex = 60;
+            this.lblGheDaChon1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblGheDaChon1.AutoSize = false;
+            this.lblGheDaChon1.BackColor = System.Drawing.Color.Transparent;
+            this.lblGheDaChon1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGheDaChon1.Location = new System.Drawing.Point(267, 198);
+            this.lblGheDaChon1.Name = "lblGheDaChon1";
+            this.lblGheDaChon1.Size = new System.Drawing.Size(27, 21);
+            this.lblGheDaChon1.TabIndex = 71;
+            this.lblGheDaChon1.Text = "10";
             // 
-            // lblBuoc2
+            // lblGia3
             // 
-            this.lblBuoc2.AutoSize = false;
-            this.lblBuoc2.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuoc2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuoc2.Location = new System.Drawing.Point(569, 28);
-            this.lblBuoc2.Name = "lblBuoc2";
-            this.lblBuoc2.Size = new System.Drawing.Size(154, 28);
-            this.lblBuoc2.TabIndex = 79;
-            this.lblBuoc2.Text = "Chọn ghế ngồi ";
+            this.lblGia3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblGia3.AutoSize = false;
+            this.lblGia3.BackColor = System.Drawing.Color.Transparent;
+            this.lblGia3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGia3.Location = new System.Drawing.Point(34, 242);
+            this.lblGia3.Name = "lblGia3";
+            this.lblGia3.Size = new System.Drawing.Size(89, 21);
+            this.lblGia3.TabIndex = 70;
+            this.lblGia3.Text = "Giá";
             // 
-            // lblBuoc3
+            // lblNgayDi2
             // 
-            this.lblBuoc3.AutoSize = false;
-            this.lblBuoc3.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuoc3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuoc3.Location = new System.Drawing.Point(874, 28);
-            this.lblBuoc3.Name = "lblBuoc3";
-            this.lblBuoc3.Size = new System.Drawing.Size(226, 28);
-            this.lblBuoc3.TabIndex = 78;
-            this.lblBuoc3.Text = "Thông tin hành khách";
+            this.lblNgayDi2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNgayDi2.AutoSize = false;
+            this.lblNgayDi2.BackColor = System.Drawing.Color.Transparent;
+            this.lblNgayDi2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayDi2.ImeMode = System.Windows.Forms.ImeMode.KatakanaHalf;
+            this.lblNgayDi2.Location = new System.Drawing.Point(267, 161);
+            this.lblNgayDi2.Name = "lblNgayDi2";
+            this.lblNgayDi2.Size = new System.Drawing.Size(106, 21);
+            this.lblNgayDi2.TabIndex = 69;
+            this.lblNgayDi2.Text = "25-08-2026";
             // 
-            // lblBuoc1
+            // lblGheChon
             // 
-            this.lblBuoc1.AutoSize = false;
-            this.lblBuoc1.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuoc1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuoc1.Location = new System.Drawing.Point(267, 28);
-            this.lblBuoc1.Name = "lblBuoc1";
-            this.lblBuoc1.Size = new System.Drawing.Size(156, 28);
-            this.lblBuoc1.TabIndex = 77;
-            this.lblBuoc1.Text = "Chọn chuyến xe";
+            this.lblGheChon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblGheChon.AutoSize = false;
+            this.lblGheChon.BackColor = System.Drawing.Color.Transparent;
+            this.lblGheChon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGheChon.Location = new System.Drawing.Point(34, 200);
+            this.lblGheChon.Name = "lblGheChon";
+            this.lblGheChon.Size = new System.Drawing.Size(116, 21);
+            this.lblGheChon.TabIndex = 68;
+            this.lblGheChon.Text = "Ghế đã chọn ";
             // 
-            // guna2HtmlLabel3
+            // lblXe4
             // 
-            this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(740, 28);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(31, 28);
-            this.guna2HtmlLabel3.TabIndex = 76;
-            this.guna2HtmlLabel3.Text = "→";
+            this.lblXe4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblXe4.AutoSize = false;
+            this.lblXe4.BackColor = System.Drawing.Color.Transparent;
+            this.lblXe4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXe4.Location = new System.Drawing.Point(267, 124);
+            this.lblXe4.Name = "lblXe4";
+            this.lblXe4.Size = new System.Drawing.Size(59, 21);
+            this.lblXe4.TabIndex = 67;
+            this.lblXe4.Text = "29 chỗ ";
             // 
-            // guna2HtmlLabel1
+            // lblNgayDi1
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(448, 28);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(31, 28);
-            this.guna2HtmlLabel1.TabIndex = 73;
-            this.guna2HtmlLabel1.Text = "→";
+            this.lblNgayDi1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNgayDi1.AutoSize = false;
+            this.lblNgayDi1.BackColor = System.Drawing.Color.Transparent;
+            this.lblNgayDi1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayDi1.Location = new System.Drawing.Point(34, 161);
+            this.lblNgayDi1.Name = "lblNgayDi1";
+            this.lblNgayDi1.Size = new System.Drawing.Size(89, 21);
+            this.lblNgayDi1.TabIndex = 66;
+            this.lblNgayDi1.Text = "Ngày đi";
             // 
-            // guna2GradientCircleButton3
+            // guna2HtmlLabel9
             // 
-            this.guna2GradientCircleButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientCircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientCircleButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton3.Location = new System.Drawing.Point(819, 17);
-            this.guna2GradientCircleButton3.Name = "guna2GradientCircleButton3";
-            this.guna2GradientCircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton3.Size = new System.Drawing.Size(49, 49);
-            this.guna2GradientCircleButton3.TabIndex = 75;
-            this.guna2GradientCircleButton3.Text = "3";
+            this.guna2HtmlLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2HtmlLabel9.AutoSize = false;
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(267, 88);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(130, 21);
+            this.guna2HtmlLabel9.TabIndex = 65;
+            this.guna2HtmlLabel9.Text = "07:00 → 08:00";
             // 
-            // guna2GradientCircleButton2
+            // lblXe3
             // 
-            this.guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(512, 17);
-            this.guna2GradientCircleButton2.Name = "guna2GradientCircleButton2";
-            this.guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(49, 49);
-            this.guna2GradientCircleButton2.TabIndex = 74;
-            this.guna2GradientCircleButton2.Text = "2";
+            this.lblXe3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblXe3.AutoSize = false;
+            this.lblXe3.BackColor = System.Drawing.Color.Transparent;
+            this.lblXe3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXe3.Location = new System.Drawing.Point(34, 124);
+            this.lblXe3.Name = "lblXe3";
+            this.lblXe3.Size = new System.Drawing.Size(89, 21);
+            this.lblXe3.TabIndex = 64;
+            this.lblXe3.Text = "Xe";
             // 
-            // guna2GradientCircleButton1
+            // lblTuyen7
             // 
-            this.guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(212, 17);
-            this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
-            this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(49, 49);
-            this.guna2GradientCircleButton1.TabIndex = 72;
-            this.guna2GradientCircleButton1.Text = "1";
+            this.lblTuyen7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTuyen7.AutoSize = false;
+            this.lblTuyen7.BackColor = System.Drawing.Color.Transparent;
+            this.lblTuyen7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuyen7.Location = new System.Drawing.Point(235, 47);
+            this.lblTuyen7.Name = "lblTuyen7";
+            this.lblTuyen7.Size = new System.Drawing.Size(182, 21);
+            this.lblTuyen7.TabIndex = 63;
+            this.lblTuyen7.Text = "Cao Lãnh → Sa Đéc";
             // 
-            // lblTongTien
+            // lblChuyenxe
             // 
-            this.lblTongTien.AutoSize = false;
-            this.lblTongTien.BackColor = System.Drawing.Color.Transparent;
-            this.lblTongTien.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTongTien.Location = new System.Drawing.Point(267, 39);
-            this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(101, 21);
-            this.lblTongTien.TabIndex = 85;
-            this.lblTongTien.Text = "30.000đ";
+            this.lblChuyenxe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChuyenxe.AutoSize = false;
+            this.lblChuyenxe.BackColor = System.Drawing.Color.Transparent;
+            this.lblChuyenxe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChuyenxe.Location = new System.Drawing.Point(34, 88);
+            this.lblChuyenxe.Name = "lblChuyenxe";
+            this.lblChuyenxe.Size = new System.Drawing.Size(89, 21);
+            this.lblChuyenxe.TabIndex = 62;
+            this.lblChuyenxe.Text = "Chuyến xe";
             // 
-            // grpChinhSach
+            // lblTuyen5
             // 
-            this.grpChinhSach.Controls.Add(this.lblChinhSach2);
-            this.grpChinhSach.Controls.Add(this.lblChinhSach3);
-            this.grpChinhSach.Controls.Add(this.lblChinhSach1);
-            this.grpChinhSach.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpChinhSach.ForeColor = System.Drawing.Color.Blue;
-            this.grpChinhSach.Location = new System.Drawing.Point(0, 480);
-            this.grpChinhSach.Name = "grpChinhSach";
-            this.grpChinhSach.Size = new System.Drawing.Size(420, 157);
-            this.grpChinhSach.TabIndex = 87;
-            this.grpChinhSach.Text = "Chính sách vé";
+            this.lblTuyen5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTuyen5.AutoSize = false;
+            this.lblTuyen5.BackColor = System.Drawing.Color.Transparent;
+            this.lblTuyen5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuyen5.Location = new System.Drawing.Point(34, 47);
+            this.lblTuyen5.Name = "lblTuyen5";
+            this.lblTuyen5.Size = new System.Drawing.Size(89, 21);
+            this.lblTuyen5.TabIndex = 60;
+            this.lblTuyen5.Text = "Tuyến xe";
             // 
-            // lblChinhSach1
+            // lblTieuDe
             // 
-            this.lblChinhSach1.AutoSize = false;
-            this.lblChinhSach1.BackColor = System.Drawing.Color.Transparent;
-            this.lblChinhSach1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChinhSach1.Location = new System.Drawing.Point(33, 47);
-            this.lblChinhSach1.Name = "lblChinhSach1";
-            this.lblChinhSach1.Size = new System.Drawing.Size(384, 21);
-            this.lblChinhSach1.TabIndex = 88;
-            this.lblChinhSach1.Text = "Đổi/Trả vé trước giờ khởi hành ít nhất 2 tiếng.";
+            this.lblTieuDe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTieuDe.AutoSize = true;
+            this.lblTieuDe.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieuDe.Location = new System.Drawing.Point(26, 7);
+            this.lblTieuDe.Name = "lblTieuDe";
+            this.lblTieuDe.Size = new System.Drawing.Size(346, 35);
+            this.lblTieuDe.TabIndex = 83;
+            this.lblTieuDe.Text = "VÉ XE BUÝT NỘI TỈNH";
             // 
-            // lblChinhSach3
+            // lblTrangChu
             // 
-            this.lblChinhSach3.AutoSize = false;
-            this.lblChinhSach3.BackColor = System.Drawing.Color.Transparent;
-            this.lblChinhSach3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChinhSach3.Location = new System.Drawing.Point(36, 126);
-            this.lblChinhSach3.Name = "lblChinhSach3";
-            this.lblChinhSach3.Size = new System.Drawing.Size(342, 21);
-            this.lblChinhSach3.TabIndex = 89;
-            this.lblChinhSach3.Text = "Vui lòng có mặt tại bến xe trước 30 phút.";
+            this.lblTrangChu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTrangChu.AutoSize = true;
+            this.lblTrangChu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangChu.Location = new System.Drawing.Point(419, 15);
+            this.lblTrangChu.Name = "lblTrangChu";
+            this.lblTrangChu.Size = new System.Drawing.Size(106, 26);
+            this.lblTrangChu.TabIndex = 80;
+            this.lblTrangChu.Text = "Trang chủ";
+            this.lblTrangChu.Click += new System.EventHandler(this.lblTrangChu_Click);
             // 
-            // lblChinhSach2
+            // lblDatVe
             // 
-            this.lblChinhSach2.AutoSize = false;
-            this.lblChinhSach2.BackColor = System.Drawing.Color.Transparent;
-            this.lblChinhSach2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChinhSach2.Location = new System.Drawing.Point(36, 87);
-            this.lblChinhSach2.Name = "lblChinhSach2";
-            this.lblChinhSach2.Size = new System.Drawing.Size(361, 21);
-            this.lblChinhSach2.TabIndex = 90;
-            this.lblChinhSach2.Text = "Không hoàn tiền vé đã thanh toán.";
+            this.lblDatVe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDatVe.AutoSize = true;
+            this.lblDatVe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatVe.Location = new System.Drawing.Point(553, 14);
+            this.lblDatVe.Name = "lblDatVe";
+            this.lblDatVe.Size = new System.Drawing.Size(73, 26);
+            this.lblDatVe.TabIndex = 84;
+            this.lblDatVe.Text = "Đặt vé";
+            this.lblDatVe.Click += new System.EventHandler(this.lblDatVe_Click);
+            // 
+            // grbThongTin
+            // 
+            this.grbThongTin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grbThongTin.Controls.Add(this.cboSoLuongVe);
+            this.grbThongTin.Controls.Add(this.lblSoLuongVe);
+            this.grbThongTin.Controls.Add(this.btnTim);
+            this.grbThongTin.Controls.Add(this.dtpNgayDi);
+            this.grbThongTin.Controls.Add(this.lblNgayDi);
+            this.grbThongTin.Controls.Add(this.cboNoiDen);
+            this.grbThongTin.Controls.Add(this.cboNoiDi);
+            this.grbThongTin.Controls.Add(this.lblNoiDen);
+            this.grbThongTin.Controls.Add(this.lblNoiDi);
+            this.grbThongTin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbThongTin.ForeColor = System.Drawing.Color.Blue;
+            this.grbThongTin.Location = new System.Drawing.Point(19, 110);
+            this.grbThongTin.Name = "grbThongTin";
+            this.grbThongTin.Size = new System.Drawing.Size(549, 287);
+            this.grbThongTin.TabIndex = 61;
+            this.grbThongTin.Text = "Thông tin chuyến xe";
+            // 
+            // cboSoLuongVe
+            // 
+            this.cboSoLuongVe.BackColor = System.Drawing.Color.Transparent;
+            this.cboSoLuongVe.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboSoLuongVe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSoLuongVe.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboSoLuongVe.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboSoLuongVe.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboSoLuongVe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboSoLuongVe.ItemHeight = 30;
+            this.cboSoLuongVe.Items.AddRange(new object[] {
+            "1 vé",
+            "2 vé",
+            "3 vé",
+            "4 vé",
+            "5 vé",
+            "6 vé",
+            "7 vé",
+            "8 vé",
+            "9 vé",
+            "10 vé",
+            "11 vé",
+            "12 vé",
+            "13 vé",
+            "14 vé",
+            "15 vé",
+            "16 vé",
+            "17 vé",
+            "18 vé",
+            "19 vé",
+            "20 vé",
+            "21 vé",
+            "22 vé",
+            "23 vé",
+            "24 vé",
+            "25 vé",
+            "26 vé",
+            "27 vé",
+            "28 vé",
+            "29 vé"});
+            this.cboSoLuongVe.Location = new System.Drawing.Point(366, 97);
+            this.cboSoLuongVe.Name = "cboSoLuongVe";
+            this.cboSoLuongVe.Size = new System.Drawing.Size(175, 36);
+            this.cboSoLuongVe.TabIndex = 87;
+            // 
+            // lblSoLuongVe
+            // 
+            this.lblSoLuongVe.AutoSize = false;
+            this.lblSoLuongVe.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoLuongVe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuongVe.Location = new System.Drawing.Point(366, 54);
+            this.lblSoLuongVe.Name = "lblSoLuongVe";
+            this.lblSoLuongVe.Size = new System.Drawing.Size(220, 46);
+            this.lblSoLuongVe.TabIndex = 86;
+            this.lblSoLuongVe.Text = "Số lượng vé";
+            // 
+            // btnTim
+            // 
+            this.btnTim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTim.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTim.FillColor2 = System.Drawing.Color.Lime;
+            this.btnTim.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTim.ForeColor = System.Drawing.Color.White;
+            this.btnTim.Location = new System.Drawing.Point(372, 175);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(130, 43);
+            this.btnTim.TabIndex = 85;
+            this.btnTim.Text = "Tìm vé";
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            // 
+            // dtpNgayDi
+            // 
+            this.dtpNgayDi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpNgayDi.Checked = true;
+            this.dtpNgayDi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgayDi.ForeColor = System.Drawing.Color.White;
+            this.dtpNgayDi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayDi.Location = new System.Drawing.Point(18, 240);
+            this.dtpNgayDi.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpNgayDi.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpNgayDi.Name = "dtpNgayDi";
+            this.dtpNgayDi.Size = new System.Drawing.Size(291, 36);
+            this.dtpNgayDi.TabIndex = 59;
+            this.dtpNgayDi.Value = new System.DateTime(2026, 8, 27, 16, 26, 48, 192);
+            // 
+            // lblNgayDi
+            // 
+            this.lblNgayDi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNgayDi.AutoSize = false;
+            this.lblNgayDi.BackColor = System.Drawing.Color.Transparent;
+            this.lblNgayDi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayDi.Location = new System.Drawing.Point(18, 206);
+            this.lblNgayDi.Name = "lblNgayDi";
+            this.lblNgayDi.Size = new System.Drawing.Size(200, 28);
+            this.lblNgayDi.TabIndex = 58;
+            this.lblNgayDi.Text = "Ngày đi";
+            // 
+            // cboNoiDen
+            // 
+            this.cboNoiDen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboNoiDen.BackColor = System.Drawing.Color.Transparent;
+            this.cboNoiDen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboNoiDen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNoiDen.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboNoiDen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboNoiDen.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboNoiDen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboNoiDen.ItemHeight = 30;
+            this.cboNoiDen.Items.AddRange(new object[] {
+            "Cao Lãnh",
+            "Sa Đéc",
+            "Hồng Ngự",
+            "Lai Vung",
+            "Lấp Vò",
+            "Tam Nông"});
+            this.cboNoiDen.Location = new System.Drawing.Point(18, 164);
+            this.cboNoiDen.Name = "cboNoiDen";
+            this.cboNoiDen.Size = new System.Drawing.Size(291, 36);
+            this.cboNoiDen.TabIndex = 57;
+            // 
+            // cboNoiDi
+            // 
+            this.cboNoiDi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboNoiDi.BackColor = System.Drawing.Color.Transparent;
+            this.cboNoiDi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboNoiDi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboNoiDi.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboNoiDi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboNoiDi.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboNoiDi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboNoiDi.ItemHeight = 30;
+            this.cboNoiDi.Items.AddRange(new object[] {
+            "Cao Lãnh",
+            "Sa Đéc",
+            "Hồng Ngự",
+            "Lai Vung",
+            "Lấp Vò",
+            "Tam Nông"});
+            this.cboNoiDi.Location = new System.Drawing.Point(18, 88);
+            this.cboNoiDi.Name = "cboNoiDi";
+            this.cboNoiDi.Size = new System.Drawing.Size(291, 36);
+            this.cboNoiDi.TabIndex = 47;
+            // 
+            // lblNoiDen
+            // 
+            this.lblNoiDen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNoiDen.AutoSize = false;
+            this.lblNoiDen.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoiDen.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoiDen.Location = new System.Drawing.Point(18, 130);
+            this.lblNoiDen.Name = "lblNoiDen";
+            this.lblNoiDen.Size = new System.Drawing.Size(200, 28);
+            this.lblNoiDen.TabIndex = 56;
+            this.lblNoiDen.Text = "Nơi đến";
+            // 
+            // lblNoiDi
+            // 
+            this.lblNoiDi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNoiDi.AutoSize = false;
+            this.lblNoiDi.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoiDi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoiDi.Location = new System.Drawing.Point(18, 54);
+            this.lblNoiDi.Name = "lblNoiDi";
+            this.lblNoiDi.Size = new System.Drawing.Size(200, 28);
+            this.lblNoiDi.TabIndex = 48;
+            this.lblNoiDi.Text = "Nơi đi";
+            // 
+            // guna2CirclePictureBox5
+            // 
+            this.guna2CirclePictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2CirclePictureBox5.ImageRotate = 0F;
+            this.guna2CirclePictureBox5.Location = new System.Drawing.Point(1212, -2);
+            this.guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
+            this.guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox5.Size = new System.Drawing.Size(56, 49);
+            this.guna2CirclePictureBox5.TabIndex = 44;
+            this.guna2CirclePictureBox5.TabStop = false;
             // 
             // FrmDatVe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1336, 828);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1512, 745);
+            this.Controls.Add(this.grbThongTin);
+            this.Controls.Add(this.lblDatVe);
+            this.Controls.Add(this.lblTrangChu);
+            this.Controls.Add(this.lblTieuDe);
             this.Controls.Add(this.grpThongTinHanhKhach);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.pnlChuyen1);
             this.Controls.Add(this.lblTenDangNhap);
-            this.Controls.Add(this.grpChonGhe);
             this.Controls.Add(this.pnlThongTinChuyenXe);
+            this.Controls.Add(this.grpChonGhe);
             this.Controls.Add(this.pnlBuoc);
             this.Controls.Add(this.guna2CirclePictureBox5);
             this.Controls.Add(this.lblXinChao);
             this.Controls.Add(this.lblHoaDon);
             this.Controls.Add(this.lblTuyenXe);
             this.Controls.Add(this.lblTraCuuVe);
-            this.Controls.Add(this.lblDatVe);
-            this.Controls.Add(this.lblTrangChu);
-            this.Controls.Add(this.lblTieuDe);
             this.Name = "FrmDatVe";
             this.Text = "ĐẶT VÉ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmDatVe_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).EndInit();
             this.pnlBuoc.ResumeLayout(false);
+            this.pnlBuoc.PerformLayout();
             this.pnlThongTinChuyenXe.ResumeLayout(false);
             this.pnlThongTinChuyenXe.PerformLayout();
-            this.grbThongTin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachChuyen)).EndInit();
             this.grpChonGhe.ResumeLayout(false);
             this.grpChonGhe.PerformLayout();
             this.pnlXe.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).EndInit();
-            this.pnlChuyen1.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
             this.grpThongTinHanhKhach.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
             this.grpChinhSach.ResumeLayout(false);
+            this.grbThongTin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTieuDe;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblXinChao;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHoaDon;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyenXe;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTraCuuVe;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblDatVe;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTrangChu;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlBuoc;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlThongTinChuyenXe;
-        private Guna.UI2.WinForms.Guna2GroupBox grbThongTin;
-        private Guna.UI2.WinForms.Guna2ComboBox cboNoiDi;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblNoiDi;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgayDi;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblNgayDi;
-        private Guna.UI2.WinForms.Guna2ComboBox cboNoiDen;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblNoiDen;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDanhSach;
         private Guna.UI2.WinForms.Guna2GroupBox grpChonGhe;
         private Guna.UI2.WinForms.Guna2Panel pnlGheTrong;
         private Guna.UI2.WinForms.Guna2Panel pnlGheDaChon;
         private Guna.UI2.WinForms.Guna2Panel pnlGheDaDat;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGheDaDat;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblGheDangChon;
         private Guna.UI2.WinForms.Guna2Panel pnlXe;
         private Guna.UI2.WinForms.Guna2GradientButton btnGhe1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTaiXe;
@@ -1800,40 +1758,12 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnGhe2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTenDangNhap;
         private System.Windows.Forms.Label lblGheTrong1;
-        private Guna.UI2.WinForms.Guna2Panel pnlChuyen1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblGio1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblGio2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblBienSo1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblXe1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyen2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyen1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblGhe1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblThoiGian1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblGia1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblThoiGian2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblGia2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblGhe2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblBienSo2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblxe2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyen4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyen3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblGio4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblGio3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblXemtatCa;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblViTri;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGhe;
         private Guna.UI2.WinForms.Guna2GroupBox grpThongTinHanhKhach;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyen5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblChuyenxe;
-        private Guna.UI2.WinForms.Guna2GradientButton btnHuy;
-        private Guna.UI2.WinForms.Guna2GradientButton btnThanhToan;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTien;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTong;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSoLuong3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTamTinh;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGheDaChon1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGia3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNgayDi2;
@@ -1845,7 +1775,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyen7;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblGia5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSoLuong;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblBuoc2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblBuoc3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblBuoc1;
@@ -1854,10 +1783,35 @@
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton3;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTongTien;
         private Guna.UI2.WinForms.Guna2GroupBox grpChinhSach;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblChinhSach2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblChinhSach3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblChinhSach1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTongTien;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTamTinh;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTong;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTien;
+        private Guna.UI2.WinForms.Guna2GradientButton btnHuy;
+        private Guna.UI2.WinForms.Guna2GradientButton btnThanhToan;
+        private System.Windows.Forms.Label lblTieuDe;
+        private System.Windows.Forms.Label lblTrangChu;
+        private System.Windows.Forms.Label lblDatVe;
+        private Guna.UI2.WinForms.Guna2GroupBox grbThongTin;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgayDi;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNgayDi;
+        private Guna.UI2.WinForms.Guna2ComboBox cboNoiDen;
+        private Guna.UI2.WinForms.Guna2ComboBox cboNoiDi;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNoiDen;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNoiDi;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvDanhSachChuyen;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnTim;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGioDi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColGioDenDuKien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNoiDi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNoiDen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colBienSo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGia;
+        private Guna.UI2.WinForms.Guna2ComboBox cboSoLuongVe;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblSoLuongVe;
     }
 }
