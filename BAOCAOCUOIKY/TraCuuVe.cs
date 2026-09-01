@@ -74,7 +74,7 @@ namespace BAOCAOCUOIKY
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
             // MỞ FORM ĐẶT VÉ
-            FrmDatVe frm = new FrmDatVe();
+            FrmDatVe frm = new FrmDatVe("", "", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();

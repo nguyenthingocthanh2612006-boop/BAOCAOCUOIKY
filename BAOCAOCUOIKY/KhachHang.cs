@@ -78,7 +78,7 @@ namespace BAOCAOCUOIKY
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
             // MỞ FORM ĐẶT VÉ
-            FrmDatVe frm = new FrmDatVe();
+            FrmDatVe frm = new FrmDatVe("", "", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -175,7 +175,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe1_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe ();
+            FrmDatVe frm = new FrmDatVe("Cao Lãnh","Sa Đéc",DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -183,7 +183,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe2_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe();
+            FrmDatVe frm = new FrmDatVe("Cao Lãnh", "Hồng Ngự", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -191,7 +191,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe3_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe();
+            FrmDatVe frm = new FrmDatVe("Sa Đéc","Lai Vung", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -199,7 +199,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe4_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe();
+            FrmDatVe frm = new FrmDatVe("Sa Đéc", "Lấp Vò", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -207,7 +207,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe5_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe();
+            FrmDatVe frm = new FrmDatVe("Cao Lãnh", "Lai Vung", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
