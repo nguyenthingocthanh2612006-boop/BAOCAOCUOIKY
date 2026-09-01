@@ -169,12 +169,6 @@
     <Compile Include="QuenMatKhau.Designer.cs">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="QUẢN LÝ VÉ.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QUẢN LÝ VÉ.Designer.cs">
-      <DependentUpon>QUẢN LÝ VÉ.cs</DependentUpon>
-    </Compile>
     <Compile Include="TRA CỨU CHUYẾN XE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +187,9 @@
     <Compile Include="XUẤT HÓA ĐƠN.Designer.cs">
       <DependentUpon>XUẤT HÓA ĐƠN.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HÓA ĐƠN.resx">
       <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,9 +214,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QUẢN LÝ TÀI XẾ.resx">
       <DependentUpon>QUẢN LÝ TÀI XẾ.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QUẢN LÝ VÉ.resx">
-      <DependentUpon>QUẢN LÝ VÉ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QUẢN LÝ XE.resx">
       <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>

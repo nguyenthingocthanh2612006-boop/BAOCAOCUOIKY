@@ -456,6 +456,12 @@ namespace BAOCAOCUOIKY
            
         }
 
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            FrmNhanVien frm = new FrmNhanVien();
+            frm.ShowDialog();
+        }
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             this.Hide();
