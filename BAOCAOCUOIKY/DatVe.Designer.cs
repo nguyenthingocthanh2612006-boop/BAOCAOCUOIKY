@@ -243,7 +243,7 @@
             this.lblBuoc1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuoc1.Location = new System.Drawing.Point(355, 15);
             this.lblBuoc1.Name = "lblBuoc1";
-            this.lblBuoc1.Size = new System.Drawing.Size(154, 28);
+            this.lblBuoc1.Size = new System.Drawing.Size(155, 28);
             this.lblBuoc1.TabIndex = 77;
             this.lblBuoc1.Text = "Chọn chuyến xe";
             // 
@@ -382,6 +382,7 @@
             this.dgvDanhSachChuyen.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDanhSachChuyen.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.dgvDanhSachChuyen.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvDanhSachChuyen.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachChuyen_CellClick);
             // 
             // colGioDi
             // 
@@ -433,7 +434,7 @@
             this.lblDanhSach.ForeColor = System.Drawing.Color.Blue;
             this.lblDanhSach.Location = new System.Drawing.Point(11, 291);
             this.lblDanhSach.Name = "lblDanhSach";
-            this.lblDanhSach.Size = new System.Drawing.Size(200, 28);
+            this.lblDanhSach.Size = new System.Drawing.Size(201, 28);
             this.lblDanhSach.TabIndex = 1;
             this.lblDanhSach.Text = "Danh sách chuyến xe";
             // 
@@ -1531,6 +1532,7 @@
             this.cboSoLuongVe.Name = "cboSoLuongVe";
             this.cboSoLuongVe.Size = new System.Drawing.Size(175, 36);
             this.cboSoLuongVe.TabIndex = 87;
+            this.cboSoLuongVe.SelectedIndexChanged += new System.EventHandler(this.cboSoLuongVe_SelectedIndexChanged);
             // 
             // lblSoLuongVe
             // 

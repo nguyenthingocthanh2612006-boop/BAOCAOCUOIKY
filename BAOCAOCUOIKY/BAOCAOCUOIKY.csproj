@@ -190,6 +190,9 @@
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DatVe.resx">
+      <DependentUpon>DatVe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HÓA ĐƠN.resx">
       <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TRANG CHỦ NHÂN VIÊN.resx">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TUYENXE.resx">
+      <DependentUpon>TuyenXe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

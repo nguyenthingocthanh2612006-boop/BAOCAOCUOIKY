@@ -162,12 +162,8 @@ namespace BAOCAOCUOIKY
             DateTime ngayDi = dtpNgayDi.Value;
             string soLuongVe = cboSoLuongVe.Text;
             // Mở form Tra Cứu Vé và truyền thông tin qua
-            FrmTraCuuVe frm = new FrmTraCuuVe (
-                noiDi,
-                noiDen,
-                ngayDi,
-                soLuongVe
-            );
+            FrmTraCuuVe frm = new FrmTraCuuVe();
+           
             this.Hide();
             frm.ShowDialog();
             this.Show();
