@@ -88,6 +88,12 @@
     <Compile Include="TraCuuVe.Designer.cs">
       <DependentUpon>TraCuuVe.cs</DependentUpon>
     </Compile>
+    <Compile Include="TRANG CHỦ ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANG CHỦ ADMIN.Designer.cs">
+      <DependentUpon>TRANG CHỦ ADMIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="TRANG CHỦ USER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,13 +118,12 @@
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
-	<Compile Include="HÓA ĐƠN.cs">
-		<SubType>Form</SubType>
-	</Compile>
-
-	  <Compile Include="HÓA ĐƠN.Designer.cs">
-		  <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
-	  </Compile>
+    <Compile Include="HÓA ĐƠN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HÓA ĐƠN.Designer.cs">
+      <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\BenXe.cs" />
     <Compile Include="Models\ChiTietHoaDon.cs" />
     <Compile Include="Models\ChuyenXe.cs" />
@@ -194,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TRA CỨU CHUYẾN XE.resx">
       <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANG CHỦ ADMIN.resx">
+      <DependentUpon>TRANG CHỦ ADMIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TRANG CHỦ NHÂN VIÊN.resx">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>

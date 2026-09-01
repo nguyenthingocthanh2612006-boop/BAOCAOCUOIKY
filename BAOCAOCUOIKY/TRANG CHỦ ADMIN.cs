@@ -430,20 +430,40 @@ namespace BAOCAOCUOIKY
                     MessageBoxIcon.Error);
             }
         }
-
-        private void lblTuyenXe_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblTien3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTuyenXe_Click(object sender, EventArgs e)
+        {
+            FrmTuyenXe frm = new FrmTuyenXe();
+            frm.ShowDialog();
+        }
+
+        private void btnChuyenXe_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnXe_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnTaiXe_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            FrmDangNhap frmDangNhap = new FrmDangNhap();
+            frmDangNhap.ShowDialog();
+
+            this.Close();
         }
     }
 }
