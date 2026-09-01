@@ -464,7 +464,7 @@
             this.pnlDanhSachTuyen.FillColor = System.Drawing.Color.White;
             this.pnlDanhSachTuyen.Location = new System.Drawing.Point(226, 145);
             this.pnlDanhSachTuyen.Name = "pnlDanhSachTuyen";
-            this.pnlDanhSachTuyen.Size = new System.Drawing.Size(981, 367);
+            this.pnlDanhSachTuyen.Size = new System.Drawing.Size(1087, 367);
             this.pnlDanhSachTuyen.TabIndex = 3;
             // 
             // label5
@@ -481,7 +481,6 @@
             // 
             // dgvTuyenXe
             // 
-            this.dgvTuyenXe.AllowUserToAddRows = false;
             this.dgvTuyenXe.AllowUserToResizeColumns = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvTuyenXe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -531,7 +530,7 @@
             this.dgvTuyenXe.RowHeadersWidth = 51;
             this.dgvTuyenXe.RowTemplate.Height = 38;
             this.dgvTuyenXe.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvTuyenXe.Size = new System.Drawing.Size(974, 333);
+            this.dgvTuyenXe.Size = new System.Drawing.Size(1080, 333);
             this.dgvTuyenXe.TabIndex = 3;
             this.dgvTuyenXe.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvTuyenXe.ThemeStyle.GridColor = System.Drawing.Color.LightGray;
@@ -547,63 +546,63 @@
             this.STT.HeaderText = "STT";
             this.STT.MinimumWidth = 6;
             this.STT.Name = "STT";
-            this.STT.Width = 40;
+            this.STT.Width = 98;
             // 
             // MaTuyen
             // 
             this.MaTuyen.HeaderText = "Mã tuyến";
             this.MaTuyen.MinimumWidth = 6;
             this.MaTuyen.Name = "MaTuyen";
-            this.MaTuyen.Width = 60;
+            this.MaTuyen.Width = 98;
             // 
             // TenTuyen
             // 
             this.TenTuyen.HeaderText = "Tên tuyến";
             this.TenTuyen.MinimumWidth = 6;
             this.TenTuyen.Name = "TenTuyen";
-            this.TenTuyen.Width = 125;
+            this.TenTuyen.Width = 99;
             // 
             // TuDiem
             // 
             this.TuDiem.HeaderText = "Từ Điểm";
             this.TuDiem.MinimumWidth = 6;
             this.TuDiem.Name = "TuDiem";
-            this.TuDiem.Width = 125;
+            this.TuDiem.Width = 98;
             // 
             // DenDiem
             // 
             this.DenDiem.HeaderText = "Đến điểm";
             this.DenDiem.MinimumWidth = 6;
             this.DenDiem.Name = "DenDiem";
-            this.DenDiem.Width = 125;
+            this.DenDiem.Width = 98;
             // 
             // KhoangCach
             // 
             this.KhoangCach.HeaderText = "Khoảng cách";
             this.KhoangCach.MinimumWidth = 6;
             this.KhoangCach.Name = "KhoangCach";
-            this.KhoangCach.Width = 60;
+            this.KhoangCach.Width = 98;
             // 
             // ThoiGian
             // 
             this.ThoiGian.HeaderText = "Thời Gian";
             this.ThoiGian.MinimumWidth = 6;
             this.ThoiGian.Name = "ThoiGian";
-            this.ThoiGian.Width = 60;
+            this.ThoiGian.Width = 98;
             // 
             // GiaVe
             // 
             this.GiaVe.HeaderText = "Giá vé";
             this.GiaVe.MinimumWidth = 6;
             this.GiaVe.Name = "GiaVe";
-            this.GiaVe.Width = 60;
+            this.GiaVe.Width = 98;
             // 
             // TrangThai
             // 
             this.TrangThai.HeaderText = "Trạng thái";
             this.TrangThai.MinimumWidth = 6;
             this.TrangThai.Name = "TrangThai";
-            this.TrangThai.Width = 125;
+            this.TrangThai.Width = 99;
             // 
             // Sua
             // 
@@ -612,7 +611,7 @@
             this.Sua.Name = "Sua";
             this.Sua.Text = "Sửa";
             this.Sua.UseColumnTextForButtonValue = true;
-            this.Sua.Width = 60;
+            this.Sua.Width = 98;
             // 
             // Xoa
             // 
@@ -621,7 +620,7 @@
             this.Xoa.Name = "Xoa";
             this.Xoa.Text = "Xóa";
             this.Xoa.UseColumnTextForButtonValue = true;
-            this.Xoa.Width = 60;
+            this.Xoa.Width = 98;
             // 
             // guna2DataGridView2
             // 
@@ -737,7 +736,7 @@
             this.pnlThongTinTuyen.Controls.Add(this.txtTenTuyen);
             this.pnlThongTinTuyen.Controls.Add(this.txtMaTuyen);
             this.pnlThongTinTuyen.Enabled = false;
-            this.pnlThongTinTuyen.Location = new System.Drawing.Point(1319, 145);
+            this.pnlThongTinTuyen.Location = new System.Drawing.Point(1319, 140);
             this.pnlThongTinTuyen.Name = "pnlThongTinTuyen";
             this.pnlThongTinTuyen.Size = new System.Drawing.Size(492, 367);
             this.pnlThongTinTuyen.TabIndex = 4;
