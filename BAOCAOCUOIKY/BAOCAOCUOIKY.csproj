@@ -81,12 +81,42 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="QUẢN LÝ NHÂN VIÊN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUẢN LÝ NHÂN VIÊN.Designer.cs">
+      <DependentUpon>QUẢN LÝ NHÂN VIÊN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUẢN LÝ TÀI XẾ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUẢN LÝ TÀI XẾ.Designer.cs">
+      <DependentUpon>QUẢN LÝ TÀI XẾ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUẢN LÝ XE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUẢN LÝ XE.Designer.cs">
+      <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinDangNhap.cs" />
     <Compile Include="TraCuuVe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TraCuuVe.Designer.cs">
       <DependentUpon>TraCuuVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRANG CHỦ USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANG CHỦ USER.Designer.cs">
+      <DependentUpon>TRANG CHỦ USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TuyenXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TuyenXe.Designer.cs">
+      <DependentUpon>TuyenXe.cs</DependentUpon>
     </Compile>
     <Compile Include="DatVe.cs">
       <SubType>Form</SubType>
@@ -99,6 +129,12 @@
     </Compile>
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HÓA ĐƠN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HÓA ĐƠN.Designer.cs">
+      <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BenXe.cs" />
     <Compile Include="Models\ChiTietHoaDon.cs" />
@@ -145,8 +181,14 @@
     <Compile Include="TRANG CHỦ NHÂN VIÊN.Designer.cs">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DatVe.resx">
-      <DependentUpon>DatVe.cs</DependentUpon>
+    <Compile Include="XUẤT HÓA ĐƠN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XUẤT HÓA ĐƠN.Designer.cs">
+      <DependentUpon>XUẤT HÓA ĐƠN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HÓA ĐƠN.resx">
+      <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NV BÁN VÉ.resx">
       <DependentUpon>NV BÁN VÉ.cs</DependentUpon>
@@ -164,8 +206,17 @@
     <EmbeddedResource Include="QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QUẢN LÝ NHÂN VIÊN.resx">
+      <DependentUpon>QUẢN LÝ NHÂN VIÊN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUẢN LÝ TÀI XẾ.resx">
+      <DependentUpon>QUẢN LÝ TÀI XẾ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QUẢN LÝ VÉ.resx">
       <DependentUpon>QUẢN LÝ VÉ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUẢN LÝ XE.resx">
+      <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TRA CỨU CHUYẾN XE.resx">
       <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>
@@ -219,6 +270,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiiiiiiii.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
