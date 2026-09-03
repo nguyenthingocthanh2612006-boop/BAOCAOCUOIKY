@@ -119,6 +119,12 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="QUẢN LÝ CHUYẾN XE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUẢN LÝ CHUYẾN XE.Designer.cs">
+      <DependentUpon>QUẢN LÝ CHUYẾN XE.cs</DependentUpon>
+    </Compile>
     <Compile Include="QUẢN LÝ NHÂN VIÊN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
       <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongTinDangNhap.cs" />
+    <Compile Include="THỐNG KÊ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THỐNG KÊ.Designer.cs">
+      <DependentUpon>THỐNG KÊ.cs</DependentUpon>
+    </Compile>
     <Compile Include="TraCuuVe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +262,9 @@
     <EmbeddedResource Include="QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QUẢN LÝ CHUYẾN XE.resx">
+      <DependentUpon>QUẢN LÝ CHUYẾN XE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QUẢN LÝ NHÂN VIÊN.resx">
       <DependentUpon>QUẢN LÝ NHÂN VIÊN.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QUẢN LÝ XE.resx">
       <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THỐNG KÊ.resx">
+      <DependentUpon>THỐNG KÊ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TRA CỨU CHUYẾN XE.resx">
       <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>

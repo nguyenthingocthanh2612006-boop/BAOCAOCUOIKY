@@ -606,5 +606,10 @@ namespace BAOCAOCUOIKY
                     MessageBoxIcon.Error);
             }
         }
+
+        private void QUẢN_LÝ_NHÂN_VIÊN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

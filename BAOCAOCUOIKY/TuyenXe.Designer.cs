@@ -107,13 +107,15 @@
             this.lblGio = new System.Windows.Forms.Label();
             this.lblNgay = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlTimKiem.SuspendLayout();
             this.pnlDanhSachTuyen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTuyenXe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.pnlThongTinTuyen.SuspendLayout();
+            this.pnlDanhSachDiemDung.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiemDung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -135,6 +137,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(220, 781);
             this.guna2Panel1.TabIndex = 1;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // label15
             // 
@@ -1015,6 +1018,132 @@
             this.txtMaTuyen.Size = new System.Drawing.Size(165, 36);
             this.txtMaTuyen.TabIndex = 6;
             // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(3, 32);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(59, 19);
+            this.guna2HtmlLabel7.TabIndex = 5;
+            this.guna2HtmlLabel7.Text = "Mã tuyến";
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.DarkBlue;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(3, 7);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(170, 19);
+            this.guna2HtmlLabel6.TabIndex = 4;
+            this.guna2HtmlLabel6.Text = "THÔNG TIN TUYẾN XE";
+            // 
+            // pnlDanhSachDiemDung
+            // 
+            this.pnlDanhSachDiemDung.BorderColor = System.Drawing.Color.LightGray;
+            this.pnlDanhSachDiemDung.BorderRadius = 10;
+            this.pnlDanhSachDiemDung.BorderThickness = 1;
+            this.pnlDanhSachDiemDung.Controls.Add(this.dgvDiemDung);
+            this.pnlDanhSachDiemDung.Controls.Add(this.btnThemDiemDung);
+            this.pnlDanhSachDiemDung.Controls.Add(this.guna2HtmlLabel17);
+            this.pnlDanhSachDiemDung.FillColor = System.Drawing.Color.White;
+            this.pnlDanhSachDiemDung.Location = new System.Drawing.Point(926, 489);
+            this.pnlDanhSachDiemDung.Name = "pnlDanhSachDiemDung";
+            this.pnlDanhSachDiemDung.Size = new System.Drawing.Size(478, 224);
+            this.pnlDanhSachDiemDung.TabIndex = 5;
+            // 
+            // dgvDiemDung
+            // 
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.dgvDiemDung.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDiemDung.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvDiemDung.ColumnHeadersHeight = 34;
+            this.dgvDiemDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvDiemDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STTDiemDung,
+            this.TenDiemDung,
+            this.ThuTu,
+            this.ThaoTacDiemDung});
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDiemDung.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvDiemDung.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvDiemDung.Location = new System.Drawing.Point(3, 41);
+            this.dgvDiemDung.Name = "dgvDiemDung";
+            this.dgvDiemDung.RowHeadersVisible = false;
+            this.dgvDiemDung.RowHeadersWidth = 51;
+            this.dgvDiemDung.RowTemplate.Height = 24;
+            this.dgvDiemDung.Size = new System.Drawing.Size(472, 180);
+            this.dgvDiemDung.TabIndex = 2;
+            this.dgvDiemDung.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvDiemDung.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDiemDung.ThemeStyle.HeaderStyle.Height = 34;
+            this.dgvDiemDung.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDiemDung.ThemeStyle.RowsStyle.Height = 24;
+            // 
+            // STTDiemDung
+            // 
+            this.STTDiemDung.HeaderText = "STT";
+            this.STTDiemDung.MinimumWidth = 6;
+            this.STTDiemDung.Name = "STTDiemDung";
+            // 
+            // TenDiemDung
+            // 
+            this.TenDiemDung.HeaderText = "Tên điểm dừng";
+            this.TenDiemDung.MinimumWidth = 6;
+            this.TenDiemDung.Name = "TenDiemDung";
+            // 
+            // ThuTu
+            // 
+            this.ThuTu.HeaderText = "Thứ tự";
+            this.ThuTu.MinimumWidth = 6;
+            this.ThuTu.Name = "ThuTu";
+            // 
+            // ThaoTacDiemDung
+            // 
+            this.ThaoTacDiemDung.HeaderText = "Thao tác";
+            this.ThaoTacDiemDung.MinimumWidth = 6;
+            this.ThaoTacDiemDung.Name = "ThaoTacDiemDung";
+            // 
+            // btnThemDiemDung
+            // 
+            this.btnThemDiemDung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThemDiemDung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThemDiemDung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThemDiemDung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThemDiemDung.FillColor = System.Drawing.Color.Blue;
+            this.btnThemDiemDung.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThemDiemDung.ForeColor = System.Drawing.Color.White;
+            this.btnThemDiemDung.Location = new System.Drawing.Point(306, 3);
+            this.btnThemDiemDung.Name = "btnThemDiemDung";
+            this.btnThemDiemDung.Size = new System.Drawing.Size(169, 32);
+            this.btnThemDiemDung.TabIndex = 1;
+            this.btnThemDiemDung.Text = "+  Thêm điểm dừng";
+            // 
+            // guna2HtmlLabel17
+            // 
+            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel17.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel17.ForeColor = System.Drawing.Color.DarkBlue;
+            this.guna2HtmlLabel17.Location = new System.Drawing.Point(3, 3);
+            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
+            this.guna2HtmlLabel17.Size = new System.Drawing.Size(189, 19);
+            this.guna2HtmlLabel17.TabIndex = 0;
+            this.guna2HtmlLabel17.Text = "DANH SÁCH ĐIỂM DỪNG";
+            // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
@@ -1090,7 +1219,6 @@
             this.Text = "QUẢN LÝ TUYẾN XE CỦA ADMIN";
             this.Load += new System.EventHandler(this.FrmTuyenXe_Load);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlTimKiem.ResumeLayout(false);
             this.pnlTimKiem.PerformLayout();
             this.pnlDanhSachTuyen.ResumeLayout(false);
@@ -1100,6 +1228,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.pnlThongTinTuyen.ResumeLayout(false);
             this.pnlThongTinTuyen.PerformLayout();
+            this.pnlDanhSachDiemDung.ResumeLayout(false);
+            this.pnlDanhSachDiemDung.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiemDung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
