@@ -36,5 +36,10 @@ namespace BAOCAOCUOIKY
         {
 
         }
+
+        private void QUẢN_LÝ_NHÂN_VIÊN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -39,6 +39,8 @@
             this.lblNgay = new System.Windows.Forms.Label();
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.pnlChiTiet = new Guna.UI2.WinForms.Guna2Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblCTEmail = new System.Windows.Forms.Label();
             this.lblCTTrangThai = new System.Windows.Forms.Label();
             this.btnInThongTin = new Guna.UI2.WinForms.Guna2Button();
             this.label19 = new System.Windows.Forms.Label();
@@ -63,12 +65,24 @@
             this.lblThongTinChiTiet = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvDanhSachNhanVien = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hovaten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sodienthoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chucvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thaotac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlDanhSach = new Guna.UI2.WinForms.Guna2Panel();
             this.btnXuatExcel = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.lblDanhSach = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlTimKiem = new Guna.UI2.WinForms.Guna2Panel();
+            this.dtpNgaySinh = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnLamMoi = new Guna.UI2.WinForms.Guna2Button();
             this.cboTrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
@@ -81,20 +95,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblTimKiem = new System.Windows.Forms.Label();
             this.picTaiXe = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.dtpNgaySinh = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.manhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hovaten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sodienthoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chucvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thaotac = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblCTEmail = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.pnlmenu.SuspendLayout();
             this.pnlNoiDung.SuspendLayout();
             this.pnlChiTiet.SuspendLayout();
@@ -214,6 +214,26 @@
             this.pnlChiTiet.Name = "pnlChiTiet";
             this.pnlChiTiet.Size = new System.Drawing.Size(303, 716);
             this.pnlChiTiet.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(133, 525);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 19);
+            this.label7.TabIndex = 59;
+            this.label7.Text = "Đang Làm Việc";
+            // 
+            // lblCTEmail
+            // 
+            this.lblCTEmail.AutoSize = true;
+            this.lblCTEmail.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCTEmail.Location = new System.Drawing.Point(35, 446);
+            this.lblCTEmail.Name = "lblCTEmail";
+            this.lblCTEmail.Size = new System.Drawing.Size(60, 19);
+            this.lblCTEmail.TabIndex = 58;
+            this.lblCTEmail.Text = "Email:";
             // 
             // lblCTTrangThai
             // 
@@ -512,6 +532,66 @@
             this.dgvDanhSachNhanVien.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDanhSachNhanVien.ThemeStyle.RowsStyle.Height = 24;
             // 
+            // stt
+            // 
+            this.stt.HeaderText = "STT";
+            this.stt.MinimumWidth = 6;
+            this.stt.Name = "stt";
+            // 
+            // manhanvien
+            // 
+            this.manhanvien.HeaderText = "Mã Nhân Viên";
+            this.manhanvien.MinimumWidth = 6;
+            this.manhanvien.Name = "manhanvien";
+            // 
+            // hovaten
+            // 
+            this.hovaten.HeaderText = "Họ Và Tên";
+            this.hovaten.MinimumWidth = 6;
+            this.hovaten.Name = "hovaten";
+            // 
+            // ngaysinh
+            // 
+            this.ngaysinh.HeaderText = "Ngày Sinh";
+            this.ngaysinh.MinimumWidth = 6;
+            this.ngaysinh.Name = "ngaysinh";
+            // 
+            // sodienthoai
+            // 
+            this.sodienthoai.HeaderText = "Số Điện Thoại";
+            this.sodienthoai.MinimumWidth = 6;
+            this.sodienthoai.Name = "sodienthoai";
+            // 
+            // gioitinh
+            // 
+            this.gioitinh.HeaderText = "Giới Tính";
+            this.gioitinh.MinimumWidth = 6;
+            this.gioitinh.Name = "gioitinh";
+            // 
+            // email
+            // 
+            this.email.HeaderText = "Email";
+            this.email.MinimumWidth = 6;
+            this.email.Name = "email";
+            // 
+            // chucvu
+            // 
+            this.chucvu.HeaderText = "Chức Vụ";
+            this.chucvu.MinimumWidth = 6;
+            this.chucvu.Name = "chucvu";
+            // 
+            // thaotac
+            // 
+            this.thaotac.HeaderText = "Thao Tác";
+            this.thaotac.MinimumWidth = 6;
+            this.thaotac.Name = "thaotac";
+            // 
+            // trangthai
+            // 
+            this.trangthai.HeaderText = "Trạng Thái";
+            this.trangthai.MinimumWidth = 6;
+            this.trangthai.Name = "trangthai";
+            // 
             // pnlDanhSach
             // 
             this.pnlDanhSach.Controls.Add(this.btnXuatExcel);
@@ -599,6 +679,36 @@
             this.pnlTimKiem.Name = "pnlTimKiem";
             this.pnlTimKiem.Size = new System.Drawing.Size(959, 183);
             this.pnlTimKiem.TabIndex = 5;
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.dtpNgaySinh.DefaultText = "";
+            this.dtpNgaySinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.dtpNgaySinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.dtpNgaySinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.dtpNgaySinh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.dtpNgaySinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgaySinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.dtpNgaySinh.Location = new System.Drawing.Point(580, 132);
+            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.PlaceholderText = "";
+            this.dtpNgaySinh.SelectedText = "";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(206, 33);
+            this.dtpNgaySinh.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(576, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 19);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Ngày Sinh";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnLamMoi
             // 
@@ -759,116 +869,6 @@
             this.picTaiXe.TabIndex = 8;
             this.picTaiXe.TabStop = false;
             // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dtpNgaySinh.DefaultText = "";
-            this.dtpNgaySinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.dtpNgaySinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.dtpNgaySinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.dtpNgaySinh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.dtpNgaySinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpNgaySinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.dtpNgaySinh.Location = new System.Drawing.Point(580, 132);
-            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.PlaceholderText = "";
-            this.dtpNgaySinh.SelectedText = "";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(206, 33);
-            this.dtpNgaySinh.TabIndex = 13;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(576, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 19);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Ngày Sinh";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // stt
-            // 
-            this.stt.HeaderText = "STT";
-            this.stt.MinimumWidth = 6;
-            this.stt.Name = "stt";
-            // 
-            // manhanvien
-            // 
-            this.manhanvien.HeaderText = "Mã Nhân Viên";
-            this.manhanvien.MinimumWidth = 6;
-            this.manhanvien.Name = "manhanvien";
-            // 
-            // hovaten
-            // 
-            this.hovaten.HeaderText = "Họ Và Tên";
-            this.hovaten.MinimumWidth = 6;
-            this.hovaten.Name = "hovaten";
-            // 
-            // ngaysinh
-            // 
-            this.ngaysinh.HeaderText = "Ngày Sinh";
-            this.ngaysinh.MinimumWidth = 6;
-            this.ngaysinh.Name = "ngaysinh";
-            // 
-            // sodienthoai
-            // 
-            this.sodienthoai.HeaderText = "Số Điện Thoại";
-            this.sodienthoai.MinimumWidth = 6;
-            this.sodienthoai.Name = "sodienthoai";
-            // 
-            // gioitinh
-            // 
-            this.gioitinh.HeaderText = "Giới Tính";
-            this.gioitinh.MinimumWidth = 6;
-            this.gioitinh.Name = "gioitinh";
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Email";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            // 
-            // chucvu
-            // 
-            this.chucvu.HeaderText = "Chức Vụ";
-            this.chucvu.MinimumWidth = 6;
-            this.chucvu.Name = "chucvu";
-            // 
-            // thaotac
-            // 
-            this.thaotac.HeaderText = "Thao Tác";
-            this.thaotac.MinimumWidth = 6;
-            this.thaotac.Name = "thaotac";
-            // 
-            // trangthai
-            // 
-            this.trangthai.HeaderText = "Trạng Thái";
-            this.trangthai.MinimumWidth = 6;
-            this.trangthai.Name = "trangthai";
-            // 
-            // lblCTEmail
-            // 
-            this.lblCTEmail.AutoSize = true;
-            this.lblCTEmail.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCTEmail.Location = new System.Drawing.Point(35, 446);
-            this.lblCTEmail.Name = "lblCTEmail";
-            this.lblCTEmail.Size = new System.Drawing.Size(60, 19);
-            this.lblCTEmail.TabIndex = 58;
-            this.lblCTEmail.Text = "Email:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(133, 525);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 19);
-            this.label7.TabIndex = 59;
-            this.label7.Text = "Đang Làm Việc";
-            // 
             // QUẢN_LÝ_NHÂN_VIÊN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -880,6 +880,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "QUẢN_LÝ_NHÂN_VIÊN";
             this.Text = "QUẢN_LÝ_NHÂN_VIÊN";
+            this.Load += new System.EventHandler(this.QUẢN_LÝ_NHÂN_VIÊN_Load);
             this.pnlmenu.ResumeLayout(false);
             this.pnlNoiDung.ResumeLayout(false);
             this.pnlNoiDung.PerformLayout();
