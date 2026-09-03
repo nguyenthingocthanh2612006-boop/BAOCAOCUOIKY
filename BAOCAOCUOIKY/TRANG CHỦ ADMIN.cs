@@ -14,6 +14,7 @@ namespace BAOCAOCUOIKY
 {
     public partial class FrmTrangChuAdmin : Form
     {
+        private Timer timer;
         public FrmTrangChuAdmin()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace BAOCAOCUOIKY
             HienThiThongTinHeThong();
             HienThiChuyenXeSapKhoiHanh();
         }
+
 
         private void LoadThongKe()
         {
@@ -464,5 +466,45 @@ namespace BAOCAOCUOIKY
             FrmQuanLyXe frm = new FrmQuanLyXe();
             frm.Show();
         }
+
+        private void FrmTrangChuAdmin_Load(object sender, EventArgs e)
+        {
+            CapNhatNgayGio();
+
+            // Tạo đồng hồ cập nhật mỗi giây
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            CapNhatNgayGio();
+        }
+
+        private void CapNhatNgayGio()
+        {
+            DateTime now = DateTime.Now;
+
+            string[] thu =
+            {
+        "Chủ nhật",
+        "Thứ 2",
+        "Thứ 3",
+        "Thứ 4",
+        "Thứ 5",
+        "Thứ 6",
+        "Thứ 7"
+    };
+
+            lblNgay.Text = thu[(int)now.DayOfWeek]
+                           + ", " + now.ToString("dd/MM/yyyy");
+
+            lblGio.Text = now.ToString("HH:mm:ss");
+
+            lblAdmin.Text = "ADMIN";
+        }
+
     }
 }

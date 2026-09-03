@@ -62,6 +62,16 @@
             this.btnCapNhatTT = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvDanhSachNhanVien = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hovaten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sodienthoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chucvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlDanhSach = new Guna.UI2.WinForms.Guna2Panel();
             this.btnThemNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.lblDanhSach = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -91,16 +101,9 @@
             this.btnTrangChu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.manhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hovaten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sodienthoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chucvu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.pnlNoiDung.SuspendLayout();
             this.pnlChiTiet.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -113,7 +116,10 @@
             // 
             // pnlNoiDung
             // 
+            this.pnlNoiDung.Controls.Add(this.label18);
+            this.pnlNoiDung.Controls.Add(this.label17);
             this.pnlNoiDung.Controls.Add(this.lblAdmin);
+            this.pnlNoiDung.Controls.Add(this.label10);
             this.pnlNoiDung.Controls.Add(this.lblGio);
             this.pnlNoiDung.Controls.Add(this.lblNgay);
             this.pnlNoiDung.Controls.Add(this.lblTieuDe);
@@ -565,6 +571,85 @@
             this.dgvDanhSachNhanVien.ThemeStyle.RowsStyle.Height = 24;
             this.dgvDanhSachNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachNhanVien_CellContentClick);
             // 
+            // stt
+            // 
+            this.stt.FillWeight = 213.9038F;
+            this.stt.HeaderText = "STT";
+            this.stt.MinimumWidth = 6;
+            this.stt.Name = "stt";
+            this.stt.Width = 40;
+            // 
+            // manhanvien
+            // 
+            this.manhanvien.FillWeight = 0.437992F;
+            this.manhanvien.HeaderText = "Mã Nhân Viên";
+            this.manhanvien.MinimumWidth = 6;
+            this.manhanvien.Name = "manhanvien";
+            this.manhanvien.Width = 125;
+            // 
+            // hovaten
+            // 
+            this.hovaten.FillWeight = 1.972517F;
+            this.hovaten.HeaderText = "Họ Và Tên";
+            this.hovaten.MinimumWidth = 6;
+            this.hovaten.Name = "hovaten";
+            this.hovaten.Width = 110;
+            // 
+            // gioitinh
+            // 
+            this.gioitinh.FillWeight = 9.656612F;
+            this.gioitinh.HeaderText = "Giới Tính";
+            this.gioitinh.MinimumWidth = 6;
+            this.gioitinh.Name = "gioitinh";
+            this.gioitinh.Width = 50;
+            // 
+            // ngaysinh
+            // 
+            this.ngaysinh.FillWeight = 3.209439F;
+            this.ngaysinh.HeaderText = "Ngày Sinh";
+            this.ngaysinh.MinimumWidth = 6;
+            this.ngaysinh.Name = "ngaysinh";
+            this.ngaysinh.Width = 125;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 130;
+            // 
+            // sodienthoai
+            // 
+            this.sodienthoai.FillWeight = 8.509249F;
+            this.sodienthoai.HeaderText = "Số Điện Thoại";
+            this.sodienthoai.MinimumWidth = 6;
+            this.sodienthoai.Name = "sodienthoai";
+            this.sodienthoai.Width = 125;
+            // 
+            // email
+            // 
+            this.email.FillWeight = 54.80978F;
+            this.email.HeaderText = "Email";
+            this.email.MinimumWidth = 6;
+            this.email.Name = "email";
+            this.email.Width = 125;
+            // 
+            // chucvu
+            // 
+            this.chucvu.FillWeight = 141.1282F;
+            this.chucvu.HeaderText = "Chức Vụ";
+            this.chucvu.MinimumWidth = 6;
+            this.chucvu.Name = "chucvu";
+            this.chucvu.Width = 125;
+            // 
+            // trangthai
+            // 
+            this.trangthai.FillWeight = 314.1137F;
+            this.trangthai.HeaderText = "Trạng Thái";
+            this.trangthai.MinimumWidth = 6;
+            this.trangthai.Name = "trangthai";
+            this.trangthai.Width = 130;
+            // 
             // pnlDanhSach
             // 
             this.pnlDanhSach.Controls.Add(this.btnThemNhanVien);
@@ -990,79 +1075,35 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // stt
+            // label10
             // 
-            this.stt.FillWeight = 213.9038F;
-            this.stt.HeaderText = "STT";
-            this.stt.MinimumWidth = 6;
-            this.stt.Name = "stt";
-            this.stt.Width = 40;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(608, -22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(137, 19);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Thứ 3,31/08/2026";
             // 
-            // manhanvien
+            // label17
             // 
-            this.manhanvien.FillWeight = 0.437992F;
-            this.manhanvien.HeaderText = "Mã Nhân Viên";
-            this.manhanvien.MinimumWidth = 6;
-            this.manhanvien.Name = "manhanvien";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(751, -22);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(75, 19);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "09:30:15";
             // 
-            // hovaten
+            // label18
             // 
-            this.hovaten.FillWeight = 1.972517F;
-            this.hovaten.HeaderText = "Họ Và Tên";
-            this.hovaten.MinimumWidth = 6;
-            this.hovaten.Name = "hovaten";
-            this.hovaten.Width = 110;
-            // 
-            // gioitinh
-            // 
-            this.gioitinh.FillWeight = 9.656612F;
-            this.gioitinh.HeaderText = "Giới Tính";
-            this.gioitinh.MinimumWidth = 6;
-            this.gioitinh.Name = "gioitinh";
-            this.gioitinh.Width = 50;
-            // 
-            // ngaysinh
-            // 
-            this.ngaysinh.FillWeight = 3.209439F;
-            this.ngaysinh.HeaderText = "Ngày Sinh";
-            this.ngaysinh.MinimumWidth = 6;
-            this.ngaysinh.Name = "ngaysinh";
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 130;
-            // 
-            // sodienthoai
-            // 
-            this.sodienthoai.FillWeight = 8.509249F;
-            this.sodienthoai.HeaderText = "Số Điện Thoại";
-            this.sodienthoai.MinimumWidth = 6;
-            this.sodienthoai.Name = "sodienthoai";
-            // 
-            // email
-            // 
-            this.email.FillWeight = 54.80978F;
-            this.email.HeaderText = "Email";
-            this.email.MinimumWidth = 6;
-            this.email.Name = "email";
-            // 
-            // chucvu
-            // 
-            this.chucvu.FillWeight = 141.1282F;
-            this.chucvu.HeaderText = "Chức Vụ";
-            this.chucvu.MinimumWidth = 6;
-            this.chucvu.Name = "chucvu";
-            // 
-            // trangthai
-            // 
-            this.trangthai.FillWeight = 314.1137F;
-            this.trangthai.HeaderText = "Trạng Thái";
-            this.trangthai.MinimumWidth = 6;
-            this.trangthai.Name = "trangthai";
-            this.trangthai.Width = 130;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(832, -22);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(66, 19);
+            this.label18.TabIndex = 14;
+            this.label18.Text = "ADMIN";
             // 
             // FrmNhanVien
             // 
@@ -1160,5 +1201,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn chucvu;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangthai;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label10;
     }
 }
