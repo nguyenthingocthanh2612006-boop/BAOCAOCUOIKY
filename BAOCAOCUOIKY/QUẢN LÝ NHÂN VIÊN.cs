@@ -13,6 +13,7 @@ namespace BAOCAOCUOIKY
 {
     public partial class FrmNhanVien : Form
     {
+        private Timer timer;
         private string maNhanVienDangChon = ""; 
         QuanLyVeXeModel db = new QuanLyVeXeModel();
         public FrmNhanVien()
@@ -27,6 +28,43 @@ namespace BAOCAOCUOIKY
             LoadNhanVien();
             LoadComboBox();
             XoaChiTiet();
+
+            // Hiển thị ngày giờ ngay khi mở form
+            CapNhatNgayGio();
+
+            // Tạo đồng hồ cập nhật mỗi giây
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            CapNhatNgayGio();
+        }
+
+        private void CapNhatNgayGio()
+        {
+            DateTime now = DateTime.Now;
+
+            string[] thu =
+            {
+        "Chủ nhật",
+        "Thứ 2",
+        "Thứ 3",
+        "Thứ 4",
+        "Thứ 5",
+        "Thứ 6",
+        "Thứ 7"
+    };
+
+            lblNgay.Text = thu[(int)now.DayOfWeek]
+                           + ", " + now.ToString("dd/MM/yyyy");
+
+            lblGio.Text = now.ToString("HH:mm:ss");
+
+            lblAdmin.Text = "ADMIN";
         }
 
         private void LoadNhanVien()
@@ -438,42 +476,6 @@ namespace BAOCAOCUOIKY
             }
         }
 
-        private void btnInThongTin_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(maNhanVienDangChon))
-            {
-                MessageBox.Show(
-                    "Vui lòng chọn nhân viên cần in!",
-                    "Thông báo",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
-                return;
-            }
-
-            var nv = db.NhanViens
-                .FirstOrDefault(x =>
-                    x.MaNV == maNhanVienDangChon);
-
-            if (nv == null)
-                return;
-
-            MessageBox.Show(
-                "THÔNG TIN NHÂN VIÊN\n\n" +
-                "Mã nhân viên: " + nv.MaNV + "\n" +
-                "Họ và tên: " + nv.HoTen + "\n" +
-                "Ngày sinh: " +
-                (nv.NgaySinh.HasValue
-                    ? nv.NgaySinh.Value.ToString("dd/MM/yyyy")
-                    : "") + "\n" +
-                "Giới tính: " + nv.GioiTinh + "\n" +
-                "Số điện thoại: " + nv.SoDienThoai + "\n" +
-                "Địa chỉ: " + nv.DiaChi + "\n" +
-                "Email: " + nv.Email + "\n" +
-                "Chức vụ: " + nv.ChucVu + "\n" +
-                "Trạng thái: " + nv.TrangThai,
-                "Thông tin nhân viên");
-        }
 
         private void dgvDanhSachNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
