@@ -86,6 +86,34 @@
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnlHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.std = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hanhkhach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giodi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tuyenxe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaydi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chuyenxe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sove = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlMain = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTieuDe = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnltehethong = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label33 = new System.Windows.Forms.Label();
@@ -149,7 +177,7 @@
             this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlMain
+            // pnltehethong
             // 
             this.pnlMain.Controls.Add(this.label51);
             this.pnlMain.Controls.Add(this.label50);
@@ -685,7 +713,7 @@
             this.guna2Panel2.TabIndex = 2;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
-            // guna2Button5
+            // guna2HtmlLabel10
             // 
             this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -701,7 +729,7 @@
             this.guna2Button5.Text = "Xuất Excel";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
-            // guna2Button4
+            // guna2PictureBox1
             // 
             this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -717,7 +745,7 @@
             this.guna2Button4.Text = "TÌM KÍM /LỌC VÉ";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2Button3
+            // pnlHeader
             // 
             this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -774,7 +802,7 @@
             this.guna2Button1.Text = "LÀM MỚI";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2Button2
+            // guna2TextBox2
             // 
             this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -810,7 +838,7 @@
             this.guna2TextBox3.TabIndex = 3;
             this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
-            // guna2TextBox2
+            // guna2Button2
             // 
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "";
@@ -830,7 +858,7 @@
             this.guna2TextBox2.TabIndex = 3;
             this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
-            // guna2DateTimePicker2
+            // guna2Button1
             // 
             this.guna2DateTimePicker2.Checked = true;
             this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
@@ -845,7 +873,7 @@
             this.guna2DateTimePicker2.Value = new System.DateTime(2026, 8, 26, 17, 39, 50, 125);
             this.guna2DateTimePicker2.ValueChanged += new System.EventHandler(this.guna2DateTimePicker2_ValueChanged);
             // 
-            // guna2DateTimePicker1
+            // guna2Panel4
             // 
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
@@ -860,7 +888,7 @@
             this.guna2DateTimePicker1.Value = new System.DateTime(2026, 8, 26, 17, 39, 47, 59);
             this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
             // 
-            // guna2ComboBox3
+            // guna2Panel2
             // 
             this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -876,7 +904,7 @@
             this.guna2ComboBox3.TabIndex = 2;
             this.guna2ComboBox3.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
             // 
-            // guna2ComboBox2
+            // guna2Button3
             // 
             this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -892,7 +920,7 @@
             this.guna2ComboBox2.TabIndex = 2;
             this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             // 
-            // guna2ComboBox1
+            // guna2Button4
             // 
             this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -910,6 +938,15 @@
             // 
             // pnlHeader
             // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(9, 61);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(60, 18);
+            this.guna2HtmlLabel2.TabIndex = 2;
+            this.guna2HtmlLabel2.Text = "Tuyến Xe";
+            // 
+            // guna2HtmlLabel3
+            // 
             this.pnlHeader.Controls.Add(this.guna2Panel3);
             this.pnlHeader.Controls.Add(this.lblTieuDe);
             this.pnlHeader.Location = new System.Drawing.Point(215, 0);
@@ -918,7 +955,7 @@
             this.pnlHeader.TabIndex = 0;
             this.pnlHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHeader_Paint);
             // 
-            // guna2Panel3
+            // guna2HtmlLabel4
             // 
             this.guna2Panel3.Location = new System.Drawing.Point(698, 71);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -926,7 +963,7 @@
             this.guna2Panel3.TabIndex = 4;
             this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
-            // lblTieuDe
+            // guna2HtmlLabel5
             // 
             this.lblTieuDe.BackColor = System.Drawing.Color.Transparent;
             this.lblTieuDe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -938,7 +975,7 @@
             this.lblTieuDe.Text = "QUẢN LÝ VÉ";
             this.lblTieuDe.Click += new System.EventHandler(this.lblTieuDe_Click);
             // 
-            // pnltehethong
+            // guna2HtmlLabel6
             // 
             this.pnltehethong.BackColor = System.Drawing.Color.Transparent;
             this.pnltehethong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1471,8 +1508,21 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Panel pnlMain;
+        private Guna.UI2.WinForms.Guna2HtmlLabel pnltehethong;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
+        private Guna.UI2.WinForms.Guna2Button btnQuanLyVe;
+        private Guna.UI2.WinForms.Guna2Button btnNhanVien;
+        private Guna.UI2.WinForms.Guna2Button btnThongKe;
+        private Guna.UI2.WinForms.Guna2Button btnTaiXe;
+        private Guna.UI2.WinForms.Guna2Button btnXe;
+        private Guna.UI2.WinForms.Guna2Button btnTuyenXe;
+        private Guna.UI2.WinForms.Guna2Button btnChuyenXe;
+        private Guna.UI2.WinForms.Guna2Button btnDangXuat;
+        private Guna.UI2.WinForms.Guna2Button btnTrangChu;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel pnlHeader;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTieuDe;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel pnltehethong;
@@ -1488,7 +1538,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
