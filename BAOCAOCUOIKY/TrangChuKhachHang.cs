@@ -37,14 +37,15 @@ namespace BAOCAOCUOIKY
             cboNoiDen.Items.AddRange(diaDiem);
             cboNoiDi.SelectedIndex = -1;
             cboNoiDen.SelectedIndex = -1;
+
             // Chọn mặc định 1 vé
             cboSoLuongVe.Items.Clear();
-
             for (int i = 1; i <= 29; i++)
             {
                 cboSoLuongVe.Items.Add(i + " vé");
             }
             cboSoLuongVe.SelectedIndex = 0;
+
             // Ngày đi
             dtpNgayDi.MinDate = DateTime.Today;
             dtpNgayDi.Value = DateTime.Today;
@@ -77,7 +78,6 @@ namespace BAOCAOCUOIKY
             lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
-            // MỞ FORM ĐẶT VÉ
             FrmDatVe frm = new FrmDatVe("", "", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
@@ -132,7 +132,6 @@ namespace BAOCAOCUOIKY
             lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.FromArgb(0, 102, 204);
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Bold);
-            
         }
 
         private void btnTim_Click(object sender, EventArgs e)
@@ -163,7 +162,6 @@ namespace BAOCAOCUOIKY
             string soLuongVe = cboSoLuongVe.Text;
             // Mở form Tra Cứu Vé và truyền thông tin qua
             FrmTraCuuVe frm = new FrmTraCuuVe();
-           
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -171,7 +169,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe1_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe("Cao Lãnh","Sa Đéc",DateTime.Today);
+            FrmDatVe frm = new FrmDatVe("Bến xe Cao Lãnh", "Bến xe Sa Đéc", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -179,7 +177,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe2_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe("Cao Lãnh", "Hồng Ngự", DateTime.Today);
+            FrmDatVe frm = new FrmDatVe("Bến xe Cao Lãnh", "Bến xe Hồng Ngự", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -187,7 +185,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe3_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe("Sa Đéc","Lai Vung", DateTime.Today);
+            FrmDatVe frm = new FrmDatVe("Bến xe Sa Đéc", "Bến xe Lai Vung", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -195,7 +193,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe4_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe("Sa Đéc", "Lấp Vò", DateTime.Today);
+            FrmDatVe frm = new FrmDatVe("Bến xe Sa Đéc", "Bến xe Lấp Vò", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();
@@ -203,7 +201,7 @@ namespace BAOCAOCUOIKY
 
         private void btnDatVe5_Click(object sender, EventArgs e)
         {
-            FrmDatVe frm = new FrmDatVe("Cao Lãnh", "Lai Vung", DateTime.Today);
+            FrmDatVe frm = new FrmDatVe("Bến xe Cao Lãnh", "Bến xe Lai Vung", DateTime.Today);
             this.Hide();
             frm.ShowDialog();
             this.Show();

@@ -47,6 +47,11 @@
     <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.8.0.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.8.0\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
@@ -67,6 +72,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DangKy.cs">
@@ -80,6 +86,12 @@
     </Compile>
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaQRThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaQRThanhToan.Designer.cs">
+      <DependentUpon>MaQRThanhToan.cs</DependentUpon>
     </Compile>
     <Compile Include="QUẢN LÝ NHÂN VIÊN.cs">
       <SubType>Form</SubType>
@@ -99,12 +111,18 @@
     <Compile Include="QUẢN LÝ XE.Designer.cs">
       <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongTinDangNhap.cs" />
-    <Compile Include="TraCuuVe.cs">
+    <Compile Include="ThanhToanKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TraCuuVe.Designer.cs">
-      <DependentUpon>TraCuuVe.cs</DependentUpon>
+    <Compile Include="ThanhToanKhachHang.Designer.cs">
+      <DependentUpon>ThanhToanKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinDangNhap.cs" />
+    <Compile Include="TraCuuVeKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraCuuVeKhachHang.Designer.cs">
+      <DependentUpon>TraCuuVeKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="TRANG CHỦ ADMIN.cs">
       <SubType>Form</SubType>
@@ -124,23 +142,23 @@
     <Compile Include="TuyenXe.Designer.cs">
       <DependentUpon>TuyenXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatVe.cs">
+    <Compile Include="DatVeKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatVe.Designer.cs">
-      <DependentUpon>DatVe.cs</DependentUpon>
+    <Compile Include="DatVeKhachHang.Designer.cs">
+      <DependentUpon>DatVeKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhachHang.cs">
+    <Compile Include="TrangChuKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KhachHang.Designer.cs">
-      <DependentUpon>KhachHang.cs</DependentUpon>
+    <Compile Include="TrangChuKhachHang.Designer.cs">
+      <DependentUpon>TrangChuKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="HÓA ĐƠN.cs">
+    <Compile Include="HoaDonKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HÓA ĐƠN.Designer.cs">
-      <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
+    <Compile Include="HoaDonKhachHang.Designer.cs">
+      <DependentUpon>HoaDonKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\BenXe.cs" />
     <Compile Include="Models\ChiTietHoaDon.cs" />
@@ -155,11 +173,11 @@
     <Compile Include="Models\TuyenXe.cs" />
     <Compile Include="Models\VeXe.cs" />
     <Compile Include="Models\Xe.cs" />
-    <Compile Include="NV BÁN VÉ.cs">
+    <Compile Include="NhanVienBanVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NV BÁN VÉ.Designer.cs">
-      <DependentUpon>NV BÁN VÉ.cs</DependentUpon>
+    <Compile Include="NhanVienBanVe.Designer.cs">
+      <DependentUpon>NhanVienBanVe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -181,23 +199,35 @@
     <Compile Include="TRANG CHỦ NHÂN VIÊN.Designer.cs">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
     </Compile>
+    <Compile Include="XacNhanMa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XacNhanMa.Designer.cs">
+      <DependentUpon>XacNhanMa.cs</DependentUpon>
+    </Compile>
     <Compile Include="XUẤT HÓA ĐƠN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="XUẤT HÓA ĐƠN.Designer.cs">
       <DependentUpon>XUẤT HÓA ĐƠN.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DatVe.resx">
-      <DependentUpon>DatVe.cs</DependentUpon>
+    <EmbeddedResource Include="DatVeKhachHang.resx">
+      <DependentUpon>DatVeKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HÓA ĐƠN.resx">
-      <DependentUpon>HÓA ĐƠN.cs</DependentUpon>
+    <EmbeddedResource Include="HoaDonKhachHang.resx">
+      <DependentUpon>HoaDonKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NV BÁN VÉ.resx">
-      <DependentUpon>NV BÁN VÉ.cs</DependentUpon>
+    <EmbeddedResource Include="MaQRThanhToan.resx">
+      <DependentUpon>MaQRThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienBanVe.resx">
+      <DependentUpon>NhanVienBanVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -221,11 +251,14 @@
     <EmbeddedResource Include="QUẢN LÝ XE.resx">
       <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToanKhachHang.resx">
+      <DependentUpon>ThanhToanKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TRA CỨU CHUYẾN XE.resx">
       <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TraCuuVe.resx">
-      <DependentUpon>TraCuuVe.cs</DependentUpon>
+    <EmbeddedResource Include="TraCuuVeKhachHang.resx">
+      <DependentUpon>TraCuuVeKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TRANG CHỦ ADMIN.resx">
       <DependentUpon>TRANG CHỦ ADMIN.cs</DependentUpon>
@@ -233,8 +266,14 @@
     <EmbeddedResource Include="TRANG CHỦ NHÂN VIÊN.resx">
       <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TrangChuKhachHang.resx">
+      <DependentUpon>TrangChuKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TUYENXE.resx">
       <DependentUpon>TuyenXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XacNhanMa.resx">
+      <DependentUpon>XacNhanMa.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -285,6 +324,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hiiiiiiii.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\Mã QR thanh toán.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -119,7 +119,7 @@
             this.lblMatKhau.AutoSize = false;
             this.lblMatKhau.BackColor = System.Drawing.Color.Transparent;
             this.lblMatKhau.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatKhau.Location = new System.Drawing.Point(159, 262);
+            this.lblMatKhau.Location = new System.Drawing.Point(159, 252);
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(100, 28);
             this.lblMatKhau.TabIndex = 15;
@@ -130,7 +130,7 @@
             this.lblDangNhap.AutoSize = false;
             this.lblDangNhap.BackColor = System.Drawing.Color.Transparent;
             this.lblDangNhap.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDangNhap.Location = new System.Drawing.Point(159, 155);
+            this.lblDangNhap.Location = new System.Drawing.Point(159, 158);
             this.lblDangNhap.Name = "lblDangNhap";
             this.lblDangNhap.Size = new System.Drawing.Size(200, 28);
             this.lblDangNhap.TabIndex = 13;

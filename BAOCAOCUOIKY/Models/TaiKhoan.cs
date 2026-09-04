@@ -24,6 +24,12 @@ namespace BAOCAOCUOIKY.Models
         [StringLength(255)]
         public string MatKhau { get; set; }
 
+        [StringLength(15)]
+        public string SoDienThoai { get; set; }
+
+        [StringLength(100)]
+        public string Email { get; set; }
+
         [Required]
         [StringLength(30)]
         public string Quyen { get; set; }

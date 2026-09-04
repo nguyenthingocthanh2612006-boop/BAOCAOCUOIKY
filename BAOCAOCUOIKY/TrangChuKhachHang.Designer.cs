@@ -57,6 +57,7 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTuyen1 = new System.Windows.Forms.Label();
             this.btnDatVe1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblGio1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblGia1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -65,17 +66,20 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblGia2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblGio2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTuyen3 = new System.Windows.Forms.Label();
             this.lblGia3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnDatVe3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblGio3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTuyen4 = new System.Windows.Forms.Label();
             this.lblGia4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblGio4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnDatVe4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblTieuDe7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTieuDe9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTieuDe16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -96,16 +100,16 @@
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlBanner1.SuspendLayout();
             this.guna2GradientPanel6.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2GradientPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.guna2GradientPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.guna2GradientPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
@@ -113,10 +117,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTieuDe
@@ -208,7 +208,7 @@
             this.pnlBanner1.Controls.Add(this.lblTieuDe1);
             this.pnlBanner1.Location = new System.Drawing.Point(12, 79);
             this.pnlBanner1.Name = "pnlBanner1";
-            this.pnlBanner1.Size = new System.Drawing.Size(1277, 248);
+            this.pnlBanner1.Size = new System.Drawing.Size(1331, 248);
             this.pnlBanner1.TabIndex = 11;
             // 
             // guna2GradientPanel6
@@ -224,7 +224,7 @@
             this.guna2GradientPanel6.Controls.Add(this.lblNoiDi);
             this.guna2GradientPanel6.Location = new System.Drawing.Point(0, 148);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
-            this.guna2GradientPanel6.Size = new System.Drawing.Size(1277, 100);
+            this.guna2GradientPanel6.Size = new System.Drawing.Size(1331, 100);
             this.guna2GradientPanel6.TabIndex = 14;
             // 
             // cboSoLuongVe
@@ -295,7 +295,7 @@
             this.btnTim.FillColor2 = System.Drawing.Color.Lime;
             this.btnTim.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTim.ForeColor = System.Drawing.Color.White;
-            this.btnTim.Location = new System.Drawing.Point(1131, 24);
+            this.btnTim.Location = new System.Drawing.Point(1155, 25);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(130, 43);
             this.btnTim.TabIndex = 50;
@@ -335,12 +335,12 @@
             this.cboNoiDen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboNoiDen.ItemHeight = 30;
             this.cboNoiDen.Items.AddRange(new object[] {
-            "Cao Lãnh",
-            "Sa Đéc",
-            "Hồng Ngự",
-            "Lai Vung",
-            "Lấp Vò",
-            "Tam Nông"});
+            "Bến xe Cao Lãnh",
+            "Bến xe Sa Đéc",
+            "Bến xe Hồng Ngự",
+            "Bến xe Lai Vung",
+            "Bến xe Lấp Vò",
+            "Bến xe Tam Nông"});
             this.cboNoiDen.Location = new System.Drawing.Point(317, 49);
             this.cboNoiDen.Name = "cboNoiDen";
             this.cboNoiDen.Size = new System.Drawing.Size(251, 36);
@@ -357,12 +357,12 @@
             this.cboNoiDi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboNoiDi.ItemHeight = 30;
             this.cboNoiDi.Items.AddRange(new object[] {
-            "Cao Lãnh",
-            "Sa Đéc",
-            "Hồng Ngự",
-            "Lai Vung",
-            "Lấp Vò",
-            "Tam Nông"});
+            "Bến xe Cao Lãnh",
+            "Bến xe Sa Đéc",
+            "Bến xe Hồng Ngự",
+            "Bến xe Lai Vung",
+            "Bến xe Lấp Vò",
+            "Bến xe Tam Nông"});
             this.cboNoiDi.Location = new System.Drawing.Point(16, 49);
             this.cboNoiDi.Name = "cboNoiDi";
             this.cboNoiDi.Size = new System.Drawing.Size(251, 36);
@@ -485,7 +485,7 @@
             this.guna2GradientPanel1.Controls.Add(this.guna2PictureBox2);
             this.guna2GradientPanel1.Controls.Add(this.lblGio1);
             this.guna2GradientPanel1.Controls.Add(this.lblGia1);
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(12, 463);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(43, 462);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(227, 271);
             this.guna2GradientPanel1.TabIndex = 28;
@@ -515,6 +515,15 @@
             this.btnDatVe1.TabIndex = 19;
             this.btnDatVe1.Text = "Đặt vé ngay";
             this.btnDatVe1.Click += new System.EventHandler(this.btnDatVe1_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(227, 120);
+            this.guna2PictureBox2.TabIndex = 32;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // lblGio1
             // 
@@ -547,7 +556,7 @@
             this.guna2GradientPanel2.Controls.Add(this.lblGia2);
             this.guna2GradientPanel2.Controls.Add(this.guna2PictureBox3);
             this.guna2GradientPanel2.Controls.Add(this.lblGio2);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(278, 463);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(309, 462);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.Size = new System.Drawing.Size(227, 271);
             this.guna2GradientPanel2.TabIndex = 29;
@@ -609,6 +618,15 @@
             this.lblGia2.TabIndex = 53;
             this.lblGia2.Text = "Giá vé từ 50.000đ ";
             // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(227, 120);
+            this.guna2PictureBox3.TabIndex = 32;
+            this.guna2PictureBox3.TabStop = false;
+            // 
             // lblGio2
             // 
             this.lblGio2.AutoSize = false;
@@ -627,7 +645,7 @@
             this.guna2GradientPanel3.Controls.Add(this.btnDatVe3);
             this.guna2GradientPanel3.Controls.Add(this.guna2PictureBox4);
             this.guna2GradientPanel3.Controls.Add(this.lblGio3);
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(541, 463);
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(572, 462);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
             this.guna2GradientPanel3.Size = new System.Drawing.Size(227, 271);
             this.guna2GradientPanel3.TabIndex = 29;
@@ -669,6 +687,15 @@
             this.btnDatVe3.Text = "Đặt vé ngay";
             this.btnDatVe3.Click += new System.EventHandler(this.btnDatVe3_Click);
             // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(227, 120);
+            this.guna2PictureBox4.TabIndex = 32;
+            this.guna2PictureBox4.TabStop = false;
+            // 
             // lblGio3
             // 
             this.lblGio3.AutoSize = false;
@@ -687,7 +714,7 @@
             this.guna2GradientPanel4.Controls.Add(this.lblGio4);
             this.guna2GradientPanel4.Controls.Add(this.btnDatVe4);
             this.guna2GradientPanel4.Controls.Add(this.guna2PictureBox5);
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(801, 463);
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(832, 462);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.Size = new System.Drawing.Size(227, 271);
             this.guna2GradientPanel4.TabIndex = 29;
@@ -740,6 +767,15 @@
             this.btnDatVe4.Text = "Đặt vé ngay";
             this.btnDatVe4.Click += new System.EventHandler(this.btnDatVe4_Click);
             // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(227, 120);
+            this.guna2PictureBox5.TabIndex = 32;
+            this.guna2PictureBox5.TabStop = false;
+            // 
             // lblTieuDe7
             // 
             this.lblTieuDe7.AutoSize = false;
@@ -790,7 +826,7 @@
             this.guna2GradientPanel5.Controls.Add(this.lblGia5);
             this.guna2GradientPanel5.Controls.Add(this.lblGio5);
             this.guna2GradientPanel5.Controls.Add(this.btnDatVe5);
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(1062, 463);
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(1093, 462);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.Size = new System.Drawing.Size(227, 271);
             this.guna2GradientPanel5.TabIndex = 43;
@@ -841,6 +877,7 @@
             this.btnDatVe5.Size = new System.Drawing.Size(205, 43);
             this.btnDatVe5.TabIndex = 38;
             this.btnDatVe5.Text = "Đặt vé ngay";
+            this.btnDatVe5.Click += new System.EventHandler(this.btnDatVe5_Click);
             // 
             // lblTieuDe5
             // 
@@ -900,7 +937,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(1062, 463);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(1093, 462);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(227, 120);
             this.guna2PictureBox1.TabIndex = 44;
@@ -956,47 +993,11 @@
             this.guna2CirclePictureBox1.TabIndex = 30;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(227, 120);
-            this.guna2PictureBox5.TabIndex = 32;
-            this.guna2PictureBox5.TabStop = false;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(227, 120);
-            this.guna2PictureBox4.TabIndex = 32;
-            this.guna2PictureBox4.TabStop = false;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(227, 120);
-            this.guna2PictureBox3.TabIndex = 32;
-            this.guna2PictureBox3.TabStop = false;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(227, 120);
-            this.guna2PictureBox2.TabIndex = 32;
-            this.guna2PictureBox2.TabStop = false;
-            // 
             // FrmTrangChuKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1327, 745);
+            this.ClientSize = new System.Drawing.Size(1378, 745);
             this.Controls.Add(this.lblTenDangNhap);
             this.Controls.Add(this.lblTieuDe14);
             this.Controls.Add(this.lblTieuDe10);
@@ -1038,12 +1039,16 @@
             this.guna2GradientPanel6.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.guna2GradientPanel5.ResumeLayout(false);
             this.guna2GradientPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -1052,10 +1057,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

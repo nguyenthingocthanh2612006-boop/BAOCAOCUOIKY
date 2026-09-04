@@ -16,12 +16,14 @@ namespace BAOCAOCUOIKY
         public FrmDangNhap()
         {
             InitializeComponent();
+            txtMatKhau.PasswordChar = '*';
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string tenDangNhap = txtDangNhap.Text.Trim();
             string matKhau = txtMatKhau.Text;
+
             // Kiểm tra bỏ trống
             if (string.IsNullOrEmpty(tenDangNhap))
             {
@@ -41,17 +43,21 @@ namespace BAOCAOCUOIKY
                 {
                     // Tìm tài khoản trong SQL Server
                     var taiKhoan = db.TaiKhoans.FirstOrDefault(x => x.TenDangNhap == tenDangNhap && x.MatKhau == matKhau);
+                    
                     // Không tìm thấy
                     if (taiKhoan == null)
                     {
                         MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtDangNhap.Clear();
                         txtMatKhau.Clear();
                         txtMatKhau.Focus();
                         return;
                     }
+                    
                     // LƯU THÔNG TIN NGƯỜI ĐANG ĐĂNG NHẬP
                     ThongTinDangNhap.TenDangNhap = taiKhoan.TenDangNhap;
                     ThongTinDangNhap.Quyen = taiKhoan.Quyen;
+
                     // Kiểm tra trạng thái tài khoản
                     if (taiKhoan.TrangThai != "Đang hoạt động")
                     {
@@ -65,19 +71,17 @@ namespace BAOCAOCUOIKY
                         FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
                         frm.Show();
                         this.Hide();
-                    
                     }
 
                         // PHÂN QUYỀN NHÂN VIÊN
                     else if (taiKhoan.Quyen == "Nhân viên")
                     {
                         MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        // Mở trang chủ nhân viên
                         FrmTrangChuNhanVien frm = new FrmTrangChuNhanVien();
                         frm.Show();
-                        // Ẩn Form đăng nhập
                         this.Hide();
                     }
+
                     // PHÂN QUYỀN KHÁCH HÀNG
                     else if (taiKhoan.Quyen == "Khách hàng")
                     {
@@ -87,8 +91,7 @@ namespace BAOCAOCUOIKY
                         this.Hide();
                     }
                 }
-            }   
-                
+            }  
             
             catch (Exception ex)
             {
