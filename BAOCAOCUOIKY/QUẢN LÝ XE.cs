@@ -18,6 +18,7 @@ namespace BAOCAOCUOIKY
         {
             InitializeComponent();
             LoadDanhSachXe();
+            ChonMenu(btnXe);
 
             cboTrangThaiTT.Items.Clear();
             cboTrangThaiTT.Items.Add("Đang hoạt động");
@@ -26,6 +27,19 @@ namespace BAOCAOCUOIKY
             cboTrangThaiTT.SelectedIndex = -1;
 
             txtMaXeTT.ReadOnly = true;
+        }
+        private void ChonMenu(Guna.UI2.WinForms.Guna2Button btn)
+        {
+            btnTrangChu.FillColor = Color.FromArgb(70, 130, 220);
+            btnQuanLyVe.FillColor = Color.FromArgb(70, 130, 220);
+            btnChuyenXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnTuyenXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnTaiXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnNhanVien.FillColor = Color.FromArgb(70, 130, 220);
+            btnThongKe.FillColor = Color.FromArgb(70, 130, 220);
+
+            btn.FillColor = Color.FromArgb(35, 85, 180);
         }
 
         private void LoadDanhSachXe()
@@ -682,6 +696,53 @@ namespace BAOCAOCUOIKY
             {
                 e.Value = e.RowIndex + 1;
             }
+        }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnChuyenXe_Click(object sender, EventArgs e)
+        {
+            FrmChuyenXe frm = new FrmChuyenXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnTuyenXe_Click(object sender, EventArgs e)
+        {
+            FrmTuyenXe frm = new FrmTuyenXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnXe_Click(object sender, EventArgs e)
+        {
+            ChonMenu(btnXe);
+        }
+
+        private void btnTaiXe_Click(object sender, EventArgs e)
+        {
+            FrmTaiXe frm = new FrmTaiXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            FrmNhanVien frm = new FrmNhanVien();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            FrmThongKe frm = new FrmThongKe();
+            frm.Show();
+            this.Hide();
         }
     }
 }

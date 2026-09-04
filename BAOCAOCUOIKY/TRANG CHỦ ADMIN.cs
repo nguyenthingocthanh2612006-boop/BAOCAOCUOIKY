@@ -14,6 +14,7 @@ namespace BAOCAOCUOIKY
 {
     public partial class FrmTrangChuAdmin : Form
     {
+        private Guna.UI2.WinForms.Guna2Button btnDangChon;
         private Timer timer;
         public FrmTrangChuAdmin()
         {
@@ -25,6 +26,7 @@ namespace BAOCAOCUOIKY
             HienThiTiLeVeTheoTrangThai();
             HienThiThongTinHeThong();
             HienThiChuyenXeSapKhoiHanh();
+            ChonMenu(btnTrangChu);
         }
 
 
@@ -435,36 +437,57 @@ namespace BAOCAOCUOIKY
 
         private void btnTuyenXe_Click(object sender, EventArgs e)
         {
+            ChonMenu(btnTuyenXe);
+
             FrmTuyenXe frm = new FrmTuyenXe();
-            frm.ShowDialog();
+            frm.Show();
+
+            this.Hide();
         }
 
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
+            ChonMenu(btnTuyenXe);
             FrmNhanVien frm = new FrmNhanVien();
             frm.ShowDialog();
         }
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            DialogResult result = MessageBox.Show(
+            "Bạn có chắc muốn đăng xuất không?",
+            "Đăng xuất",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question);
 
-            FrmDangNhap frmDangNhap = new FrmDangNhap();
-            frmDangNhap.ShowDialog();
+            if (result == DialogResult.Yes)
+            {
+                FrmDangNhap frm = new FrmDangNhap();
+                frm.Show();
 
-            this.Close();
+                foreach (Form f in Application.OpenForms.Cast<Form>().ToList())
+                {
+                    if (f != frm)
+                        f.Hide();
+                }
+            }
         }
 
         private void btnTaiXe_Click(object sender, EventArgs e)
         {
+            ChonMenu(btnTuyenXe);
             FrmTaiXe frm = new FrmTaiXe();
             frm.ShowDialog();
         }
 
         private void btnXe_Click(object sender, EventArgs e)
         {
+            ChonMenu(btnXe);
+
             FrmQuanLyXe frm = new FrmQuanLyXe();
             frm.Show();
+
+            this.Hide();
         }
 
         private void FrmTrangChuAdmin_Load(object sender, EventArgs e)
@@ -506,5 +529,55 @@ namespace BAOCAOCUOIKY
             lblAdmin.Text = "ADMIN";
         }
 
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            ChonMenu(btnChuyenXe);
+            FrmThongKe frm = new FrmThongKe();
+            frm.Show();
+        }
+
+        private void btnChuyenXe_Click(object sender, EventArgs e)
+        {
+            ChonMenu(btnChuyenXe);
+
+            FrmChuyenXe frm = new FrmChuyenXe();
+            frm.Show();
+
+            this.Hide();
+        }
+
+        private void ChonMenu(Guna.UI2.WinForms.Guna2Button btn)
+        {
+            // Tắt nút đang sáng
+            if (btnDangChon != null)
+            {
+                btnDangChon.FillColor = Color.FromArgb(70, 130, 220);
+            }
+
+            // Bật nút được chọn
+            btn.FillColor = Color.FromArgb(35, 85, 180);
+
+            btnDangChon = btn;
+        }
+
+        private void btnQuanLyVe_Click(object sender, EventArgs e)
+        {
+            ChonMenu(btnChuyenXe);
+
+            FrmQuanLyVe frm = new FrmQuanLyVe();
+            frm.Show();
+
+            this.Hide();
+        }
+
+        private void btnBenXe_Click(object sender, EventArgs e)
+        {
+            ChonMenu(btnChuyenXe);
+
+            FrmBenXe frm = new FrmBenXe();
+            frm.Show();
+
+            this.Hide();
+        }
     }
 }

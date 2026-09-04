@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BAOCAOCUOIKY
 {
-    public partial class NV_BÁN_VÉ : Form
+    public partial class FrmBanVe : Form
     {
-        public NV_BÁN_VÉ()
+        public FrmBanVe()
         {
             InitializeComponent();
         }

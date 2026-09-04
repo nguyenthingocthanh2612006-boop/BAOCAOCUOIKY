@@ -19,6 +19,7 @@ namespace BAOCAOCUOIKY
         public FrmNhanVien()
         {
             InitializeComponent();
+            ChonMenu(btnNhanVien);
 
             this.Load += FrmNhanVien_Load;
         }
@@ -607,9 +608,86 @@ namespace BAOCAOCUOIKY
             }
         }
 
-        private void QUẢN_LÝ_NHÂN_VIÊN_Load(object sender, EventArgs e)
+        private void ChonMenu(Guna.UI2.WinForms.Guna2Button btn)
         {
+            btnTrangChu.FillColor = Color.FromArgb(70, 130, 220);
+            btnQuanLyVe.FillColor = Color.FromArgb(70, 130, 220);
+            btnChuyenXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnTuyenXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnTaiXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnNhanVien.FillColor = Color.FromArgb(70, 130, 220);
+            btnThongKe.FillColor = Color.FromArgb(70, 130, 220);
 
+            // Nút đang chọn
+            btn.FillColor = Color.FromArgb(35, 85, 180);
+        }
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnChuyenXe_Click(object sender, EventArgs e)
+        {
+            FrmChuyenXe frm = new FrmChuyenXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnTuyenXe_Click(object sender, EventArgs e)
+        {
+            FrmTuyenXe frm = new FrmTuyenXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnXe_Click(object sender, EventArgs e)
+        {
+            FrmQuanLyXe frm = new FrmQuanLyXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnTaiXe_Click(object sender, EventArgs e)
+        {
+            FrmTaiXe frm = new FrmTaiXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            ChonMenu(btnNhanVien);
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            FrmThongKe frm = new FrmThongKe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+            "Bạn có chắc muốn đăng xuất không?",
+            "Đăng xuất",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                FrmDangNhap frm = new FrmDangNhap();
+                frm.Show();
+
+                foreach (Form f in Application.OpenForms.Cast<Form>().ToList())
+                {
+                    if (f != frm)
+                        f.Hide();
+                }
+            }
         }
     }
 }
