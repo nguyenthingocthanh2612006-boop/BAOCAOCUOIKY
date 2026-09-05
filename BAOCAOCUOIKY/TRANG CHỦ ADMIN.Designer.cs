@@ -39,6 +39,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnQuanLyVe = new Guna.UI2.WinForms.Guna2Button();
             this.btnNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
@@ -50,10 +51,10 @@
             this.btnTrangChu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblAdmin = new System.Windows.Forms.Label();
+            this.lblGio = new System.Windows.Forms.Label();
+            this.lblNgay = new System.Windows.Forms.Label();
             this.lblTrangChu = new System.Windows.Forms.Label();
-            this.lblTenDangNhap = new System.Windows.Forms.Label();
-            this.lblXinChao = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pnlTuyenXe = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTongSoTuyen = new System.Windows.Forms.Label();
             this.lblSoTuyen = new System.Windows.Forms.Label();
@@ -130,11 +131,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnBenXe = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.pnlTuyenXe.SuspendLayout();
             this.pnlChuyenXe.SuspendLayout();
             this.pnlVeDaBan.SuspendLayout();
@@ -155,7 +155,8 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Controls.Add(this.btnBenXe);
+            this.guna2Panel1.Controls.Add(this.label7);
             this.guna2Panel1.Controls.Add(this.btnQuanLyVe);
             this.guna2Panel1.Controls.Add(this.btnNhanVien);
             this.guna2Panel1.Controls.Add(this.btnThongKe);
@@ -173,6 +174,18 @@
             this.guna2Panel1.Size = new System.Drawing.Size(220, 780);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(78, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(134, 72);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "QUẢN LÝ XE BUÝT NỘI TỈNH";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // btnQuanLyVe
             // 
             this.btnQuanLyVe.BorderRadius = 8;
@@ -187,6 +200,7 @@
             this.btnQuanLyVe.Size = new System.Drawing.Size(205, 42);
             this.btnQuanLyVe.TabIndex = 11;
             this.btnQuanLyVe.Text = "Quản lý vé";
+            this.btnQuanLyVe.Click += new System.EventHandler(this.btnQuanLyVe_Click);
             // 
             // btnNhanVien
             // 
@@ -197,7 +211,7 @@
             this.btnNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnNhanVien.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btnNhanVien.Location = new System.Drawing.Point(7, 429);
+            this.btnNhanVien.Location = new System.Drawing.Point(8, 496);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(205, 42);
             this.btnNhanVien.TabIndex = 3;
@@ -213,11 +227,12 @@
             this.btnThongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnThongKe.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKe.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe.Location = new System.Drawing.Point(7, 488);
+            this.btnThongKe.Location = new System.Drawing.Point(8, 555);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(205, 42);
             this.btnThongKe.TabIndex = 4;
             this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // btnTaiXe
             // 
@@ -228,11 +243,12 @@
             this.btnTaiXe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnTaiXe.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaiXe.ForeColor = System.Drawing.Color.White;
-            this.btnTaiXe.Location = new System.Drawing.Point(8, 371);
+            this.btnTaiXe.Location = new System.Drawing.Point(8, 436);
             this.btnTaiXe.Name = "btnTaiXe";
             this.btnTaiXe.Size = new System.Drawing.Size(205, 42);
             this.btnTaiXe.TabIndex = 8;
             this.btnTaiXe.Text = "Tài Xế";
+            this.btnTaiXe.Click += new System.EventHandler(this.btnTaiXe_Click);
             // 
             // btnXe
             // 
@@ -243,11 +259,12 @@
             this.btnXe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnXe.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXe.ForeColor = System.Drawing.Color.White;
-            this.btnXe.Location = new System.Drawing.Point(7, 312);
+            this.btnXe.Location = new System.Drawing.Point(8, 374);
             this.btnXe.Name = "btnXe";
             this.btnXe.Size = new System.Drawing.Size(205, 42);
             this.btnXe.TabIndex = 9;
             this.btnXe.Text = "Xe";
+            this.btnXe.Click += new System.EventHandler(this.btnXe_Click);
             // 
             // btnTuyenXe
             // 
@@ -279,6 +296,7 @@
             this.btnChuyenXe.Size = new System.Drawing.Size(205, 42);
             this.btnChuyenXe.TabIndex = 7;
             this.btnChuyenXe.Text = "Chuyến xe";
+            this.btnChuyenXe.Click += new System.EventHandler(this.btnChuyenXe_Click);
             // 
             // btnDangXuat
             // 
@@ -329,16 +347,49 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.lblAdmin);
+            this.guna2Panel2.Controls.Add(this.lblGio);
+            this.guna2Panel2.Controls.Add(this.lblNgay);
             this.guna2Panel2.Controls.Add(this.lblTrangChu);
-            this.guna2Panel2.Controls.Add(this.lblTenDangNhap);
-            this.guna2Panel2.Controls.Add(this.lblXinChao);
-            this.guna2Panel2.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1242, 60);
             this.guna2Panel2.TabIndex = 0;
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.Color.Black;
+            this.lblAdmin.Location = new System.Drawing.Point(1164, 26);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(66, 19);
+            this.lblAdmin.TabIndex = 17;
+            this.lblAdmin.Text = "ADMIN";
+            // 
+            // lblGio
+            // 
+            this.lblGio.AutoSize = true;
+            this.lblGio.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGio.ForeColor = System.Drawing.Color.Black;
+            this.lblGio.Location = new System.Drawing.Point(1082, 26);
+            this.lblGio.Name = "lblGio";
+            this.lblGio.Size = new System.Drawing.Size(75, 19);
+            this.lblGio.TabIndex = 16;
+            this.lblGio.Text = "09:30:15";
+            // 
+            // lblNgay
+            // 
+            this.lblNgay.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgay.ForeColor = System.Drawing.Color.Black;
+            this.lblNgay.Location = new System.Drawing.Point(931, 26);
+            this.lblNgay.Name = "lblNgay";
+            this.lblNgay.Size = new System.Drawing.Size(156, 19);
+            this.lblNgay.TabIndex = 15;
+            this.lblNgay.Text = "Thứ 3,31/08/2026";
+            this.lblNgay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTrangChu
             // 
@@ -350,37 +401,6 @@
             this.lblTrangChu.Size = new System.Drawing.Size(198, 35);
             this.lblTrangChu.TabIndex = 4;
             this.lblTrangChu.Text = "TRANG CHỦ";
-            // 
-            // lblTenDangNhap
-            // 
-            this.lblTenDangNhap.AutoSize = true;
-            this.lblTenDangNhap.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenDangNhap.Location = new System.Drawing.Point(1150, 20);
-            this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(48, 26);
-            this.lblTenDangNhap.TabIndex = 3;
-            this.lblTenDangNhap.Text = "Tên";
-            // 
-            // lblXinChao
-            // 
-            this.lblXinChao.AutoSize = true;
-            this.lblXinChao.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXinChao.Location = new System.Drawing.Point(1055, 21);
-            this.lblXinChao.Name = "lblXinChao";
-            this.lblXinChao.Size = new System.Drawing.Size(102, 26);
-            this.lblXinChao.TabIndex = 2;
-            this.lblXinChao.Text = "Xin chào,";
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.MediumBlue;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(997, 8);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(54, 45);
-            this.guna2CirclePictureBox1.TabIndex = 1;
-            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // pnlTuyenXe
             // 
@@ -1260,17 +1280,21 @@
             this.label6.Size = new System.Drawing.Size(100, 23);
             this.label6.TabIndex = 0;
             // 
-            // guna2HtmlLabel1
+            // btnBenXe
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(78, 17);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(130, 55);
-            this.guna2HtmlLabel1.TabIndex = 12;
-            this.guna2HtmlLabel1.Text = " QUẢN LÝ\nXE BUÝT\nNỘI TỈNH";
+            this.btnBenXe.BorderRadius = 8;
+            this.btnBenXe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBenXe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBenXe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBenXe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBenXe.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBenXe.ForeColor = System.Drawing.Color.White;
+            this.btnBenXe.Location = new System.Drawing.Point(7, 315);
+            this.btnBenXe.Name = "btnBenXe";
+            this.btnBenXe.Size = new System.Drawing.Size(205, 42);
+            this.btnBenXe.TabIndex = 15;
+            this.btnBenXe.Text = "Bến xe";
+            this.btnBenXe.Click += new System.EventHandler(this.btnBenXe_Click);
             // 
             // FrmTrangChuAdmin
             // 
@@ -1283,11 +1307,11 @@
             this.Name = "FrmTrangChuAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TRANG CHỦ ADMIN";
+            this.Load += new System.EventHandler(this.FrmTrangChuAdmin_Load);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.pnlTuyenXe.ResumeLayout(false);
             this.pnlChuyenXe.ResumeLayout(false);
             this.pnlVeDaBan.ResumeLayout(false);
@@ -1378,9 +1402,6 @@
         private System.Windows.Forms.Label lblTenTuyen1;
         private System.Windows.Forms.Label lblTien1;
         private System.Windows.Forms.Label lblTrangChu;
-        private System.Windows.Forms.Label lblTenDangNhap;
-        private System.Windows.Forms.Label lblXinChao;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Label lblTien3;
         private System.Windows.Forms.Label lblTenTuyen3;
         private System.Windows.Forms.Label label14;
@@ -1408,6 +1429,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblAdmin;
+        private System.Windows.Forms.Label lblGio;
+        private System.Windows.Forms.Label lblNgay;
+        private Guna.UI2.WinForms.Guna2Button btnBenXe;
     }
 }

@@ -13,6 +13,7 @@ namespace BAOCAOCUOIKY
 {
     public partial class FrmTuyenXe : Form
     {
+        private Timer timer;
         private bool dangThem = false;
         public FrmTuyenXe()
         {
@@ -21,8 +22,7 @@ namespace BAOCAOCUOIKY
             LoadBenXe();
             LoadTrangThai();
             LoadDanhSachTuyen();
-
-           
+            ChonMenu(btnTuyenXe);
         }
 
         private void LoadBenXe()
@@ -166,9 +166,7 @@ namespace BAOCAOCUOIKY
             }
         }
 
-        private void dgvTuyenXe_CellContentClick(
-     object sender,
-     DataGridViewCellEventArgs e)
+        private void dgvTuyenXe_CellContentClick(object sender,DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)
                 return;
@@ -298,25 +296,56 @@ namespace BAOCAOCUOIKY
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
-            if (hoi == DialogResult.No)
+            if (hoi != DialogResult.Yes)
                 return;
 
             using (var db = new QuanLyVeXeModel())
             {
-                var t = db.TuyenXes
+                var tuyen = db.TuyenXes
                     .FirstOrDefault(x => x.MaTuyen == maTuyen);
 
-                if (t == null)
+                if (tuyen == null)
                 {
-                    MessageBox.Show("Không tìm thấy tuyến!");
+                    MessageBox.Show(
+                        "Không tìm thấy tuyến!",
+                        "Thông báo",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+
                     return;
                 }
 
-                db.TuyenXes.Remove(t);
-                db.SaveChanges();
-            }
+                // Kiểm tra tuyến có chuyến xe đang sử dụng không
+                bool coChuyenXe = db.ChuyenXes
+                    .Any(c => c.MaTuyen == maTuyen);
 
-            MessageBox.Show("Đã xóa tuyến xe!");
+                if (coChuyenXe)
+                {
+                    // Không xóa thật
+                    tuyen.TrangThai = "Ngừng hoạt động";
+
+                    db.SaveChanges();
+
+                    MessageBox.Show(
+                        "Tuyến này đang được sử dụng bởi chuyến xe.\n" +
+                        "Đã chuyển tuyến sang trạng thái Ngừng hoạt động.",
+                        "Thông báo",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+                else
+                {
+                    // Không có chuyến → xóa thật
+                    db.TuyenXes.Remove(tuyen);
+                    db.SaveChanges();
+
+                    MessageBox.Show(
+                        "Đã xóa tuyến xe!",
+                        "Thông báo",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+            }
 
             LoadDanhSachTuyen();
 
@@ -556,6 +585,127 @@ namespace BAOCAOCUOIKY
             dgvTuyenXe.ClearSelection();
 
             txtMaTuyen.Focus();
+        }
+
+        private void FrmTuyenXe_Load(object sender, EventArgs e)
+        {
+            CapNhatNgayGio();
+
+            // Tạo đồng hồ cập nhật mỗi giây
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            CapNhatNgayGio();
+        }
+
+        private void CapNhatNgayGio()
+        {
+            DateTime now = DateTime.Now;
+
+            string[] thu =
+            {
+        "Chủ nhật",
+        "Thứ 2",
+        "Thứ 3",
+        "Thứ 4",
+        "Thứ 5",
+        "Thứ 6",
+        "Thứ 7"
+    };
+
+            lblNgay.Text = thu[(int)now.DayOfWeek]
+                           + ", " + now.ToString("dd/MM/yyyy");
+
+            lblGio.Text = now.ToString("HH:mm:ss");
+
+            lblAdmin.Text = "ADMIN";
+        }
+
+        private void ChonMenu(Guna.UI2.WinForms.Guna2Button btn)
+        {
+            btnTrangChu.FillColor = Color.FromArgb(70, 130, 220);
+            btnQuanLyVe.FillColor = Color.FromArgb(70, 130, 220);
+            btnChuyenXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnTuyenXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnQuanLyXeXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnTaiXe.FillColor = Color.FromArgb(70, 130, 220);
+            btnNhanVien.FillColor = Color.FromArgb(70, 130, 220);
+            btnThongKe.FillColor = Color.FromArgb(70, 130, 220);
+
+            btn.FillColor = Color.FromArgb(35, 85, 180);
+        }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnChuyenXe_Click(object sender, EventArgs e)
+        {
+            FrmChuyenXe frm = new FrmChuyenXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnQuanLyXeXe_Click(object sender, EventArgs e)
+        {
+            FrmQuanLyXe frm = new FrmQuanLyXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnTaiXe_Click(object sender, EventArgs e)
+        {
+            FrmTaiXe frm = new FrmTaiXe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            FrmNhanVien frm = new FrmNhanVien();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            FrmThongKe frm = new FrmThongKe();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnTuyenXe_Click(object sender, EventArgs e)
+        {
+            ChonMenu(btnTuyenXe);
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+           "Bạn có chắc muốn đăng xuất không?",
+           "Đăng xuất",
+           MessageBoxButtons.YesNo,
+           MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                FrmDangNhap frm = new FrmDangNhap();
+                frm.Show();
+
+                foreach (Form f in Application.OpenForms.Cast<Form>().ToList())
+                {
+                    if (f != frm)
+                        f.Hide();
+                }
+            }
         }
     }
 }
