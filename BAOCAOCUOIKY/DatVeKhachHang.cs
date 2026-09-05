@@ -25,6 +25,9 @@ namespace BAOCAOCUOIKY
         public FrmDatVe(string noiDi, string noiDen, DateTime ngayDi)
         {
             InitializeComponent();
+            lblDatVe.ForeColor = Color.FromArgb(0, 102, 204);
+            lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Bold);
+
             btnThanhToan.Enabled = false;
             for (int i = 1; i <= 29; i++)
             {
@@ -56,8 +59,6 @@ namespace BAOCAOCUOIKY
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Regular);
             lblTraCuuVe.ForeColor = Color.Black;
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Regular);
-            lblTuyenXe.ForeColor = Color.Black;
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
             // MỞ FORM TRANG CHỦ
@@ -76,8 +77,6 @@ namespace BAOCAOCUOIKY
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Bold);
             lblTraCuuVe.ForeColor = Color.Black;
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Regular);
-            lblTuyenXe.ForeColor = Color.Black;
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
         }
@@ -91,31 +90,13 @@ namespace BAOCAOCUOIKY
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Regular);
             lblTraCuuVe.ForeColor = Color.FromArgb(0, 102, 204);
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Bold);
-            lblTuyenXe.ForeColor = Color.Black;
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
             // MỞ FORM TRA CỨU VÉ
-            FrmTraCuuVe frm = new FrmTraCuuVe();
+            FrmTraCuuVe frm = new FrmTraCuuVe("", "", DateTime.Today, "");
             this.Hide();
             frm.ShowDialog();
             this.Show();
-        }
-
-        private void lblTuyenXe_Click(object sender, EventArgs e)
-        {
-            //MÀU CHO CÁC NÚT
-            lblTrangChu.ForeColor = Color.Black;
-            lblTrangChu.Font = new Font(lblTrangChu.Font, FontStyle.Regular);
-            lblDatVe.ForeColor = Color.Black;
-            lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Regular);
-            lblTraCuuVe.ForeColor = Color.Black;
-            lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Regular);
-            lblTuyenXe.ForeColor = Color.FromArgb(0, 102, 204);
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Bold);
-            lblHoaDon.ForeColor = Color.Black;
-            lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
-
         }
 
         private void lblHoaDon_Click(object sender, EventArgs e)
@@ -127,10 +108,12 @@ namespace BAOCAOCUOIKY
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Regular);
             lblTraCuuVe.ForeColor = Color.Black;
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Regular);
-            lblTuyenXe.ForeColor = Color.Black;
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.FromArgb(0, 102, 204);
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Bold);
+            FrmHoaDon frm = new FrmHoaDon(ThongTinDangNhap.MaTK);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
         private void FrmDatVe_Load(object sender, EventArgs e)
@@ -242,6 +225,10 @@ namespace BAOCAOCUOIKY
             lblGia5.Text = giaVeDangChon.ToString("N0") + "đ";
 
             daChonChuyen = true;
+
+            // Đọc SQL và tô ghế đã đặt
+            HienThiGheDaDat();
+
             CapNhatThongTinHanhKhach();
             btnThanhToan.Enabled = gheDangChon.Count > 0;
         }
@@ -315,8 +302,8 @@ namespace BAOCAOCUOIKY
                 gheDangChon.Remove(soGhe);
 
                 // Màu ghế trống
-                btn.FillColor = Color.FromArgb(94, 148, 255);
-                btn.FillColor2 = Color.FromArgb(231, 76, 156);
+                btn.FillColor = Color.MediumPurple;
+                btn.FillColor2 = Color.MediumPurple;
                 btn.ForeColor = Color.White;
             }
             else
@@ -368,19 +355,101 @@ namespace BAOCAOCUOIKY
 
                 if (btn != null)
                 {
-                    btn.FillColor = Color.FromArgb(94, 148, 255);
-                    btn.FillColor2 = Color.FromArgb(231, 76, 156);
+                    btn.FillColor = Color.MediumPurple;
+                    btn.FillColor2 = Color.MediumPurple;
                     btn.ForeColor = Color.White;
                 }
             }
-
+            // Tô lại ghế đã đặt → XANH DƯƠNG
+            HienThiGheDaDat();
             lblGheDaChon.Text = "Ghế đã chọn:";
 
             CapNhatThongTinHanhKhach();
         }
+        private void HienThiGheDaDat()
+        {
+            if (!daChonChuyen)
+                return;
+
+            using (var db = new QuanLyVeXeModel())
+            {
+                // Tìm chuyến đang chọn
+                TimeSpan gioKhoiHanh;
+
+                if (!TimeSpan.TryParse(gioDiDangChon, out gioKhoiHanh))
+                    return;
+
+                var chuyen = db.ChuyenXes.FirstOrDefault(x =>
+                    x.NgayKhoiHanh == dtpNgayDi.Value.Date &&
+                    x.GioKhoiHanh == gioKhoiHanh &&
+                    x.Xe.BienSo == bienSoDangChon);
+
+                if (chuyen == null)
+                    return;
+
+                // Lấy danh sách ghế đã đặt
+                var gheDaDat = db.VeXes
+                    .Where(v =>
+                        v.MaChuyen == chuyen.MaChuyen &&
+                        v.TrangThai != "Đã hủy")
+                    .Select(v => v.MaGhe)
+                    .ToList();
+
+                // Tô màu 29 ghế
+                for (int i = 1; i <= 29; i++)
+                {
+                    var btn = pnlXe.Controls["btnGhe" + i]
+                        as Guna.UI2.WinForms.Guna2GradientButton;
+
+                    if (btn == null)
+                        continue;
+
+                    var ghe = db.Ghes.FirstOrDefault(x =>
+                        x.MaXe == chuyen.MaXe &&
+                        x.SoGhe == i);
+
+                    if (ghe != null && gheDaDat.Contains(ghe.MaGhe))
+                    {
+                        // ĐÃ ĐẶT → XANH DƯƠNG
+                        btn.FillColor = Color.Blue;
+                        btn.FillColor2 = Color.Blue;
+                        btn.ForeColor = Color.White;
+
+                        // Giữ màu xanh khi khóa nút
+                        btn.DisabledState.FillColor = Color.Blue;
+                        btn.DisabledState.FillColor2 = Color.Blue;
+                        btn.DisabledState.ForeColor = Color.White;
+
+                        btn.Enabled = false;
+                    }
+                    else
+                    {
+                        // GHẾ TRỐNG → TÍM
+                        btn.FillColor = Color.MediumPurple;
+                        btn.FillColor2 = Color.MediumPurple;
+                        btn.ForeColor = Color.White;
+                        btn.Enabled = true;
+                    }
+                }
+            }
+        }
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
+            int soLuong = cboSoLuongVe.SelectedIndex + 1;
+
+            if (gheDangChon.Count != soLuong)
+            {
+                MessageBox.Show(
+                    "Bạn đang chọn " + soLuong + " vé.\n" +
+                    "Vui lòng chọn đúng " + soLuong + " ghế!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
             if (!daChonChuyen)
             {
                 MessageBox.Show("Vui lòng chọn chuyến xe!");
@@ -392,8 +461,6 @@ namespace BAOCAOCUOIKY
                 MessageBox.Show("Vui lòng chọn ghế!");
                 return;
             }
-
-            int soLuong = gheDangChon.Count;
 
             // Tạm tính
             decimal tamTinh = giaVeDangChon * soLuong;
@@ -418,6 +485,9 @@ namespace BAOCAOCUOIKY
             );
 
             frm.ShowDialog();
+
+            // Cập nhật lại trạng thái ghế từ SQL
+            HienThiGheDaDat();
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -456,8 +526,7 @@ namespace BAOCAOCUOIKY
                 if (btn != null)
                 {
                     btn.Enabled = true;
-                    btn.FillColor = Color.FromArgb(94, 148, 255);
-                    btn.FillColor2 = Color.FromArgb(231, 76, 156);
+                    btn.BackColor = Color.MediumPurple;
                     btn.ForeColor = Color.White;
                 }
             }
@@ -480,6 +549,11 @@ namespace BAOCAOCUOIKY
 
             // Khóa nút thanh toán
             btnThanhToan.Enabled = false;
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

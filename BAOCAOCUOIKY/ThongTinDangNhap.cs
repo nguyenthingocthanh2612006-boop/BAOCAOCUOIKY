@@ -8,6 +8,7 @@ namespace BAOCAOCUOIKY
 {
     internal class ThongTinDangNhap
     {
+        public static string MaTK { get; set; }
         public static string TenDangNhap { get; set; }
         public static string Quyen { get; set; }
     }

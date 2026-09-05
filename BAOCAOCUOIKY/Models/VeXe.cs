@@ -35,6 +35,9 @@ namespace BAOCAOCUOIKY.Models
         [StringLength(20)]
         public string MaNV { get; set; }
 
+        [StringLength(30)]
+        public string PhuongThucThanhToan { get; set; }
+
         [Column(TypeName = "date")]
         public DateTime NgayDat { get; set; }
 

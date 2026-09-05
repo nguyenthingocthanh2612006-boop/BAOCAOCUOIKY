@@ -140,6 +140,7 @@
             this.btnQuayLai.Size = new System.Drawing.Size(159, 45);
             this.btnQuayLai.TabIndex = 109;
             this.btnQuayLai.Text = "Quay lại";
+            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
             // rdoTienMat
             // 

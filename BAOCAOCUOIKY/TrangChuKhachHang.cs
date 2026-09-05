@@ -26,12 +26,12 @@ namespace BAOCAOCUOIKY
             cboNoiDen.Items.Clear();
             string[] diaDiem =
             {
-                "Cao Lãnh",
-                "Sa Đéc",
-                "Hồng Ngự",
-                "Lai Vung",
-                "Lấp Vò",
-                "Tam Nông"
+                 "Bến xe Cao Lãnh",
+                 "Bến xe Sa Đéc",
+                 "Bến xe Hồng Ngự",
+                 "Bến xe Lai Vung",
+                 "Bến xe Lấp Vò",
+                 "Bến xe Tam Nông"
             };
             cboNoiDi.Items.AddRange(diaDiem);
             cboNoiDen.Items.AddRange(diaDiem);
@@ -60,8 +60,6 @@ namespace BAOCAOCUOIKY
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Regular);
             lblTraCuuVe.ForeColor = Color.Black;
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Regular);
-            lblTuyenXe.ForeColor = Color.Black;
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
         }
@@ -74,8 +72,6 @@ namespace BAOCAOCUOIKY
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Bold);
             lblTraCuuVe.ForeColor = Color.Black;
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Regular);
-            lblTuyenXe.ForeColor = Color.Black;
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
             FrmDatVe frm = new FrmDatVe("", "", DateTime.Today);
@@ -93,30 +89,12 @@ namespace BAOCAOCUOIKY
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Regular);
             lblTraCuuVe.ForeColor = Color.FromArgb(0, 102, 204);
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Bold);
-            lblTuyenXe.ForeColor = Color.Black;
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.Black;
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
-            FrmTraCuuVe frm = new FrmTraCuuVe();
+            FrmTraCuuVe frm = new FrmTraCuuVe("", "", DateTime.Today, "");
             this.Hide();
             frm.ShowDialog();
             this.Show();
-        }
-
-        private void lblTuyenXe_Click(object sender, EventArgs e)
-        {
-            //MÀU CHO CÁC NÚT
-            lblTrangChu.ForeColor = Color.Black;
-            lblTrangChu.Font = new Font(lblTrangChu.Font, FontStyle.Regular);
-            lblDatVe.ForeColor = Color.Black;
-            lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Regular);
-            lblTraCuuVe.ForeColor = Color.Black;
-            lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Regular);
-            lblTuyenXe.ForeColor = Color.FromArgb(0, 102, 204);
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Bold);
-            lblHoaDon.ForeColor = Color.Black;
-            lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Regular);
-            
         }
 
         private void lblHoaDon_Click(object sender, EventArgs e)
@@ -128,10 +106,12 @@ namespace BAOCAOCUOIKY
             lblDatVe.Font = new Font(lblDatVe.Font, FontStyle.Regular);
             lblTraCuuVe.ForeColor = Color.Black;
             lblTraCuuVe.Font = new Font(lblTraCuuVe.Font, FontStyle.Regular);
-            lblTuyenXe.ForeColor = Color.Black;
-            lblTuyenXe.Font = new Font(lblTuyenXe.Font, FontStyle.Regular);
             lblHoaDon.ForeColor = Color.FromArgb(0, 102, 204);
             lblHoaDon.Font = new Font(lblHoaDon.Font, FontStyle.Bold);
+            FrmHoaDon frm = new FrmHoaDon(ThongTinDangNhap.MaTK);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
 
         private void btnTim_Click(object sender, EventArgs e)
@@ -155,13 +135,13 @@ namespace BAOCAOCUOIKY
                 MessageBox.Show("Nơi đi và nơi đến không được giống nhau!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
-            // Lấy thông tin người dùng đã chọn
+            // Lấy thông tin từ trang chủ
             string noiDi = cboNoiDi.Text;
             string noiDen = cboNoiDen.Text;
-            DateTime ngayDi = dtpNgayDi.Value;
+            DateTime ngayDi = dtpNgayDi.Value.Date;
             string soLuongVe = cboSoLuongVe.Text;
             // Mở form Tra Cứu Vé và truyền thông tin qua
-            FrmTraCuuVe frm = new FrmTraCuuVe();
+            FrmTraCuuVe frm = new FrmTraCuuVe(noiDi, noiDen, ngayDi, soLuongVe);
             this.Hide();
             frm.ShowDialog();
             this.Show();

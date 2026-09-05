@@ -139,8 +139,22 @@ namespace BAOCAOCUOIKY
                         TrangThai = "Đang hoạt động"
                     };
 
-                    // Lưu vào SQL
+                    // Tạo khách hàng tương ứng với tài khoản
+                    int soKH = db.KhachHangs.Count() + 1;
+                    string maKH = "KH" + soKH.ToString("D3");
+
+                    KhachHang khachHang = new KhachHang
+                    {
+                        MaKH = maKH,
+                        MaTK = maTK,
+                        HoTen = tenDangNhap,
+                        SoDienThoai = soDienThoai,
+                        NgayDangKy = DateTime.Today
+                    };
+
+                    // Lưu tài khoản + khách hàng
                     db.TaiKhoans.Add(taiKhoan);
+                    db.KhachHangs.Add(khachHang);
                     db.SaveChanges();
                     MessageBox.Show("Đăng ký tài khoản thành công!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     this.Close();

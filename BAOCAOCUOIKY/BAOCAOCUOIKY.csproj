@@ -103,12 +103,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bến Xe Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bến Xe Admin.Designer.cs">
-      <DependentUpon>Bến Xe Admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,23 +121,11 @@
     <Compile Include="MaQRThanhToan.Designer.cs">
       <DependentUpon>MaQRThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="QUẢN LÝ NHÂN VIÊN.cs">
+    <Compile Include="NhanVienBanVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QUẢN LÝ NHÂN VIÊN.Designer.cs">
-      <DependentUpon>QUẢN LÝ NHÂN VIÊN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QUẢN LÝ TÀI XẾ.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QUẢN LÝ TÀI XẾ.Designer.cs">
-      <DependentUpon>QUẢN LÝ TÀI XẾ.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QUẢN LÝ XE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QUẢN LÝ XE.Designer.cs">
-      <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
+    <Compile Include="NhanVienBanVe.Designer.cs">
+      <DependentUpon>NhanVienBanVe.cs</DependentUpon>
     </Compile>
     <Compile Include="ThanhToanKhachHang.cs">
       <SubType>Form</SubType>
@@ -151,30 +133,18 @@
     <Compile Include="ThanhToanKhachHang.Designer.cs">
       <DependentUpon>ThanhToanKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongTinCaNhanKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinCaNhanKhachHang.Designer.cs">
+      <DependentUpon>ThongTinCaNhanKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinDangNhap.cs" />
     <Compile Include="TraCuuVeKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TraCuuVeKhachHang.Designer.cs">
       <DependentUpon>TraCuuVeKhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TRANG CHỦ ADMIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TRANG CHỦ ADMIN.Designer.cs">
-      <DependentUpon>TRANG CHỦ ADMIN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TRANG CHỦ USER.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TRANG CHỦ USER.Designer.cs">
-      <DependentUpon>TRANG CHỦ USER.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TuyenXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TuyenXe.Designer.cs">
-      <DependentUpon>TuyenXe.cs</DependentUpon>
     </Compile>
     <Compile Include="DatVeKhachHang.cs">
       <SubType>Form</SubType>
@@ -207,12 +177,6 @@
     <Compile Include="Models\TuyenXe.cs" />
     <Compile Include="Models\VeXe.cs" />
     <Compile Include="Models\Xe.cs" />
-    <Compile Include="NhanVienBanVe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NhanVienBanVe.Designer.cs">
-      <DependentUpon>NhanVienBanVe.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuenMatKhau.cs">
@@ -226,12 +190,6 @@
     </Compile>
     <Compile Include="TRA CỨU CHUYẾN XE.Designer.cs">
       <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TRANG CHỦ NHÂN VIÊN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TRANG CHỦ NHÂN VIÊN.Designer.cs">
-      <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
     </Compile>
     <Compile Include="XacNhanMa.cs">
       <SubType>Form</SubType>
@@ -276,20 +234,11 @@
     <EmbeddedResource Include="QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QUẢN LÝ CHUYẾN XE.resx">
-      <DependentUpon>QUẢN LÝ CHUYẾN XE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QUẢN LÝ NHÂN VIÊN.resx">
-      <DependentUpon>QUẢN LÝ NHÂN VIÊN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QUẢN LÝ TÀI XẾ.resx">
-      <DependentUpon>QUẢN LÝ TÀI XẾ.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QUẢN LÝ XE.resx">
-      <DependentUpon>QUẢN LÝ XE.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ThanhToanKhachHang.resx">
       <DependentUpon>ThanhToanKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinCaNhanKhachHang.resx">
+      <DependentUpon>ThongTinCaNhanKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TRA CỨU CHUYẾN XE.resx">
       <DependentUpon>TRA CỨU CHUYẾN XE.cs</DependentUpon>
@@ -297,17 +246,8 @@
     <EmbeddedResource Include="TraCuuVeKhachHang.resx">
       <DependentUpon>TraCuuVeKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TRANG CHỦ ADMIN.resx">
-      <DependentUpon>TRANG CHỦ ADMIN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TRANG CHỦ NHÂN VIÊN.resx">
-      <DependentUpon>TRANG CHỦ NHÂN VIÊN.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TrangChuKhachHang.resx">
       <DependentUpon>TrangChuKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TUYENXE.resx">
-      <DependentUpon>TuyenXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XacNhanMa.resx">
       <DependentUpon>XacNhanMa.cs</DependentUpon>
@@ -325,42 +265,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\HOOOO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BBBB.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Â.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\b.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\b1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\c.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\a17f46b7-76c5-4de0-a190-50de6e72c10e.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\a17f46b7-76c5-4de0-a190-50de6e72c10e1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1b19a986-f8c4-4d74-a38f-65a63955fe8b.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\d.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\e.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hiiiiiiii.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

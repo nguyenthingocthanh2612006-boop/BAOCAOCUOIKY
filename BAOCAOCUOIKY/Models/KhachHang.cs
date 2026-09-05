@@ -20,6 +20,9 @@ namespace BAOCAOCUOIKY.Models
         [StringLength(20)]
         public string MaKH { get; set; }
 
+        [StringLength(20)]
+        public string MaTK { get; set; }
+
         [Required]
         [StringLength(100)]
         public string HoTen { get; set; }

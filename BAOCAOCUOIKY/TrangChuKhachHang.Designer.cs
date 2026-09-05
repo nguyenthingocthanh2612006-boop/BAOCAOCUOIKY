@@ -32,7 +32,6 @@
             this.lblTrangChu = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblDatVe = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblTraCuuVe = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTuyenXe = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblHoaDon = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblXinChao = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlBanner1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -166,24 +165,12 @@
             this.lblTraCuuVe.Text = "Tra cứu vé";
             this.lblTraCuuVe.Click += new System.EventHandler(this.lblTraCuuVe_Click);
             // 
-            // lblTuyenXe
-            // 
-            this.lblTuyenXe.AutoSize = false;
-            this.lblTuyenXe.BackColor = System.Drawing.Color.Transparent;
-            this.lblTuyenXe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTuyenXe.Location = new System.Drawing.Point(757, 33);
-            this.lblTuyenXe.Name = "lblTuyenXe";
-            this.lblTuyenXe.Size = new System.Drawing.Size(150, 28);
-            this.lblTuyenXe.TabIndex = 4;
-            this.lblTuyenXe.Text = "Tuyến xe";
-            this.lblTuyenXe.Click += new System.EventHandler(this.lblTuyenXe_Click);
-            // 
             // lblHoaDon
             // 
             this.lblHoaDon.AutoSize = false;
             this.lblHoaDon.BackColor = System.Drawing.Color.Transparent;
             this.lblHoaDon.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoaDon.Location = new System.Drawing.Point(902, 33);
+            this.lblHoaDon.Location = new System.Drawing.Point(772, 33);
             this.lblHoaDon.Name = "lblHoaDon";
             this.lblHoaDon.Size = new System.Drawing.Size(150, 28);
             this.lblHoaDon.TabIndex = 5;
@@ -997,7 +984,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1378, 745);
+            this.ClientSize = new System.Drawing.Size(1368, 745);
             this.Controls.Add(this.lblTenDangNhap);
             this.Controls.Add(this.lblTieuDe14);
             this.Controls.Add(this.lblTieuDe10);
@@ -1027,7 +1014,6 @@
             this.Controls.Add(this.pnlBanner1);
             this.Controls.Add(this.lblXinChao);
             this.Controls.Add(this.lblHoaDon);
-            this.Controls.Add(this.lblTuyenXe);
             this.Controls.Add(this.lblTraCuuVe);
             this.Controls.Add(this.lblDatVe);
             this.Controls.Add(this.lblTrangChu);
@@ -1067,7 +1053,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTrangChu;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDatVe;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTraCuuVe;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblTuyenXe;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHoaDon;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblXinChao;
         private Guna.UI2.WinForms.Guna2Panel pnlBanner1;

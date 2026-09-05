@@ -126,7 +126,12 @@ namespace BAOCAOCUOIKY.Models
             modelBuilder.Entity<KhachHang>()
                 .HasMany(e => e.VeXes)
                 .WithRequired(e => e.KhachHang)
+                .HasForeignKey(e => e.MaKH)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<KhachHang>()
+                .Property(e => e.MaTK)
+                .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.MaNV)

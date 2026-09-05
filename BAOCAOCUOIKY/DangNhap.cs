@@ -57,6 +57,7 @@ namespace BAOCAOCUOIKY
                     // LƯU THÔNG TIN NGƯỜI ĐANG ĐĂNG NHẬP
                     ThongTinDangNhap.TenDangNhap = taiKhoan.TenDangNhap;
                     ThongTinDangNhap.Quyen = taiKhoan.Quyen;
+                    ThongTinDangNhap.MaTK = taiKhoan.MaTK;
 
                     // Kiểm tra trạng thái tài khoản
                     if (taiKhoan.TrangThai != "Đang hoạt động")
@@ -64,20 +65,11 @@ namespace BAOCAOCUOIKY
                         MessageBox.Show("Tài khoản đang bị khóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    if (taiKhoan.Quyen == "Admin")
-                    {
-                        // PHÂN QUYỀN ADMIN
-                        MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        FrmTrangChuAdmin frm = new FrmTrangChuAdmin();
-                        frm.Show();
-                        this.Hide();
-                    }
-
-                        // PHÂN QUYỀN NHÂN VIÊN
+                    // PHÂN QUYỀN NHÂN VIÊN
                     else if (taiKhoan.Quyen == "Nhân viên")
                     {
                         MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        FrmTrangChuNhanVien frm = new FrmTrangChuNhanVien();
+                        FrmNhanVienBanVe frm = new FrmNhanVienBanVe();
                         frm.Show();
                         this.Hide();
                     }

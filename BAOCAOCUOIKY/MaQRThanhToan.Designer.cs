@@ -56,6 +56,7 @@
             this.picQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picQR.TabIndex = 64;
             this.picQR.TabStop = false;
+            this.picQR.Click += new System.EventHandler(this.picQR_Click);
             // 
             // FrmMaQRThanhToan
             // 
